@@ -10,18 +10,17 @@ import Header from './components/layout/Header.vue';
 </script>
 
 <template>
-  <Header></Header>
   <!-- <Integration></Integration> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <Header></Header>
   <HeroSection></HeroSection>
   <FeatureSection></FeatureSection>
   <AgenticSolutionSection></AgenticSolutionSection>
 
   <TestimonialSection></TestimonialSection>
   <CTASection></CTASection>
-  <Footer></Footer> 
+  <Footer></Footer>  
 </template>
 
 <style >
-
 </style>
