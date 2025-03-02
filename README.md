@@ -44,5 +44,4 @@ The application should now be running on `http://localhost:5173` (or another por
 
 ---
 
-Happy coding! 🚀
 
