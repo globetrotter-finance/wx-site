@@ -13,9 +13,9 @@
         <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Solutions
         </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
+        <router-link to="/integration" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Integrations
-        </a>
+        </router-link>
         <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Agentic Solutions
         </a>

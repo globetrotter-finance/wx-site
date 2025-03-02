@@ -1,4 +1,5 @@
 <script setup>
+import { RouterView } from 'vue-router';
 import AgenticSolutionSection from './components/Home/AgenticSolutionSection.vue';
 import CTASection from './components/Home/CTASection.vue';
 import FeatureSection from './components/Home/FeatureSection.vue';
@@ -12,14 +13,15 @@ import Header from './components/layout/Header.vue';
 <template>
   <!-- <Integration></Integration> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <Header></Header>
+  <!-- <Header></Header>
   <HeroSection></HeroSection>
   <FeatureSection></FeatureSection>
   <AgenticSolutionSection></AgenticSolutionSection>
 
   <TestimonialSection></TestimonialSection>
   <CTASection></CTASection>
-  <Footer></Footer>  
+  <Footer></Footer>   -->
+  <RouterView></RouterView>
 </template>
 
 <style >
