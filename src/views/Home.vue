@@ -9,6 +9,7 @@ import Footer from '../components/layout/Footer.vue';
 </script>
 
 <template>
+    <!-- <div className = "bg-primary  h-50 w-50"  ></div> -->
   <Header />
   <HeroSection />
   <FeatureSection />

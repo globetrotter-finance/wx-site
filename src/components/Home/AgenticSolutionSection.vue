@@ -173,16 +173,7 @@
         </div>
         
         <!-- Floating badge -->
-        <div class="absolute top-12 right-8 bg-white p-3 rounded-lg shadow-md border border-gray-100 hidden md:block transform -rotate-3 animate-float z-20">
-          <div class="flex items-center gap-2">
-            <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd" />
-              </svg>
-            </div>
-            <span class="text-sm font-medium">AI-powered automations</span>
-          </div>
-        </div>
+        
       </div>
     </section>
   </template>

@@ -19,19 +19,19 @@
         <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Agentic Solutions
         </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
+        <router-link to="/blogs" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Blog
-        </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
+        </router-link>
+        <router-link to="/contact"  class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Contact
-        </a>
+        </router-link>
       </nav>
       
       <!-- ✅ Compact Action Buttons -->
       <div class="hidden md:flex items-center space-x-3 flex-shrink-0">
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200">
+        <!-- <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200">
           Access Portal
-        </a>
+        </a> -->
         <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-md transition-all duration-200">
           Get Started
         </a> 
@@ -64,9 +64,9 @@
           Contact
         </a>
         <div class="pt-3 border-t border-gray-300">
-          <button class="w-full text-left text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+          <!-- <button class="w-full text-left text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
             Access Portal
-          </button>
+          </button> -->
           <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-md">
             Get Started
           </button>

@@ -1,0 +1,103 @@
+{
+    "categories": [
+      { "id": "all", "name": "All Posts" },
+      { "id": "legal", "name": "Legal Solutions" },
+      { "id": "customer", "name": "Customer Experience" },
+      { "id": "automation", "name": "Workflow Automation" },
+      { "id": "integration", "name": "Integrations" },
+      { "id": "case-study", "name": "Case Studies" }
+    ],
+    "featuredArticle": {
+      "id": 1,
+      "title": "How AI-Powered Workflow Automation is Revolutionizing Legal Due Diligence",
+      "excerpt": "Discover how leading law firms are reducing their document review time by up to 80% while improving accuracy and compliance with AI-powered workflow automation solutions.",
+      "image": "/api/placeholder/800/600",
+      "date": "Feb 26, 2025",
+      "category": "legal",
+      "author": {
+        "name": "Sophia Chen",
+        "title": "Chief Legal Solutions Architect",
+        "avatar": "/api/placeholder/100/100"
+      }
+    },
+    "articles": [
+      {
+        "id": 2,
+        "title": "Slashing Customer Response Times: Automation Success Story",
+        "excerpt": "Learn how Acme Corp reduced their customer response time from 24 hours to under 5 minutes with intelligent email management and support automation.",
+        "image": "/api/placeholder/400/300",
+        "date": "Feb 22, 2025",
+        "readTime": 6,
+        "category": "customer",
+        "author": {
+          "name": "David Park",
+          "avatar": "/api/placeholder/100/100"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Salesforce + AI Agents: The Ultimate CRM Enhancement",
+        "excerpt": "Explore how our Salesforce integration brings intelligent automation to your CRM, eliminating manual data entry and enhancing customer insights.",
+        "image": "/api/placeholder/400/300",
+        "date": "Feb 18, 2025",
+        "readTime": 8,
+        "category": "integration",
+        "author": {
+          "name": "Maya Johnson",
+          "avatar": "/api/placeholder/100/100"
+        }
+      },
+      {
+        "id": 4,
+        "title": "The Future of Tax Reconciliation: AI-Driven Efficiency",
+        "excerpt": "Discover how financial departments are saving thousands of hours yearly with automated tax reconciliation powered by intelligent AI workflows.",
+        "image": "/api/placeholder/400/300",
+        "date": "Feb 14, 2025",
+        "readTime": 7,
+        "category": "legal",
+        "author": {
+          "name": "James Wilson",
+          "avatar": "/api/placeholder/100/100"
+        }
+      },
+      {
+        "id": 5,
+        "title": "From 3 Hours to 5 Minutes: Revolutionizing Meeting Scheduling",
+        "excerpt": "How our AI scheduling assistant integrates with Google and Outlook calendars to eliminate the back-and-forth of finding meeting times.",
+        "image": "/api/placeholder/400/300",
+        "date": "Feb 10, 2025",
+        "readTime": 5,
+        "category": "automation",
+        "author": {
+          "name": "Elena Garcia",
+          "avatar": "/api/placeholder/100/100"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Case Study: How Financial Firm XYZ Saved $2.4M with Automation",
+        "excerpt": "An in-depth look at how a leading financial services company transformed their operations with our agentic workflow solutions.",
+        "image": "/api/placeholder/400/300",
+        "date": "Feb 6, 2025",
+        "readTime": 10,
+        "category": "case-study",
+        "author": {
+          "name": "Robert Chen",
+          "avatar": "/api/placeholder/100/100"
+        }
+      },
+      {
+        "id": 7,
+        "title": "Building a 24/7 Support Team with AI Agents",
+        "excerpt": "Learn how to combine human expertise with AI agents to provide round-the-clock customer support without expanding headcount.",
+        "image": "/api/placeholder/400/300",
+        "date": "Feb 2, 2025",
+        "readTime": 6,
+        "category": "customer",
+        "author": {
+          "name": "Priya Sharma",
+          "avatar": "/api/placeholder/100/100"
+        }
+      }
+    ]
+  }
