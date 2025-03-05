@@ -1,0 +1,67 @@
+{
+    "successStats": [
+      {
+        "value": "45%",
+        "title": "Productivity Boost",
+        "description": "Optimize workflows and reduce manual tasks."
+      },
+      {
+        "value": "72%",
+        "title": "Cost Reduction",
+        "description": "Cut costs with efficient solutions."
+      },
+      {
+        "value": "3.2x",
+        "title": "Faster Onboarding",
+        "description": "Accelerate team adoption."
+      }
+    ],
+    "categories": [
+      { "id": "all", "name": "All" },
+      { "id": "tech", "name": "Technology" },
+      { "id": "business", "name": "Business" }
+    ],
+    "featuredArticle": {
+      "id": 1,
+      "title": "The Future of Workflow Automation",
+      "excerpt": "Discover how AI-driven tools are reshaping business efficiency.",
+      "date": "March 01, 2025",
+      "category": "tech",
+      "image": "https://via.placeholder.com/600x400",
+      "author": {
+        "name": "Jane Doe",
+        "title": "Chief Innovation Officer",
+        "avatar": "https://via.placeholder.com/50"
+      }
+    },
+    "articles": [
+      {
+        "id": 2,
+        "title": "Scaling Your Business with SaaS",
+        "excerpt": "Learn strategies to leverage SaaS for rapid growth.",
+        "date": "February 28, 2025",
+        "readTime": 5,
+        "category": "business",
+        "image": "https://via.placeholder.com/600x400",
+        "author": {
+          "name": "John Smith",
+          "title": "SaaS Expert",
+          "avatar": "https://via.placeholder.com/50"
+        }
+      },
+      {
+        "id": 3,
+        "title": "AI in Tech: A New Era",
+        "excerpt": "Exploring the impact of artificial intelligence on modern tech.",
+        "date": "February 25, 2025",
+        "readTime": 7,
+        "category": "tech",
+        "image": "https://via.placeholder.com/600x400",
+        "author": {
+          "name": "Emily Carter",
+          "title": "Tech Analyst",
+          "avatar": "https://via.placeholder.com/50"
+        }
+      }
+    ]
+  }

@@ -10,9 +10,9 @@
       
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex flex-grow justify-center space-x-6">
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
+        <router-link to="/solutions" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Solutions
-        </a>
+        </router-link>
         <router-link to="/integration" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Integrations
         </router-link>

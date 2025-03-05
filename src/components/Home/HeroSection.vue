@@ -160,9 +160,7 @@
     </div>
   </section>
 </template>
-<script>
-const primaryColor = "blue"; 
-</script>
+
 
 
 <style scoped>
