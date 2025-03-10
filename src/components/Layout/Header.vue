@@ -16,9 +16,9 @@
         <router-link to="/integration" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Integrations
         </router-link>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
+        <router-link to="/agentic-solutions" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Agentic Solutions
-        </a>
+        </router-link>
         <router-link to="/blogs" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Blog
         </router-link>

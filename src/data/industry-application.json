@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Enterprise IT",
+      "description": "Automate routine system processes and integrate disparate platforms to ensure a seamless digital ecosystem."
+    },
+    {
+      "id": 2,
+      "title": "Media & Communications",
+      "description": "Streamline content creation, manage digital assets, and improve operational efficiency with intelligent workflows."
+    },
+    {
+      "id": 3,
+      "title": "Healthcare",
+      "description": "Accelerate administrative tasks, enhance patient data management, and ensure compliance—all while reducing manual errors."
+    },
+    {
+      "id": 4,
+      "title": "Fintech",
+      "description": "Optimize risk assessment, regulatory compliance, and transaction processing with rapid, data-driven automation."
+    },
+    {
+      "id": 5,
+      "title": "Other Industries",
+      "description": "From manufacturing to retail, Agentic Solutions scales to meet your process automation needs, regardless of complexity."
+    }
+  ]

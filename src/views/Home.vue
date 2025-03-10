@@ -6,6 +6,9 @@ import AgenticSolutionSection from '../components/Home/AgenticSolutionSection.vu
 import TestimonialSection from '../components/Home/TestimonialSection.vue';
 import CTASection from '../components/Home/CTASection.vue';
 import Footer from '../components/layout/Footer.vue';
+import AboutUs from '../components/Home/AboutUs.vue';
+import OurTechnology from '../components/Home/OurTechnology.vue';
+import IndustryApplication from '../components/Home/IndustryApplication.vue';
 </script>
 
 <template>
@@ -13,8 +16,11 @@ import Footer from '../components/layout/Footer.vue';
   <Header />
   <HeroSection />
   <FeatureSection />
+  <IndustryApplication/>
   <AgenticSolutionSection />
   <TestimonialSection />
   <CTASection />
+  <OurTechnology/>
+  <AboutUs/>
   <Footer />
 </template>

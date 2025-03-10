@@ -17,7 +17,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <span class="text-xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">WorkflowAI</span>
+            <span class="text-xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">WorkflowsX</span>
           </div>
           <p class="text-gray-500 text-sm">
             Intelligent workflow automation for modern businesses. Build, deploy, and scale in minutes.

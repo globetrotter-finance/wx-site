@@ -1,47 +1,43 @@
 <template>
   <div class="min-h-screen bg-white overflow-hidden">
-    <!-- Full-screen intro section with very light colors -->
+    <!-- Full-screen intro section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
-      <!-- Subtle background gradient -->
       <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50"></div>
-      
-      <!-- Decorative shapes -->
       <div class="absolute inset-0 overflow-hidden opacity-30">
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-100 rounded-full blur-3xl"></div>
         <div class="absolute top-1/4 -left-24 w-80 h-80 bg-indigo-100 rounded-full blur-3xl"></div>
         <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-100 rounded-full blur-3xl"></div>
       </div>
-      
-      <!-- Content -->
       <div class="container mx-auto px-6 relative z-10 text-center max-w-4xl">
-        <h1 class="text-6xl font-light text-gray-800 mb-6">Seamless <span class="font-semibold text-blue-600">Integrations</span></h1>
-        <p class="text-xl text-gray-600 font-light mb-10 leading-relaxed">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-light text-gray-800 mb-6">
+          Seamless <span class="font-semibold text-blue-600">Integrations</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 font-light mb-10 leading-relaxed">
           Connect your workflow to our powerful ecosystem and experience a new level of productivity
         </p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-base sm:text-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
           Explore Integrations
         </button>
-        
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <!-- <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg> -->
-        </div>
       </div>
     </section>
-    
+
+    <!-- Integration Features Section -->
+    <integration-features />
+
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-24 relative">
       <div class="max-w-6xl mx-auto">
-        <!-- Section Title -->
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-light text-gray-800">Discover Our <span class="font-semibold">Integration Ecosystem</span></h2>
-          <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Browse our collection of powerful integrations designed to enhance your workflow and boost productivity</p>
+          <h2 class="text-3xl sm:text-4xl font-light text-gray-800">
+            Discover Our <span class="font-semibold">Integration Ecosystem</span>
+          </h2>
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Browse our collection of powerful integrations designed to enhance your workflow and boost productivity
+          </p>
         </div>
-        
+
         <!-- Search & Filters Card -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 mb-16 border border-gray-100">
+        <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-16 border border-gray-100">
           <div class="flex flex-col lg:flex-row items-stretch gap-6">
             <div class="flex-1 relative">
               <input 
@@ -94,7 +90,6 @@
             :key="integration.id"
             class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all group flex flex-col h-full transform hover:-translate-y-1"
           >
-            <!-- Card Header with Logo & Badge -->
             <div class="p-6 border-b border-gray-50">
               <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
@@ -108,13 +103,9 @@
                 </span>
               </div>
             </div>
-            
-            <!-- Card Body -->
             <div class="p-6 flex-grow">
               <p class="text-gray-600 leading-relaxed">{{ integration.description }}</p>
             </div>
-            
-            <!-- Card Footer -->
             <div class="p-6 border-t border-gray-50 bg-gray-50">
               <div class="flex justify-between items-center">
                 <span class="text-sm text-gray-500 font-medium">{{ integration.connections.toLocaleString() }}+ users</span>
@@ -165,8 +156,12 @@
 
 <script>
 import { integrations } from '../../data/integration-data';
+import IntegrationFeatures from './IntegrationFeatures.vue';
 
 export default {
+  components: {
+    IntegrationFeatures
+  },
   data() {
     return {
       searchQuery: '',
@@ -204,14 +199,12 @@ export default {
 </script>
 
 <style scoped>
-/* Smooth animations and transitions */
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
 
-/* Custom scrollbar for a more polished look */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -231,7 +224,6 @@ export default {
   background: #a0a0a0;
 }
 
-/* Custom select appearance */
 select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
