@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Speed",
+      "description": "Reduce process validation time by up to 99% – from 8 months to as little as 10 minutes.",
+      "icon": "el-icon-lightning"
+    },
+    {
+      "id": 2,
+      "title": "Efficiency",
+      "description": "Increase workflow efficiency by automating complex tasks with built-in intelligence.",
+      "icon": "el-icon-cpu"
+    },
+    {
+      "id": 3,
+      "title": "Integration",
+      "description": "Connect effortlessly with any ERP system, legacy software, or custom platform.",
+      "icon": "el-icon-link"
+    },
+    {
+      "id": 4,
+      "title": "Scalability",
+      "description": "Adaptable for any industry, ensuring your business stays agile in a fast-changing market.",
+      "icon": "el-icon-top-right"
+    }
+  ]

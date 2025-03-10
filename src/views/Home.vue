@@ -9,6 +9,8 @@ import Footer from '../components/layout/Footer.vue';
 import AboutUs from '../components/Home/AboutUs.vue';
 import OurTechnology from '../components/Home/OurTechnology.vue';
 import IndustryApplication from '../components/Home/IndustryApplication.vue';
+import KeyData from '../components/Home/KeyData.vue';
+import KeyData2 from '../components/Home/KeyData2.vue';
 </script>
 
 <template>
@@ -16,9 +18,11 @@ import IndustryApplication from '../components/Home/IndustryApplication.vue';
   <Header />
   <HeroSection />
   <FeatureSection />
-  <IndustryApplication/>
-  <AgenticSolutionSection />
-  <TestimonialSection />
+  <KeyData/>
+  <KeyData2/>
+  <!-- <IndustryApplication/> -->
+  <!-- <AgenticSolutionSection /> -->
+  <!-- <TestimonialSection /> -->
   <CTASection />
   <OurTechnology/>
   <AboutUs/>

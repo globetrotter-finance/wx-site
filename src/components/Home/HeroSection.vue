@@ -16,30 +16,43 @@
           <div class="space-y-4 sm:space-y-6">
             <!-- Responsive Headline -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-center lg:text-left">
-              Revolutionize Your Workflow with Agentic Solutions
+              Revolutionize Your Workflows with Agentic Solutions
             </h1>
             
             <!-- Responsive Subheadline -->
             <p class="text-gray-600 text-base sm:text-lg md:text-xl max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
-              Transform complex, time-consuming processes into rapid, intelligent outcomes. Our platform reduces proof-of-concept cycles from months to mere minutes—empowering businesses in Media, Healthcare, Fintech, Legal and beyond.
+              Transform complex, time-consuming processes into rapid & intelligent outcomes. 
+              
             </p>
+            <p class="text-gray-600 text-base sm:text-lg md:text-xl max-w-lg mx-auto lg:mx-0 text-center lg:text-left">       
+              Our platform reduces product building cycles from months to mere minutes - empowering businesses in Fintech, Legal, Healthcare, Media,  and beyond.            </p>
           </div>
           
           <!-- Responsive Stats bar -->
           <div class="flex flex-wrap justify-center lg:justify-start items-center gap-4 sm:gap-8 py-4">
             <div class="flex items-center gap-2">
-              <span class="text-blue-600 font-bold text-xl sm:text-2xl">500+</span>
-              <span class="text-gray-500 text-xs sm:text-sm">Integrations</span>
+              <span class="text-gray-500 text-xs sm:text-sm">1. Build & launch in </span>
+              <span class="text-blue-600 font-bold text-xl sm:text-2xl">10 mins</span>
+              <span class="text-gray-500 text-xs sm:text-sm">minutes—no coding needed! </span>
+
             </div>
             <div class="h-6 sm:h-8 w-px bg-gray-200"></div>
             <div class="flex items-center gap-2">
-              <span class="text-blue-600 font-bold text-xl sm:text-2xl">5 min</span>
-              <span class="text-gray-500 text-xs sm:text-sm">Setup</span>
-            </div>
-            <div class="h-6 sm:h-8 w-px bg-gray-200"></div>
-            <div class="flex items-center gap-2">
+              <span class="text-gray-500 text-xs sm:text-sm">Available</span>
               <span class="text-blue-600 font-bold text-xl sm:text-2xl">24/7</span>
-              <span class="text-gray-500 text-xs sm:text-sm">Automation</span>
+            </div>
+            <div class="h-6 sm:h-8 w-px bg-gray-200"></div>
+            <div class="flex items-center gap-2">
+              <span class="text-gray-500 text-xs sm:text-sm">Integrate with </span>
+              <span class="text-blue-600 font-bold text-xl sm:text-2xl">API</span>
+
+              <span class="text-gray-500 text-xs sm:text-sm">and </span>
+              <span class="text-blue-600 font-bold text-xl sm:text-2xl">NON-API</span>
+
+              <span class="text-gray-500 text-xs sm:text-sm"> Systems </span>
+              <!-- <span class="text-gray-500 text-xs sm:text-sm">Integrate with API and Non-Api Systems </span>
+
+              <span class="text-blue-600 font-bold text-xl sm:text-2xl">A</span> -->
             </div>
           </div>
           
