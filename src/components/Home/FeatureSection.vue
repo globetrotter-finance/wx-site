@@ -261,9 +261,9 @@
       
       <!-- CTA Button -->
       <div class="text-center mt-12">
-        <router-link to="/solutions" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1">
+        <!-- <router-link to="/solutions" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1">
           Explore All Solutions
-        </router-link>
+        </router-link> -->
       </div>
     </div>
   </section>

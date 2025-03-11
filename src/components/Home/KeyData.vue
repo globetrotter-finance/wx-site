@@ -8,16 +8,16 @@
         <div class="absolute bottom-1/3 left-1/4 w-48 h-48 bg-purple-100 rounded-full blur-2xl"></div>
       </div>
   
-      <div class="container mx-auto max-w-6xl relative z-10">
+      <div class="container mx-auto max-w-8xl relative z-10">
         <!-- Section Header -->
         <el-row justify="center" class="mb-12 sm:mb-16">
           <el-col :span="20" :xs="22">
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center">
-              Our Proposition with <span class="text-blue-600"> Agentic Solutions</span>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
+              With our Game Changing <span class="text-blue-600"> Agentic Solutions</span>
             </h2>
+            <!-- <br> -->
             <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
-              Unlock lightning-fast productivity and seamless integration with our revolutionary Auto Workflow Builder! 🚀
-            </p>
+              Unlock lightning-fast productivity and seamless integration 🚀            </p>
           </el-col>
         </el-row>
   
@@ -31,19 +31,20 @@
             <div 
               v-for="(value, index) in displayedData" 
               :key="value.id" 
-              class="flex-shrink-0 w-80 mx-4 snap-start animate-slide-in,justify-center  items-center"
+              class="flex-shrink-0 w-80 mx-4 snap-start animate-slide-in"
               :style="{ '--index': index }"
             >
               <el-card 
                 shadow="never"
-                class="h-full bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+                round
+                class="h-full bg-white border border-gray-100 rounded-10xl overflow-hidden transition-all duration-300 hover:shadow-xl"
                 :body-style="{ padding: '24px' }"
               >
                 <div class="flex justify-center mb-4">
                   <component :is="iconComponents[value.icon]" class="text-4xl sm:text-5xl text-blue-600" />
                 </div>
                 <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 text-center">{{ value.title }}</h3>
-                <p class="text-gray-600 text-sm sm:text-base leading-relaxed text-center">{{ value.description }}</p>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed text-center" v-html="value.description"></p>
               </el-card>
             </div>
             <!-- Loading Indicator -->
@@ -106,7 +107,7 @@
       return {
         keyData: keyData,
         displayedData: [],
-        batchSize: 4,
+        batchSize: 5,
         isLoading: false,
         scrollPosition: 0,
         iconComponents: {
@@ -167,6 +168,11 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   }
   
+  .el-card {
+    border-radius: 12px;
+
+  }
+
   .el-button--primary {
     background-color: #2563eb;
     border-color: #2563eb;

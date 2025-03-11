@@ -3,14 +3,14 @@
     <div class="container mx-auto flex items-center justify-between">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/" class="text-lg font-bold text-gray-900 tracking-wide">
+        <router-link to="/" class="text-lg font-bold text-gray-900 tracking-wide">
           WX
-        </a>
+        </router-link>
       </div>
       
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex flex-grow justify-center space-x-6">
-        <router-link to="/solutions" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
+        <!-- <router-link to="/solutions" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Solutions
         </router-link>
         <router-link to="/integration" href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
@@ -24,7 +24,7 @@
         </router-link>
         <router-link to="/contact"  class="text-gray-800 hover:text-blue-600 text-sm font-medium transition-all duration-200">
           Contact
-        </router-link>
+        </router-link> -->
       </nav>
       
       <!-- ✅ Compact Action Buttons -->
@@ -32,9 +32,9 @@
         <!-- <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200">
           Access Portal
         </a> -->
-        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-md transition-all duration-200">
+        <router-link to="/contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-md transition-all duration-200">
           Get Started
-        </a> 
+        </router-link> 
       </div>
       
       <!-- Mobile Menu Button -->
@@ -48,7 +48,7 @@
     <!-- Mobile Menu -->
     <div v-show="mobileMenuOpen" class="absolute top-[100%] left-0 right-0 bg-white shadow-md py-4 md:hidden rounded-b-2xl border-t border-gray-200">
       <div class="container mx-auto px-6 flex flex-col space-y-4">
-        <router-link to="/solutions" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+        <!-- <router-link to="/solutions" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Solutions
         </router-link>
         <router-link to="/integration" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
@@ -62,13 +62,16 @@
         </router-link>
         <router-link to="/contact"   class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Contact
-        </router-link>
+        </router-link> -->
         <div class="pt-3 border-t border-gray-300">
           <!-- <button class="w-full text-left text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
             Access Portal
           </button> -->
           <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-md">
-            Get Started
+            <router-link to="/contact">
+
+              Get Started
+            </router-link>
           </button>
         </div>
       </div>

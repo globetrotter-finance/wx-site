@@ -15,47 +15,48 @@
         <div class="w-full lg:w-1/2 space-y-8">
           <div class="space-y-6">
             <!-- Headline -->
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 text-center lg:text-left">
-              Streamline Workflows with <span class="text-blue-600">Agentic Solutions</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 text-center lg:text-left mt-10">
+              Streamline Workflows with <br> <span class="text-blue-600">AI Agents</span>
             </h1>
             
             <!-- Subheadline -->
             <p class="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
-              Optimize complex processes into efficient, intelligent workflows. Our platform accelerates product development, reducing cycles from months to minutes for industries like Fintech, Legal, Healthcare, and Media.
-            </p>
+              Transform complex, time-consuming processes into rapid & intelligent outcomes            </p>
           </div>
           
           <!-- Stats bar -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-6">
             <div class="flex items-center gap-3">
-              <span class="text-blue-600 font-semibold text-2xl">10</span>
-              <span class="text-gray-600 text-sm">Minutes to build & launch—no coding required</span>
+              <span class="text-blue-600 font-semibold text-2xl"><10<span class=" text-xs">mins</span>    </span>
+              <span class="text-gray-600 text-sm">No coding needed,<br> Build & ship your product</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="text-blue-600 font-semibold text-2xl">24/7</span>
-              <span class="text-gray-600 text-sm">AI assistant with zero downtime</span>
+              <span class="text-gray-600 text-sm"> Always available,<br> No breaks & downtime</span>
             </div>
-            <div class="flex items-center gap-3">
+            <!-- <div class="flex items-center gap-3">
               <span class="text-blue-600 font-semibold text-2xl">Autopilot</span>
               <span class="text-gray-600 text-sm">AI-driven workflows</span>
-            </div>
-            <div class="flex items-center gap-3">
+            </div> -->
+            <!-- <div class="flex items-center gap-3">
               <span class="text-blue-600 font-semibold text-2xl">Flexible</span>
               <span class="text-gray-600 text-sm">Seamless integrations—APIs optional</span>
-            </div>
+            </div> -->
           </div>
           
           <!-- CTA buttons -->
           <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
             <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md shadow-md transition duration-300 transform hover:-translate-y-1">
-              Request a Demo
+              <router-link to="/contact">
+                Contact Sales
+              </router-link>
             </button>
-            <button class="bg-white border border-gray-300 hover:border-blue-500 text-gray-700 hover:text-blue-600 font-medium py-3 px-8 rounded-md shadow-sm transition duration-300 transform hover:-translate-y-1 flex items-center gap-2">
+            <!-- <button class="bg-white border border-gray-300 hover:border-blue-500 text-gray-700 hover:text-blue-600 font-medium py-3 px-8 rounded-md shadow-sm transition duration-300 transform hover:-translate-y-1 flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
               </svg>
               Watch Demo
-            </button>
+            </button> -->
           </div>
         </div>
         

@@ -25,7 +25,9 @@
             >
               <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
               <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
-                At Agentic Solutions, we believe that every business—regardless of industry—deserves the power to innovate and operate at the speed of thought. Our mission is to empower organizations worldwide with tools that transform labor-intensive processes into smart, efficient workflows.
+                At WorkflowsX, we believe that every business - regardless of industry - deserves the power to innovate and operate at the speed of thought.
+<br> <br>
+Our mission is to empower organizations worldwide with tools that transform labor-intensive processes into smart, efficient workflows.
               </p>
             </el-card>
           </el-col>
@@ -39,7 +41,9 @@
             >
               <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
               <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
-                Founded by a team of industry experts, our journey began with a simple goal: to eliminate the traditional bottlenecks of process validation. Today, our technology serves a diverse range of industries—from healthcare and fintech to media and IT—driving transformation across every sector.
+                Founded by a team of industry experts in FinTech, Legal Domain, our journey began with a simple goal: to eliminate the traditional bottlenecks of process validation. <br> <br>
+
+Today, our technology serves a diverse range of industries and drives transformation across every sector.
               </p>
             </el-card>
           </el-col>
@@ -62,7 +66,7 @@
         </el-row>
   
         <!-- CTA -->
-        <el-row justify="center">
+        <!-- <el-row justify="center">
           <el-col :span="24" class="text-center">
             <el-button 
               type="primary" 
@@ -74,7 +78,7 @@
               Read Our Full Story
             </el-button>
           </el-col>
-        </el-row>
+        </el-row> -->
       </div>
     </section>
   </template>
