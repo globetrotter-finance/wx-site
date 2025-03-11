@@ -147,17 +147,7 @@
         </div>
       </div>
       
-      <!-- Testimonial strip -->
-      <div class="mt-16 text-center">
-        <p class="text-gray-500 text-sm mb-6">Trusted by innovative companies worldwide</p>
-        <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70">
-          <div class="h-8 w-24 bg-gray-200 rounded"></div>
-          <div class="h-8 w-24 bg-gray-200 rounded"></div>
-          <div class="h-8 w-24 bg-gray-200 rounded"></div>
-          <div class="h-8 w-24 bg-gray-200 rounded"></div>
-          <div class="h-8 w-24 bg-gray-200 rounded"></div>
-        </div>
-      </div>
+      
     </div>
   </section>
 </template>

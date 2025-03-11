@@ -13,10 +13,10 @@
         <el-row justify="center" class="mb-12 sm:mb-16">
           <el-col :span="20" :xs="22">
             <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center">
-              Key Data & <span class="text-blue-600">Value Proposition</span>
+                Our Proposition with <span class="text-blue-600"> Agentic Solutions</span>
             </h2>
             <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
-              The core strengths that make Agentic Solutions transformative
+                Unlock lightning-fast productivity and seamless integration with our revolutionary Auto Workflow Builder! 🚀
             </p>
           </el-col>
         </el-row>
@@ -96,13 +96,8 @@
   </script>
   
   <style scoped>
-  /* Enhanced premium styling */
-  /* .el-card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  } */
-  
+
   .el-card:hover {
-    /* transform: translateY(-8px); */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   }
   
@@ -117,17 +112,6 @@
     border-color: #1d4ed8;
     /* transform: translateY(-2px); */
   }
-  
-  /* Icon styling */
-  /* svg {
-    transition: transform 0.3s ease;
-  } */
-  
-  /* .el-card:hover svg {
-    transform: scale(1.1);
-  } */
-  
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .el-card {
       margin-bottom: 24px;
@@ -138,18 +122,4 @@
     }
   }
   
-  /* Load animation */
-  /* @keyframes fadeInUp {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } */
-  
-  /* .el-col {
-    animation: fadeInUp 0.6s ease-out forwards;
-    animation-delay: calc(var(--index) * 0.1s);
-  } */
   </style>

@@ -13,44 +13,65 @@
         <el-row justify="center" class="mb-12 sm:mb-16">
           <el-col :span="20" :xs="22">
             <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center">
-              Key Data & <span class="text-blue-600">Value Proposition</span>
+              Our Proposition with <span class="text-blue-600"> Agentic Solutions</span>
             </h2>
             <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
-              The core strengths that make Agentic Solutions transformative
+              Unlock lightning-fast productivity and seamless integration with our revolutionary Auto Workflow Builder! 🚀
             </p>
           </el-col>
         </el-row>
   
-        <!-- Value Proposition Grid -->
-        <el-row :gutter="24" class="mb-12">
-          <el-col 
-            v-for="(value, index) in keyData" 
-            :key="value.id" 
-            :xs="24" 
-            :sm="12" 
-            :lg="6" 
-            class="mb-6"
-            :style="{ '--index': index }"
+        <!-- Horizontal Scroll Container -->
+        <div class="relative">
+          <div 
+            ref="scrollContainer" 
+            class="flex overflow-x-auto scrollbar-hidden snap-x snap-mandatory pb-6"
+            @scroll="handleScroll"
           >
-            <el-card 
-              shadow="never"
-              class="h-full bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl "
-              :body-style="{ padding: '24px' }"
+            <div 
+              v-for="(value, index) in displayedData" 
+              :key="value.id" 
+              class="flex-shrink-0 w-80 mx-4 snap-start animate-slide-in,justify-center  items-center"
+              :style="{ '--index': index }"
             >
-              <!-- Icon Header -->
-              <div class="flex justify-center mb-4">
-                <component :is="iconComponents[value.icon]" class="text-4xl sm:text-5xl text-blue-600" />
-              </div>
-  
-              <!-- Content -->
-              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 text-center">{{ value.title }}</h3>
-              <p class="text-gray-600 text-sm sm:text-base leading-relaxed text-center">{{ value.description }}</p>
-            </el-card>
-          </el-col>
-        </el-row>
+              <el-card 
+                shadow="never"
+                class="h-full bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+                :body-style="{ padding: '24px' }"
+              >
+                <div class="flex justify-center mb-4">
+                  <component :is="iconComponents[value.icon]" class="text-4xl sm:text-5xl text-blue-600" />
+                </div>
+                <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-3 text-center">{{ value.title }}</h3>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed text-center">{{ value.description }}</p>
+              </el-card>
+            </div>
+            <!-- Loading Indicator -->
+            <div v-if="isLoading" class="flex-shrink-0 w-80 mx-4 flex items-center justify-center">
+              <el-icon class="animate-spin text-3xl text-blue-600"><loading /></el-icon>
+            </div>
+          </div>
+          <!-- Navigation Arrows -->
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pointer-events-none">
+            <el-button 
+              circle 
+              class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100" 
+              @click="scrollLeft"
+            >
+              <el-icon><arrow-left /></el-icon>
+            </el-button>
+            <el-button 
+              circle 
+              class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100" 
+              @click="scrollRight"
+            >
+              <el-icon><arrow-right /></el-icon>
+            </el-button>
+          </div>
+        </div>
   
         <!-- CTA -->
-        <el-row justify="center">
+        <el-row justify="center" class="mt-12">
           <el-col :span="24" class="text-center">
             <el-button 
               type="primary" 
@@ -67,23 +88,27 @@
   </template>
   
   <script>
-  // Import specific Element Plus icons
-  import { Lightning, Cpu, Link, TopRight } from '@element-plus/icons-vue';
-  import keyData from '../../data/key-data.json'
+  import { Lightning, Cpu, Link, TopRight, Loading, ArrowLeft, ArrowRight } from '@element-plus/icons-vue';
+  import keyData from '../../data/key-data.json';
   
   export default {
     name: 'KeyData',
     components: {
-      // Register the icons as components
       'el-icon-lightning': Lightning,
       'el-icon-cpu': Cpu,
       'el-icon-link': Link,
-      'el-icon-top-right': TopRight
+      'el-icon-top-right': TopRight,
+      'loading': Loading,
+      'arrow-left': ArrowLeft,
+      'arrow-right': ArrowRight
     },
     data() {
       return {
         keyData: keyData,
-        // Map icons to their component names for dynamic rendering
+        displayedData: [],
+        batchSize: 4,
+        isLoading: false,
+        scrollPosition: 0,
         iconComponents: {
           'el-icon-lightning': 'el-icon-lightning',
           'el-icon-cpu': 'el-icon-cpu',
@@ -91,18 +116,54 @@
           'el-icon-top-right': 'el-icon-top-right'
         }
       };
+    },
+    computed: {
+      hasMoreData() {
+        return this.displayedData.length < this.keyData.length;
+      }
+    },
+    methods: {
+      loadMore() {
+        if (this.isLoading || !this.hasMoreData) return;
+        
+        this.isLoading = true;
+        setTimeout(() => {
+          const nextBatch = this.keyData.slice(
+            this.displayedData.length,
+            this.displayedData.length + this.batchSize
+          );
+          this.displayedData = [...this.displayedData, ...nextBatch];
+          this.isLoading = false;
+        }, 500);
+      },
+      handleScroll() {
+        const container = this.$refs.scrollContainer;
+        const scrollWidth = container.scrollWidth;
+        const clientWidth = container.clientWidth;
+        const scrollLeft = container.scrollLeft;
+  
+        // Load more when nearing the end
+        if (scrollWidth - scrollLeft - clientWidth < 300 && this.hasMoreData) {
+          this.loadMore();
+        }
+      },
+      scrollLeft() {
+        const container = this.$refs.scrollContainer;
+        container.scrollBy({ left: -320, behavior: 'smooth' }); // 320px = card width + margin
+      },
+      scrollRight() {
+        const container = this.$refs.scrollContainer;
+        container.scrollBy({ left: 320, behavior: 'smooth' });
+      }
+    },
+    created() {
+      this.displayedData = this.keyData.slice(0, this.batchSize);
     }
   };
   </script>
   
   <style scoped>
-  /* Enhanced premium styling */
-  /* .el-card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  } */
-  
   .el-card:hover {
-    /* transform: translateY(-8px); */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   }
   
@@ -115,41 +176,43 @@
   .el-button--primary:hover {
     background-color: #1d4ed8;
     border-color: #1d4ed8;
-    /* transform: translateY(-2px); */
   }
   
-  /* Icon styling */
-  /* svg {
-    transition: transform 0.3s ease;
-  } */
-  
-  /* .el-card:hover svg {
-    transform: scale(1.1);
-  } */
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .el-card {
-      margin-bottom: 24px;
-    }
-  
-    .el-button--primary {
-      padding: 12px 32px;
-    }
+  /* Horizontal Scroll Styling */
+  .scrollbar-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   
-  /* Load animation */
-  /* @keyframes fadeInUp {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+  
+  /* Animation for smooth slide-in */
+  @keyframes slideIn {
     from {
       opacity: 0;
+      transform: translateX(20px);
     }
     to {
       opacity: 1;
+      transform: translateX(0);
     }
-  } */
+  }
   
-  /* .el-col {
-    animation: fadeInUp 0.6s ease-out forwards;
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
     animation-delay: calc(var(--index) * 0.1s);
-  } */
+  }
+  
+  @media (max-width: 768px) {
+    .w-80 {
+      width: 70vw;
+    }
+    
+    .mx-4 {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
   </style>

@@ -48,21 +48,21 @@
     <!-- Mobile Menu -->
     <div v-show="mobileMenuOpen" class="absolute top-[100%] left-0 right-0 bg-white shadow-md py-4 md:hidden rounded-b-2xl border-t border-gray-200">
       <div class="container mx-auto px-6 flex flex-col space-y-4">
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+        <router-link to="/solutions" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Solutions
-        </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+        </router-link>
+        <router-link to="/integration" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Integrations
-        </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+        </router-link>
+        <router-link to="/agentic-solutions" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Agentic Solutions
-        </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+        </router-link>
+        <router-link to="/blogs" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Blog
-        </a>
-        <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
+        </router-link>
+        <router-link to="/contact"   class="text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
           Contact
-        </a>
+        </router-link>
         <div class="pt-3 border-t border-gray-300">
           <!-- <button class="w-full text-left text-gray-800 hover:text-blue-600 text-sm font-medium py-2">
             Access Portal
