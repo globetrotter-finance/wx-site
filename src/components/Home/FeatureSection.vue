@@ -117,7 +117,7 @@ const solutions = [
       "Tax Computation Agent",
       "Legal Interpretation Agent",
       "Writ & Appeal Drafting Agent",
-      "And Infinately more ..."
+      "And infinitely more ..."
     ]
   },
 ]
