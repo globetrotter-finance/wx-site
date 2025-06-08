@@ -55,6 +55,11 @@
 import { ref, computed, onMounted, watchEffect } from 'vue';
 import { ElCheckbox } from 'element-plus';
 
+import { useRouter } from 'vue-router';
+const router = useRouter();
+
+
+
 // Tasks array with text and checked status
 // const tasks = ref([
 //   { text: 'Task 1 Done', checked: true },
