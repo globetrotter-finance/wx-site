@@ -23,7 +23,25 @@
           <span class="text-blue-600 fw-bold">Saras</span> helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
         </p>
 
-        <div class="flex justify-center mt-10">
+        <!-- <div class="checklist-container mt-10">
+          <div class="checklist">
+            <div
+              class="task-item"
+              :key="currentTaskIndex"
+              :class="{'scroll-up': isTaskChanging}"
+            >
+                <el-checkbox
+                  :model-value="currentTask.checked"
+                  disabled
+                  style="color: green;"
+                >
+                  {{ currentTask.text }}
+                </el-checkbox>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="flex justify-center mt-5">
           <img src="../../assets/hero/home-hero.gif" />
         </div>
 
@@ -34,9 +52,51 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
+import { ref, computed, onMounted, watchEffect } from 'vue';
+import { ElCheckbox } from 'element-plus';
 
-const router = useRouter();
+// Tasks array with text and checked status
+// const tasks = ref([
+//   { text: 'Task 1 Done', checked: true },
+//   { text: 'Task 2 Done', checked: true },
+//   { text: 'Task 3 Done', checked: true },
+//   { text: 'Task 4 Done', checked: true },
+//   { text: 'Task 5 Done', checked: true },
+// ]);
+
+// // Current task index (to track the visible task)
+// const currentTaskIndex = ref(0);
+
+// // Computed property to get the current task based on the currentTaskIndex
+// const currentTask = computed(() => {
+//   return tasks.value[currentTaskIndex.value] || { text: '', checked: false };
+// });
+
+// // Automatically change tasks and scroll up when a task is completed
+// const changeTask = () => {
+//   currentTaskIndex.value = currentTaskIndex.value + 1
+//   currentTaskIndex.value = currentTaskIndex.value % tasks.value.length
+//   triggerAnimation();
+// };
+
+// // This function triggers the task change after a specific interval (e.g., 2 seconds)
+// onMounted(() => {
+//   const intervalId = setInterval(() => {
+//     changeTask();
+//   }, 3000); // Change task every 2 seconds
+
+//   // Clean up the interval when the component is destroyed
+//   watchEffect(() => {
+//     if (currentTaskIndex.value >= tasks.value.length - 1) {
+//       clearInterval(intervalId);
+//     }
+//   });
+// });
+// const triggerAnimation = async () => {
+//   isTaskChanging.value = false; // Ensure the animation class is removed
+//   await nextTick(); // Wait for the DOM to update
+//   isTaskChanging.value = true; // Re-add the animation class to trigger animation
+// };
 
 </script>
 
@@ -92,6 +152,35 @@ const router = useRouter();
 @media (min-width: 1024px) {
   .lg\:flex-row {
     flex-direction: row;
+  }
+}
+
+.checklist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checklist {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.task-item {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: scrollUp 1s forwards;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 </style>

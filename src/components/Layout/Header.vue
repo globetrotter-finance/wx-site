@@ -18,9 +18,9 @@
 
     <!-- App and Contacts -->
     <div class="hidden md:flex items-center space-x-3 flex-shrink-0">
-      <el-button @click="router.push('/solutions')" plain text round>Solutions</el-button>
-      <el-button @click="router.push('/solutions')" plain text round>Products</el-button>
-      <el-button @click="router.push('/solutions')" plain text round>Platform</el-button>
+      <!-- <el-button @click="router.push('/solutions')" plain text round>Solutions</el-button> -->
+      <!-- <el-button @click="router.push('/solutions')" plain text round>Products</el-button> -->
+      <!-- <el-button @click="router.push('/solutions')" plain text round>Platform</el-button> -->
       <el-button @click="takeMeToApp" type="success" round>Go to Saras Portal</el-button>
       <el-button @click="router.push('/contact')" type="primary" round>Get Started</el-button>
     </div>
