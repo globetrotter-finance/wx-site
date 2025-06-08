@@ -1,52 +1,35 @@
 <template>
   <section class="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-16 md:py-24 px-4 relative overflow-hidden">
-    <!-- Background pattern -->
+
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute top-10 -right-20 sm:top-20 sm:-right-40 w-64 sm:w-96 h-64 sm:h-96 bg-blue-100 rounded-full opacity-60 blur-3xl"></div>
       <div class="absolute bottom-10 -left-20 sm:bottom-20 sm:-left-40 w-64 sm:w-96 h-64 sm:h-96 bg-blue-100 rounded-full opacity-60 blur-3xl"></div>
       <div class="absolute -bottom-10 sm:-bottom-20 right-1/4 w-48 sm:w-64 h-48 sm:h-64 bg-blue-200 rounded-full opacity-40 blur-3xl"></div>
     </div>
 
-    <!-- Main content container -->
-    <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+    <el-row justify="center" class="mt-30 mb-10  sm:mb-16">
+      <el-col :xs="22" class="items-center justify-between">
+        <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
+          We are <span class="text-blue-600">redefining</span> how<br>
+        </h2>
+        <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
+          Legal, Audit & Finance Firms work
+        </h2>
+        <!-- <br> -->
+        <p class="mt-10 text-center">
+          AI-powered, ISO-certified, and built for scale —
+        </p>
+        <p class="mt-4 text-center">
+          <span class="text-blue-600 fw-bold">Saras</span> helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
+        </p>
 
-        <!-- Left side: Text content -->
-        <div class="w-full lg:w-1/2 space-y-8">
-          <!-- Headline -->
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 text-center lg:text-left mt-10">
-            We are <span class="text-blue-600">redefining</span> how Legal, Audit & Finance Firms work
-          </h1>
-
-          <!-- Subheadline -->
-          <p>
-            AI-powered, ISO-certified, and built for scale — SARAS helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
-          </p>
-
-          <!-- Stats bar -->
-          <!-- <div class="flex items-center gap-3">
-            <span class="text-blue-600 font-semibold text-2xl"><10<span class=" text-xs">mins</span>    </span>
-            <span class="text-gray-600 text-sm">No coding needed,<br> Build & ship your product</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <span class="text-blue-600 font-semibold text-2xl">24/7</span>
-            <span class="text-gray-600 text-sm"> Always available,<br> No breaks & downtime</span>
-          </div> -->
-
-          <el-row>
-            <el-button @click="router.push('/contact')" type="primary" round class="me-2">Contact Us</el-button>
-            <el-button @click="router.push('/solutions')" type="primary" round class="me-2">Explore Product Suite</el-button>
-          </el-row>
-        </div>
-
-        <!-- Right side: Visualization -->
-        <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
-
+        <div class="flex justify-center mt-10">
           <img src="../../assets/hero/home-hero.gif" />
-
         </div>
-      </div>
-    </div>
+
+      </el-col>
+    </el-row>
+
   </section>
 </template>
 

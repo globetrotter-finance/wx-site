@@ -7,12 +7,12 @@
         <div class="absolute bottom-10 -right-20 w-72 h-72 bg-indigo-200 rounded-full blur-3xl"></div>
         <div class="absolute bottom-1/3 left-1/4 w-48 h-48 bg-purple-100 rounded-full blur-2xl"></div>
       </div>
-  
+
       <div class="container mx-auto max-w-8xl relative z-10">
         <!-- Section Header -->
         <el-row justify="center" class="mb-12 sm:mb-16">
           <el-col :span="20" :xs="22">
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
               With our Game Changing <span class="text-blue-600"> Agentic Solutions</span>
             </h2>
             <!-- <br> -->
@@ -20,21 +20,21 @@
               Unlock lightning-fast productivity and seamless integration 🚀            </p>
           </el-col>
         </el-row>
-  
+
         <!-- Horizontal Scroll Container -->
         <div class="relative">
-          <div 
-            ref="scrollContainer" 
+          <div
+            ref="scrollContainer"
             class="flex overflow-x-auto scrollbar-hidden snap-x snap-mandatory pb-6"
             @scroll="handleScroll"
           >
-            <div 
-              v-for="(value, index) in displayedData" 
-              :key="value.id" 
+            <div
+              v-for="(value, index) in displayedData"
+              :key="value.id"
               class="flex-shrink-0 w-80 mx-4 snap-start animate-slide-in"
               :style="{ '--index': index }"
             >
-              <el-card 
+              <el-card
                 shadow="never"
                 round
                 class="h-full bg-white border border-gray-100 rounded-10xl overflow-hidden transition-all duration-300 hover:shadow-xl"
@@ -54,29 +54,29 @@
           </div>
           <!-- Navigation Arrows -->
           <div class="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pointer-events-none">
-            <el-button 
-              circle 
-              class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100" 
+            <el-button
+              circle
+              class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100"
               @click="scrollLeft"
             >
               <el-icon><arrow-left /></el-icon>
             </el-button>
-            <el-button 
-              circle 
-              class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100" 
+            <el-button
+              circle
+              class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100"
               @click="scrollRight"
             >
               <el-icon><arrow-right /></el-icon>
             </el-button>
           </div>
         </div>
-  
+
         <!-- CTA -->
         <el-row justify="center" class="mt-12">
           <el-col :span="24" class="text-center">
-            <el-button 
-              type="primary" 
-              round 
+            <el-button
+              type="primary"
+              round
               size="large"
               class="px-10 py-4 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 bg-blue-600 hover:bg-blue-700"
             >
@@ -87,11 +87,11 @@
       </div>
     </section>
   </template>
-  
+
   <script>
   import { Lightning, Cpu, Link, TopRight, Loading, ArrowLeft, ArrowRight } from '@element-plus/icons-vue';
   import keyData from '../../data/key-data.json';
-  
+
   export default {
     name: 'KeyData',
     components: {
@@ -126,7 +126,7 @@
     methods: {
       loadMore() {
         if (this.isLoading || !this.hasMoreData) return;
-        
+
         this.isLoading = true;
         setTimeout(() => {
           const nextBatch = this.keyData.slice(
@@ -142,7 +142,7 @@
         const scrollWidth = container.scrollWidth;
         const clientWidth = container.clientWidth;
         const scrollLeft = container.scrollLeft;
-  
+
         // Load more when nearing the end
         if (scrollWidth - scrollLeft - clientWidth < 300 && this.hasMoreData) {
           this.loadMore();
@@ -162,12 +162,12 @@
     }
   };
   </script>
-  
+
   <style scoped>
   .el-card:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
   }
-  
+
   .el-card {
     border-radius: 12px;
 
@@ -178,22 +178,22 @@
     border-color: #2563eb;
     padding: 14px 40px;
   }
-  
+
   .el-button--primary:hover {
     background-color: #1d4ed8;
     border-color: #1d4ed8;
   }
-  
+
   /* Horizontal Scroll Styling */
   .scrollbar-hidden {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-  
+
   .scrollbar-hidden::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
   }
-  
+
   /* Animation for smooth slide-in */
   @keyframes slideIn {
     from {
@@ -205,17 +205,17 @@
       transform: translateX(0);
     }
   }
-  
+
   .animate-slide-in {
     animation: slideIn 0.5s ease-out forwards;
     animation-delay: calc(var(--index) * 0.1s);
   }
-  
+
   @media (max-width: 768px) {
     .w-80 {
       width: 70vw;
     }
-    
+
     .mx-4 {
       margin-left: 1rem;
       margin-right: 1rem;
