@@ -1,6 +1,6 @@
 <template>
-<header class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[80%] shadow-md d-flex flex-row justify-content-center align-items-center">
-  <el-row>
+<header class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[80%] z-50 bg-white shadow-md rounded-2xl px-6 py-3 border border-gray-200">
+  <el-row class="container mx-auto flex items-center justify-between">
 
     <!-- Logo -->
     <el-col class="flex" :span="4">
@@ -10,17 +10,17 @@
       </el-link>
     </el-col>
 
-    <el-col :span="16">
+    <nav class="hidden md:flex flex-grow justify-center space-x-6">
       <nav class="space-x-6 min-vh-100">
         <el-link href="/solutions" :underline="false">Solutions</el-link>
       </nav>
-    </el-col>
+    </nav>
 
     <!-- App and Contacts -->
-    <el-col class="flex" :span="4">
+    <div class="hidden md:flex items-center space-x-3 flex-shrink-0">
       <el-button @click="takeMeToApp" plain text round>Access App</el-button>
       <el-button @click="router.push('/contact')" type="primary" round>Get Started</el-button>
-    </el-col>
+    </div>
 
   </el-row>
 
