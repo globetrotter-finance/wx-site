@@ -14,27 +14,27 @@ import KeyData from '../components/Home/KeyData.vue';
 import KeyData2 from '../components/Home/KeyData2.vue';
 
 useHead({
-  title: 'Workflows X - AI-Powered Workflow Automation',
+  title: 'Saras Finance | AI-Powered Legal, Compliance & Finance Platform',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
       name: 'description',
-      content: 'Transform workflows with Agentic Solutions’ AI agents. Reduce process times from months to minutes for Fintech, Legal, Healthcare, and more.'
+      content: 'Simplify litigation, compliance, and audits with SARAS - the AI-driven platform for legal, audit, and finance teams. ISO 27001 certified company.'
     },
     {
       name: 'keywords',
-      content: 'workflow automation, AI agents, Agentic Solutions, no-code platform, productivity tools'
+      content: 'legal automation, compliance management software, litigation AI, audit workflow, tax AI, ISO 27001 legal tech, legal tech India'
     },
     { name: 'robots', content: 'index, follow' },
-    { property: 'og:title', content: 'Agentic Solutions - AI-Powered Workflow Automation' },
-    { property: 'og:description', content: 'Revolutionize your workflows with AI. Build and launch in 10 minutes—no coding needed!' },
+    { property: 'og:title', content: 'Saras Finance | AI-Powered Legal, Compliance & Finance Platform' },
+    { property: 'og:description', content: 'SARAS empowers legal, audit and finance professionals with automated workflows, compliance dashboards, and legal intelligence.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://www.yourdomain.com/' }, 
+    { property: 'og:url', content: 'https://sarasfinance.com/' },
     { property: 'og:image', content: 'https://www.yourdomain.com/og-image.jpg' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://www.yourdomain.com/' } 
+    { rel: 'canonical', href: 'https://sarasfinance.com/' }
   ],
   script: [
     {
@@ -43,9 +43,9 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Organization',
         'name': 'Agentic Solutions',
-        'url': 'https://www.yourdomain.com/',
+        'url': 'https://sarasfinance.com/',
         'logo': 'https://www.yourdomain.com/logo.png', // Replace with your logo URL
-        'description': 'Agentic Solutions empowers businesses with AI-powered workflow automation, reducing process times and boosting efficiency across industries.'
+        'description': 'Simplify litigation, compliance, and audits with SARAS - the AI-driven platform for legal, audit, and finance teams. ISO 27001 certified company.'
       })
     },
     {
@@ -59,7 +59,7 @@ useHead({
           'name': 'Agentic Solutions'
         },
         'description': 'A no-code platform to automate workflows, cutting process validation from months to minutes.',
-        'url': 'https://www.yourdomain.com/'
+        'url': 'https://sarasfinance.com/'
       })
     }
   ]

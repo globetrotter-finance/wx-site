@@ -5,7 +5,7 @@
       <div class="absolute -top-60 -right-20 w-96 h-96 bg-blue-100 rounded-full opacity-30 blur-3xl"></div>
       <div class="absolute -bottom-60 -left-20 w-96 h-96 bg-blue-100 rounded-full opacity-30 blur-3xl"></div>
     </div>
-    
+
     <div class="container mx-auto max-w-6xl relative z-10">
       <!-- Top section with logo and links -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12 pb-12 border-b border-gray-200">
@@ -45,7 +45,7 @@
             </a>
           </div>
         </div>
-        
+
         <!-- Products links -->
         <div class="col-span-1 space-y-4">
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Product</h3>
@@ -57,7 +57,7 @@
             <li><a href="#" class="hover:text-blue-600 transition-colors">Security</a></li>
           </ul>
         </div>
-        
+
         <!-- Resources links -->
         <div class="col-span-1 space-y-4">
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Resources</h3>
@@ -69,7 +69,7 @@
             <li><a href="#" class="hover:text-blue-600 transition-colors">Community</a></li>
           </ul>
         </div>
-        
+
         <!-- Company links -->
         <div class="col-span-1 space-y-4">
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Company</h3>
@@ -82,7 +82,7 @@
           </ul>
         </div>
       </div>
-      
+
       <!-- Newsletter subscription -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
         <div class="space-y-4">
@@ -101,11 +101,11 @@
           </form>
         </div>
       </div>
-      
+
       <!-- Bottom section with copyright -->
-      <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
+      <el-row class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
         <p class="text-gray-500 text-sm">
-          &copy; 2025 WorkflowAI. All rights reserved.
+          &copy; 2025 Globetrotter Finance. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a href="#" class="text-sm text-gray-500 hover:text-blue-600 transition-colors">Privacy</a>
@@ -113,19 +113,8 @@
           <a href="#" class="text-sm text-gray-500 hover:text-blue-600 transition-colors">Cookies</a>
           <a href="#" class="text-sm text-gray-500 hover:text-blue-600 transition-colors">Sitemap</a>
         </div>
-      </div>
-      
-      <!-- Floating badge -->
-      <div class="absolute bottom-12 right-8 bg-white p-3 rounded-lg shadow-md border border-gray-100 hidden md:block transform rotate-3 animate-float animation-delay-1000 z-20">
-        <div class="flex items-center gap-2">
-          <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-            </svg>
-          </div>
-          <span class="text-sm font-medium">Trusted by 10,000+ teams</span>
-        </div>
-      </div>
+      </el-row>
+
     </div>
   </footer>
 </template>
