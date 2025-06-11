@@ -12,10 +12,16 @@
         <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
           We are <span class="text-blue-600">redefining</span> how<br>
         </h2>
-        <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
-          Legal, Audit & Finance Firms work
-        </h2>
-        <!-- <br> -->
+        <!-- Animated Titles Start -->
+        <div class="relative h-16 flex flex-col items-center justify-center mb-12 overflow-hidden">
+          <transition-group name="scroll-up" tag="div">
+            <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title">
+              <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
+              <span>{{ title }}</span>
+            </div>
+          </transition-group>
+        </div>
+        <!-- Animated Titles End -->
         <p class="mt-10 text-center">
           AI-powered, ISO-certified, and built for scale —
         </p>
@@ -53,12 +59,13 @@
 
 <script setup>
 import { ref, computed, onMounted, watchEffect } from 'vue';
-import { ElCheckbox } from 'element-plus';
+import { ElCheckbox, ElIcon } from 'element-plus';
+import { CircleCheckFilled } from '@element-plus/icons-vue';
 
 import { useRouter } from 'vue-router';
 const router = useRouter();
 
-
+const iconSize = '1em'; // Much smaller icon, close to text height
 
 // Tasks array with text and checked status
 // const tasks = ref([
@@ -103,6 +110,22 @@ const router = useRouter();
 //   isTaskChanging.value = true; // Re-add the animation class to trigger animation
 // };
 
+const animatedTitles = [
+  'Compliance, Risk & Governance',
+  'Litigation Management',
+  'Knowledge & Advisory',
+  'Audits & Due Diligence',
+  'Agentic Automation Platform',
+];
+const currentTitleIndex = ref(0);
+const currentTitle = ref(animatedTitles[0]);
+
+onMounted(() => {
+  setInterval(() => {
+    currentTitleIndex.value = (currentTitleIndex.value + 1) % animatedTitles.length;
+    currentTitle.value = animatedTitles[currentTitleIndex.value];
+  }, 2500); // Much longer interval (2.5s)
+});
 </script>
 
 <style scoped>
@@ -187,5 +210,44 @@ const router = useRouter();
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Animation for title scrolling */
+.scroll-up-enter-active, .scroll-up-leave-active {
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.scroll-up-enter-from {
+  opacity: 0;
+  transform: translateY(100%);
+  position: absolute;
+  width: 100%;
+}
+.scroll-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+.scroll-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+.scroll-up-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.tick-icon {
+  display: flex;
+  align-items: center;
+  height: 1em;
+}
+
+.animated-title {
+  font-size: 2em !important;
+  line-height: 1.1;
 }
 </style>

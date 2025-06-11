@@ -54,6 +54,8 @@
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Company</h3>
           <ul class="space-y-3 text-gray-500">
             <li><a href="/contact" class="hover:text-blue-600 transition-colors">Contact Us</a></li>
+              <li><a href="/aboutus" class="hover:text-blue-600 transition-colors">About Us</a></li>
+
             <li><a href="https://globetrotter.finance/privacy/" class="hover:text-blue-600 transition-colors">Privacy</a></li>
             <li><a href="https://globetrotter.finance/terms/" class="hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
             <!-- <li><a href="#" class="hover:text-blue-600 transition-colors">Legal</a></li> -->
