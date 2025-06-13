@@ -13,14 +13,7 @@
           We are <span class="text-blue-600">redefining</span> how<br>
         </h2>
         <!-- Animated Titles Start -->
-        <div class="relative h-16 flex flex-col items-center justify-center mb-12 overflow-hidden">
-          <transition-group name="scroll-up" tag="div">
-            <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title">
-              <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
-              <span>{{ title }}</span>
-            </div>
-          </transition-group>
-        </div>
+
         <!-- Animated Titles End -->
         <p class="mt-10 text-center">
           AI-powered, ISO-certified, and built for scale —
@@ -47,10 +40,18 @@
           </div>
         </div> -->
 
-        <div class="flex justify-center mt-5">
-          <img src="../../assets/hero/home-hero.gif" />
+       
+                <div class="relative h-16 flex flex-col items-center justify-center mb-1 overflow-hidden">
+          <transition-group name="scroll-up" tag="div">
+            <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title">
+              <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
+              <span>{{ title }}</span>
+            </div>
+          </transition-group>
         </div>
-
+ <div class="flex justify-center">
+          <img src="../../assets/hero/home-hero-cropped.gif" />
+        </div>
       </el-col>
     </el-row>
 
@@ -215,30 +216,22 @@ onMounted(() => {
 /* Animation for title scrolling */
 .scroll-up-enter-active, .scroll-up-leave-active {
   transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
 }
 .scroll-up-enter-from {
   opacity: 0;
   transform: translateY(100%);
-  position: absolute;
-  width: 100%;
 }
 .scroll-up-enter-to {
   opacity: 1;
   transform: translateY(0);
-  position: relative;
 }
 .scroll-up-leave-from {
   opacity: 1;
   transform: translateY(0);
-  position: relative;
 }
 .scroll-up-leave-to {
   opacity: 0;
   transform: translateY(-100%);
-  position: absolute;
-  width: 100%;
-  left: 0;
 }
 .tick-icon {
   display: flex;

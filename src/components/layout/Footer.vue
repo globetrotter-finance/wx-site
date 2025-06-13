@@ -54,8 +54,11 @@
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Company</h3>
           <ul class="space-y-3 text-gray-500">
             <li><a href="/contact" class="hover:text-blue-600 transition-colors">Contact Us</a></li>
-              <li><a href="/aboutus" class="hover:text-blue-600 transition-colors">About Us</a></li>
-
+            <li><a href="/aboutus" class="hover:text-blue-600 transition-colors">About Us</a></li>
+            <li><a href="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</a></li>
+            <li><a href="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</a></li>
+            <li><a href="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</a></li>
+            <li><a href="/litigation-management" class="hover:text-blue-600 transition-colors">Litigation Management</a></li>
             <li><a href="https://globetrotter.finance/privacy/" class="hover:text-blue-600 transition-colors">Privacy</a></li>
             <li><a href="https://globetrotter.finance/terms/" class="hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
             <!-- <li><a href="#" class="hover:text-blue-600 transition-colors">Legal</a></li> -->

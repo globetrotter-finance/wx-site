@@ -8,17 +8,22 @@ import component from 'element-plus/es/components/tree-select/src/tree-select-op
 import Solution from '../views/Solution.vue';
 import AgenticSolution from '../views/AgenticSolution.vue';
 import AboutUs from '../components/Home/AboutUs.vue';
+import ComplianceGovernance from '../components/Home/ComplianceGovernance.vue';
+import AuditAutomation from '../components/Home/AuditAutomation.vue';
+import KnowledgeAdvisory from '../components/Home/KnowledgeAdvisory.vue';
+import LitigationManagement from '../components/Home/LitigationManagement.vue';
 const routes = [
   { path: '/',                  component: Home },
   { path: '/integration',       component: Integration },
   { path: '/blogs', component: Blog },
-    { path: '/aboutus', component: AboutUs },
+  { path: '/aboutus', component: AboutUs },
   { path: '/contact', component: Contact },
   { path: '/solutions', component: Solution },
-  { path: '/agentic-solutions', component: AgenticSolution }
-
-
-
+  { path: '/agentic-solutions', component: AgenticSolution },
+  { path: '/compliance-governance', component: ComplianceGovernance },
+  { path: '/audit-automation', component: AuditAutomation },
+  { path: '/knowledge-advisory', component: KnowledgeAdvisory },
+  { path: '/litigation-management', component: LitigationManagement }
 ];
 
 const router = createRouter({
