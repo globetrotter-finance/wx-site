@@ -1,5 +1,7 @@
 <template>
-    <section class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+<div>
+<Header/>
+<section class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div class="container mx-auto max-w-6xl">
         <!-- Section Header -->
         <el-row justify="center" class="mb-12 sm:mb-16">
@@ -80,18 +82,15 @@ Today, our technology serves a diverse range of domains, be it Identity Fraud Pr
         </el-row> -->
       </div>
     </section>
+<Footer/>
+  </div>
+
   </template>
 
-  <script>
-  export default {
-    name: 'AboutUs',
-    methods: {
-      handleReadStory() {
-        // Add your navigation logic here, e.g., to a full story page
-        this.$router.push('/about-story');
-      }
-    }
-  }
+  <script setup>
+
+import Header from '../layout/Header.vue';
+import Footer from '../layout/Footer.vue';
   </script>
 
   <style scoped>
