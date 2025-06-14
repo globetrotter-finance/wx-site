@@ -12,12 +12,17 @@
         <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
           We are <span class="text-blue-600">redefining</span> how<br>
         </h2>
+                <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
+          Legal, Audit & Finance Firms work
+        </h2>
+        <!-- <br> -->
         <!-- Animated Titles Start -->
 
         <!-- Animated Titles End -->
         <p class="mt-10 text-center">
           AI-powered, ISO-certified, and built for scale —
         </p>
+            
         <p class="mt-4 text-center">
           <span class="text-blue-600 fw-bold">Saras</span> helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
         </p>
@@ -41,9 +46,9 @@
         </div> -->
 
        
-                <div class="relative h-16 flex flex-col items-center justify-center mb-1 overflow-hidden">
-          <transition-group name="scroll-up" tag="div">
-            <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title">
+                <div class="relative h-16 flex flex-col items-center justify-center mb-1 mt-5 overflow-hidden">
+          <transition-group name="scroll-up" tag="div" class="relative w-full h-16 flex items-center justify-center">
+            <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title absolute w-full h-full top-0 left-0 transition-transform duration-700">
               <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
               <span>{{ title }}</span>
             </div>
@@ -215,7 +220,11 @@ onMounted(() => {
 
 /* Animation for title scrolling */
 .scroll-up-enter-active, .scroll-up-leave-active {
-  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 .scroll-up-enter-from {
   opacity: 0;
@@ -242,5 +251,13 @@ onMounted(() => {
 .animated-title {
   font-size: 2em !important;
   line-height: 1.1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 </style>

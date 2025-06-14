@@ -1,6 +1,5 @@
 <template>
 <div>
-<Header/>
 <section class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div class="container mx-auto max-w-6xl">
         <!-- Section Header -->
@@ -103,7 +102,6 @@ Today, our technology serves a diverse range of domains, be it Identity Fraud Pr
         </el-row> -->
       </div>
     </section>
-<Footer/>
   </div>
 
   </template>
