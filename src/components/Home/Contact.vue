@@ -86,7 +86,6 @@
         </el-row>
       </el-main>
     </el-container>
-    <Footer />
   </div>
 </template>
 

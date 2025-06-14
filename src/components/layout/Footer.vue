@@ -53,15 +53,14 @@
         <div class="col-span-1 space-y-4">
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Company</h3>
           <ul class="space-y-3 text-gray-500">
-            <li><a href="/contact" class="hover:text-blue-600 transition-colors">Contact Us</a></li>
-            <li><a href="/aboutus" class="hover:text-blue-600 transition-colors">About Us</a></li>
-            <li><a href="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</a></li>
-            <li><a href="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</a></li>
-            <li><a href="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</a></li>
-            <li><a href="/litigation-management" class="hover:text-blue-600 transition-colors">Litigation Management</a></li>
+            <li><router-link to="/contact" class="hover:text-blue-600 transition-colors">Contact Us</router-link></li>
+            <li><router-link to="/aboutus" class="hover:text-blue-600 transition-colors">About Us</router-link></li>
+            <li><router-link to="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</router-link></li>
+            <li><router-link to="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</router-link></li>
+            <li><router-link to="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</router-link></li>
+            <li><router-link to="/litigation-management" class="hover:text-blue-600 transition-colors">Litigation Management</router-link></li>
             <li><a href="https://globetrotter.finance/privacy/" class="hover:text-blue-600 transition-colors">Privacy</a></li>
             <li><a href="https://globetrotter.finance/terms/" class="hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
-            <!-- <li><a href="#" class="hover:text-blue-600 transition-colors">Legal</a></li> -->
           </ul>
         </div>
 
