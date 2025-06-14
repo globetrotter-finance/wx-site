@@ -23,9 +23,9 @@
           </div>
         </div>
 
-        <!-- Products links -->
+        <!-- Resources links -->
         <div class="col-span-1 space-y-4">
-          <!-- <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Product</h3> -->
+          <!-- <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Resources</h3> -->
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider"></h3>
           <!-- <ul class="space-y-3 text-gray-500">
             <li><a href="#" class="hover:text-blue-600 transition-colors">Features</a></li>
@@ -36,17 +36,15 @@
           </ul> -->
         </div>
 
-        <!-- Resources links -->
-        <div class="col-span-1 space-y-4">
+               <div class="col-span-1 space-y-4">
+          <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Product</h3>
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider"></h3>
-          <!-- <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Resources</h3> -->
-          <!-- <ul class="space-y-3 text-gray-500">
-            <li><a href="#" class="hover:text-blue-600 transition-colors">Documentation</a></li>
-            <li><a href="#" class="hover:text-blue-600 transition-colors">Guides</a></li>
-            <li><a href="#" class="hover:text-blue-600 transition-colors">API Reference</a></li>
-            <li><a href="#" class="hover:text-blue-600 transition-colors">Blog</a></li>
-            <li><a href="#" class="hover:text-blue-600 transition-colors">Community</a></li>
-          </ul> -->
+          <ul class="space-y-3 text-gray-500">
+                        <li><router-link to="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</router-link></li>
+            <li><router-link to="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</router-link></li>
+            <li><router-link to="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</router-link></li>
+            <li><router-link to="/litigation-management" class="hover:text-blue-600 transition-colors">Litigation Management</router-link></li>
+          </ul>
         </div>
 
         <!-- Company links -->
@@ -55,10 +53,6 @@
           <ul class="space-y-3 text-gray-500">
             <li><router-link to="/contact" class="hover:text-blue-600 transition-colors">Contact Us</router-link></li>
             <li><router-link to="/aboutus" class="hover:text-blue-600 transition-colors">About Us</router-link></li>
-            <li><router-link to="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</router-link></li>
-            <li><router-link to="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</router-link></li>
-            <li><router-link to="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</router-link></li>
-            <li><router-link to="/litigation-management" class="hover:text-blue-600 transition-colors">Litigation Management</router-link></li>
             <li><a href="https://globetrotter.finance/privacy/" class="hover:text-blue-600 transition-colors">Privacy</a></li>
             <li><a href="https://globetrotter.finance/terms/" class="hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
           </ul>
