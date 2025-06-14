@@ -7,7 +7,7 @@ import Contact from '../views/Contact.vue';
 import component from 'element-plus/es/components/tree-select/src/tree-select-option.mjs';
 import Solution from '../views/Solution.vue';
 import AgenticSolution from '../views/AgenticSolution.vue';
-import AboutUs from '../components/Home/AboutUs.vue';
+import AboutUs from '../views/Aboutus.vue';
 import ComplianceGovernance from '../components/Home/ComplianceGovernance.vue';
 import AuditAutomation from '../components/Home/AuditAutomation.vue';
 import KnowledgeAdvisory from '../components/Home/KnowledgeAdvisory.vue';

@@ -1,52 +1,116 @@
 <template>
-  <div>
+  <div class="min-h-screen bg-slate-50">
     <Header />
-    <el-container class="bg-gradient-to-br from-blue-50 via-white to-blue-50 font-sans min-h-screen py-24">
-      <el-main>
-        <el-row justify="center">
-          <el-col :xs="24" :sm="20" :md="16" :lg="12" class="text-center">
-            <el-text tag="h1" class="compliance-title mb-8">
-              Enterprise-Grade <span class="text-blue-600">Compliance, Risk & Governance</span> Management
-            </el-text>
-            <el-text class="compliance-desc mb-10">
-              Track, manage, and automate regulatory and internal compliance with SARAS. Real-time dashboards and governance tools for audit readiness.
-            </el-text>
-            <el-divider content-position="center">Why SARAS for Compliance?</el-divider>
-            <el-row :gutter="40" justify="center" align="stretch" class="compliance-info-row">
-              <el-col :xs="24" :sm="12" :md="8" class="compliance-info-col mb-8">
-                <el-icon color="#2563EB" class="compliance-icon"><CircleCheckFilled /></el-icon>
-                <div class="compliance-label text-blue-700">Automated Compliance Tracking</div>
-                <el-text class="compliance-feature">Stay audit-ready with automated reminders, document management, and compliance calendars.</el-text>
-              </el-col>
-              <el-col :xs="24" :sm="12" :md="8" class="compliance-info-col mb-8">
-                <el-icon color="#22c55e" class="compliance-icon"><CircleCheckFilled /></el-icon>
-                <div class="compliance-label text-green-700">Risk & Governance Dashboard</div>
-                <el-text class="compliance-feature">Visualize risk exposure and governance status in real time with powerful dashboards.</el-text>
-              </el-col>
-              <el-col :xs="24" :sm="12" :md="8" class="compliance-info-col mb-8">
-                <el-icon color="#eab308" class="compliance-icon"><CircleCheckFilled /></el-icon>
-                <div class="compliance-label text-yellow-700">Regulatory Updates</div>
-                <el-text class="compliance-feature">Get instant alerts on regulatory changes and ensure your enterprise is always compliant.</el-text>
-              </el-col>
-            </el-row>
-            <el-divider content-position="center">Get Started</el-divider>
-            <el-row justify="center" class="mb-10">
-              <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="cta-card mb-8">
-                  <el-text class="cta-title">
-                    Ready to transform your compliance management?
-                  </el-text>
-                  <div class="cta-actions mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-                    <el-button type="primary" size="large" class="cta-btn">Request a Demo</el-button>
-                    <el-button type="info" size="large" plain class="cta-btn">Contact Sales</el-button>
-                  </div>
-                </el-card>
-              </el-col>
-            </el-row>
+    
+    <!-- Hero Section -->
+    <section class="w-full pt-20 pb-32 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent"></div>
+      <div class="container mx-auto px-4">
+        <el-row :gutter="64" class="items-center">
+          <el-col :span="24" :lg="14">
+            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-tight mb-8">
+              Stay in control, reduce risk, and simplify <span class="text-blue-600">compliance</span> across the enterprise
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed mb-10 lg:pr-12">
+              SARAS transforms how organizations manage statutory and internal compliance by bringing all obligations, risks, and actions into a unified, real-time system.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <el-button type="primary" size="large" class="px-8 py-3 text-base font-semibold bg-blue-600 hover:bg-blue-700 border-0">
+                👉 Request a Demo
+              </el-button>
+              <el-button size="large" class="px-8 py-3 text-base font-semibold">
+                Talk to Experts
+              </el-button>
+            </div>
+          </el-col>
+
+        </el-row>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="w-full py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-slate-900 mb-4">Key Features</h2>
+          <p class="text-lg text-slate-600">Transform your compliance and risk management with our enterprise-grade solution</p>
+        </div>
+
+        <el-row :gutter="32">
+          <el-col v-for="(feature, index) in features" :key="index" :span="24" :md="8" class="mb-8">
+            <el-card class="h-full border-0 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="text-3xl mb-6">{{ feature.icon }}</div>
+                <h3 class="text-xl font-semibold text-slate-900 mb-4">{{ feature.title }}</h3>
+                <p class="text-slate-600 leading-relaxed">{{ feature.description }}</p>
+              </div>
+            </el-card>
           </el-col>
         </el-row>
-      </el-main>
-    </el-container>
+      </div>
+    </section>
+
+    <!-- Benefits & Target Section -->
+    <section class="w-full py-24 bg-gradient-to-b from-slate-50 to-white">
+      <div class="container mx-auto px-4">
+        <el-row :gutter="64" justify="center">
+          <el-col :span="24" :lg="10" class="mb-8 lg:mb-0">
+            <el-card class="border-0 shadow-xl">
+              <template #header>
+                <h3 class="text-2xl font-bold text-slate-900">Benefits</h3>
+              </template>
+              <el-space direction="vertical" size="large" fill class="w-full">
+                <div v-for="(benefit, index) in benefits" :key="index" 
+                  class="flex items-start gap-3 p-2">
+                  <el-icon class="text-blue-600 text-lg mt-1 flex-shrink-0"><Check /></el-icon>
+                  <span class="text-slate-700">{{ benefit }}</span>
+                </div>
+              </el-space>
+            </el-card>
+          </el-col>
+
+          <el-col :span="24" :lg="10">
+            <el-card class="border-0 shadow-xl">
+              <template #header>
+                <h3 class="text-2xl font-bold text-slate-900">Ideal For</h3>
+              </template>
+              <el-space direction="vertical" size="large" fill class="w-full">
+                <div v-for="(ideal, index) in idealFor" :key="index" 
+                  class="flex items-start gap-3 p-2">
+                  <el-icon class="text-blue-600 text-lg mt-1 flex-shrink-0"><Check /></el-icon>
+                  <span class="text-slate-700">{{ ideal }}</span>
+                </div>
+              </el-space>
+            </el-card>
+          </el-col>
+        </el-row>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="w-full py-24 bg-blue-600">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+            Ready to simplify and secure your compliance process?
+          </h2>
+          <p class="text-xl text-blue-100 mb-12">
+            SARAS gives your team the clarity, control, and confidence to manage risk — intelligently.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <el-button type="primary" size="large" 
+              class="px-8 py-3 text-base font-semibold bg-white text-blue-600 hover:bg-blue-50 border-0">
+              Request a Demo
+            </el-button>
+            <el-button size="large" 
+              class="px-8 py-3 text-base font-semibold text-white border-2 border-white/80 hover:bg-white/10">
+              Talk to Compliance Experts
+            </el-button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <Footer />
   </div>
 </template>
@@ -54,89 +118,46 @@
 <script setup>
 import Header from '../layout/Header.vue';
 import Footer from '../layout/Footer.vue';
-import { ElIcon, ElText, ElLink, ElDivider, ElContainer, ElMain, ElRow, ElCol, ElCard, ElButton } from 'element-plus';
-import { CircleCheckFilled } from '@element-plus/icons-vue';
+import { Check } from '@element-plus/icons-vue';
+import { 
+  ElRow, ElCol, ElCard, ElButton, 
+  ElIcon, ElSpace
+} from 'element-plus';
+
+const features = [
+  {
+    icon: '🔍',
+    title: 'Risk & Governance Health Check',
+    description: 'Identify areas of high risk and recurring non-compliance across departments, branches, or business units. SARAS helps you prioritize action and proactively mitigate risk before it escalates.'
+  },
+  {
+    icon: '📊',
+    title: '360° Compliance Dashboard',
+    description: 'Access a single view of all compliance responsibilities — regulatory, tax, internal, or sector-specific. Track ownership, deadlines, and status across teams and geographies.'
+  },
+  {
+    icon: '🔄',
+    title: 'End-to-End Workflow Visibility',
+    description: 'Assign, monitor, and close compliance tasks with full audit trails. SARAS keeps every step transparent, documented, and reportable.'
+  }
+];
+
+const benefits = [
+  'Avoid regulatory penalties through timely oversight',
+  'Improve accountability with task-level ownership',
+  'Enable audit preparedness with structured documentation and traceable logs',
+  'Scale seamlessly across regions and departments with consistent standards'
+];
+
+const idealFor = [
+  'Large enterprises with complex compliance obligations',
+  'Legal, finance, and risk teams managing statutory reporting',
+  'Firms looking to move away from manual tracking systems'
+];
 </script>
 
-<style scoped>
-.compliance-title {
-  font-size: 2.8rem;
-  font-weight: 900;
-  letter-spacing: -1px;
-  color: #1e293b;
-  line-height: 1.1;
-}
-.compliance-desc {
-  font-size: 1.25rem;
-  color: #334155;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.compliance-info-row {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  gap: 2.5rem;
-}
-.compliance-info-col {
-  background: rgba(255,255,255,0.95);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.06);
-  padding: 2.5rem 1.5rem 2rem 1.5rem;
-  margin-bottom: 2rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 210px;
-  transition: box-shadow 0.2s;
-  gap: 1.2rem;
-}
-.compliance-info-col:hover {
-  box-shadow: 0 8px 32px 0 rgba(37,99,235,0.10);
-}
-.compliance-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.7rem;
-}
-.compliance-label {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.compliance-feature {
-  font-size: 1.1rem;
-  color: #334155;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-.cta-card {
-  background: rgba(37,99,235,0.03);
-  border-radius: 1.5rem;
-  padding: 2.5rem 2rem 3.5rem 2rem;
-  text-align: center;
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
-  margin-bottom: 2.5rem;
-  min-height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.cta-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 1.5rem;
-}
-.cta-actions {
-  gap: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-.cta-btn {
-  border-radius: 1.2rem;
-  padding: 1.1rem 2.2rem;
-  font-size: 1.1rem;
-  min-width: 180px;
+<style>
+.container {
+  max-width: 1280px;
 }
 </style>
