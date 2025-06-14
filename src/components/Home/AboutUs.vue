@@ -50,6 +50,27 @@ Today, our technology serves a diverse range of domains, be it Identity Fraud Pr
           </el-col>
         </el-row>
 
+        <!-- Team Section -->
+        <el-row justify="center" class="mb-16">
+          <el-col :span="24">
+            <h3 class="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-10">Meet Our Team</h3>
+            <el-row :gutter="32" justify="center" align="stretch">
+              <template v-for="person in team" :key="person.name">
+                <el-col :xs="24" :sm="12" :md="6" class="mb-8 flex justify-center">
+                  <el-card class="team-card" shadow="hover">
+                    <el-avatar size="large" :src="person.img" class="mb-4 mx-auto" />
+                    <div class="text-center">
+                      <div class="font-semibold text-lg text-gray-800 mb-1">{{ person.name }}</div>
+                      <div :class="`text-${person.roleColor} text-xs font-bold mb-2`">{{ person.role }}</div>
+                      <div class="text-gray-500 text-sm">{{ person.desc }}</div>
+                    </div>
+                  </el-card>
+                </el-col>
+              </template>
+            </el-row>
+          </el-col>
+        </el-row>
+
         <!-- Our Vision -->
         <!-- <el-row justify="center" class="mb-12">
           <el-col :span="20" :xs="22">
@@ -91,6 +112,15 @@ Today, our technology serves a diverse range of domains, be it Identity Fraud Pr
 
 import Header from '../layout/Header.vue';
 import Footer from '../layout/Footer.vue';
+import { ref, onMounted } from 'vue';
+import { ElAvatar, ElCard, ElRow, ElCol } from 'element-plus';
+
+const team = ref([]);
+
+onMounted(async () => {
+  const res = await fetch('/src/data/team.json');
+  team.value = await res.json();
+});
   </script>
 
   <style scoped>
@@ -115,6 +145,30 @@ import Footer from '../layout/Footer.vue';
     border-color: #1d4ed8;
     transform: translateY(-2px);
   }
+
+  .team-card {
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.06);
+  padding: 2.2rem 1.5rem 2rem 1.5rem;
+  min-width: 220px;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.team-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(37,99,235,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+.el-avatar {
+  width: 72px !important;
+  height: 72px !important;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+  background: #f3f6fa;
+}
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
