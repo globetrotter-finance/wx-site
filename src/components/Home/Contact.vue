@@ -43,7 +43,7 @@
             <el-divider content-position="center">Book a Demo</el-divider>
             <el-row justify="center" class="mb-10">
               <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="demo-card mb-8">
+                <el-card class="demo-card mb-10">
                   <el-text class="demo-title">
                     <el-icon color="#2563EB"><CircleCheckFilled /></el-icon> Book a Demo
                   </el-text>
@@ -57,7 +57,7 @@
             <el-divider content-position="center">Partnerships & Media</el-divider>
             <el-row justify="center" class="mb-10">
               <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="partnership-card mb-8">
+                <el-card class="partnership-card mb-10">
                   <el-text class="partnership-title">
                     <el-icon color="#6366f1"><CircleCheckFilled /></el-icon> Partnerships & Media
                   </el-text>
@@ -71,7 +71,7 @@
             <el-divider content-position="center"></el-divider>
             <el-row justify="center" class="mb-10">
               <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="cta-card mb-8">
+                <el-card class="cta-card mb-10">
                   <el-text class="cta-title">
                     We’re here to simplify your workflow — let’s connect.
                   </el-text>
