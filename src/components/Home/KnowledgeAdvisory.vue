@@ -1,116 +1,126 @@
 <template>
-  <!-- Global layout: Header & Footer wrap around page content -->
+  <div>
     <Header />
-    <el-container class="flex-1 bg-gradient-to-br from-sky-50 via-white to-sky-50 font-sans min-h-screen pt-20">
-      <!-- Padding-top to offset fixed header -->
-      <el-main class="py-24">
-        <div class="max-w-4xl mx-auto text-center px-4">
-          <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-6">
-            AI-Powered <span class="text-blue-600">Enterprise Knowledge & Advisory System</span>
-          </h1>
-          <p class="text-lg sm:text-xl text-gray-600 mb-12">
-            Preserve your team’s expertise. Retrieve answers instantly.<br>
-            SARAS turns your internal docs, legal resources, and research into a living, searchable AI-powered knowledge base.
-          </p>
 
-          <el-divider class="mb-12" />
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-white via-blue-50 to-slate-100 px-4">
+      <div class="max-w-6xl text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-8">
+          AI-Powered <span class="text-blue-600">Enterprise Knowledge & Advisory System</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12">
+          Preserve your team’s expertise. Retrieve answers instantly. SARAS Knowledge & Advisory tools turn your internal documentation, legal resources, and research material into a living, searchable knowledge system — powered by intelligent AI assistants trained to understand law, tax, and regulations.
+        </p>
+        <div class="flex justify-center gap-6 flex-wrap">
+          <el-button type="primary" size="large" class="px-8 py-3 text-base font-semibold bg-blue-600 hover:bg-blue-700">
+            👉 Request a Demo
+          </el-button>
+          <el-button size="large" class="px-8 py-3 text-base font-semibold border border-slate-300 text-slate-700 hover:bg-slate-100">
+            Explore Knowledge Platform
+          </el-button>
+        </div>
+      </div>
+    </section>
 
-          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <el-card class="bg-white/90 rounded-2xl p-6 shadow hover:shadow-lg transition-shadow">
-              <el-icon class="text-blue-600 text-3xl mb-3"><CircleCheckFilled/></el-icon>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Enterprise Knowledge Repository</h3>
-              <p class="text-gray-600 text-sm">
-                Centralize case law, advisory memos, and internal docs in one queryable system.
-              </p>
-            </el-card>
-
-            <el-card class="bg-white/90 rounded-2xl p-6 shadow hover:shadow-lg transition-shadow">
-              <el-icon class="text-indigo-600 text-3xl mb-3"><CircleCheckFilled/></el-icon>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">AI-Powered Legal & Tax ChatBot</h3>
-              <p class="text-gray-600 text-sm">
-                Get precise, statute-backed answers in seconds. Contextual understanding for informed decisions.
-              </p>
-            </el-card>
-
-            <el-card class="bg-white/90 rounded-2xl p-6 shadow hover:shadow-lg transition-shadow">
-              <el-icon class="text-green-500 text-3xl mb-3"><CircleCheckFilled/></el-icon>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">FileBot: Smart Document Reading</h3>
-              <p class="text-gray-600 text-sm">
-                Upload agreements, notices, or orders and ask contextual questions—answers based on your docs.
-              </p>
-            </el-card>
-
-            <el-card class="bg-white/90 rounded-2xl p-6 shadow hover:shadow-lg transition-shadow">
-              <el-icon class="text-yellow-500 text-3xl mb-3"><CircleCheckFilled/></el-icon>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Context-Aware Q&A</h3>
-              <p class="text-gray-600 text-sm">
-                No more digging through files. SARAS finds the right source from past matters automatically.
-              </p>
-            </el-card>
-          </div>
-
-          <el-divider class="my-12" />
-
-          <div class="grid gap-6 sm:grid-cols-2">
-            <el-card class="bg-blue-50 rounded-xl p-6 shadow">
-              <h4 class="text-lg font-semibold text-gray-900 mb-2">Save Research Time</h4>
-              <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
-                <li>Reduce research time by 30–50%.</li>
-                <li>Centralize institutional knowledge.</li>
-              </ul>
-            </el-card>
-
-            <el-card class="bg-blue-50 rounded-xl p-6 shadow">
-              <h4 class="text-lg font-semibold text-gray-900 mb-2">Boost Onboarding & Audit</h4>
-              <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
-                <li>Accelerate new-hire ramp-up.</li>
-                <li>Ensure audit readiness with traceable history.</li>
-              </ul>
-            </el-card>
-          </div>
-
-          <el-divider class="my-12" />
-
-          <div class="max-w-xl mx-auto text-left">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Ideal For</h2>
-            <el-card class="bg-white/90 rounded-2xl p-8 shadow">
-              <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
-                <li>Firms with vast legal & tax repositories</li>
-                <li>Corporate law departments</li>
-                <li>Audit & compliance teams managing document-heavy cases</li>
-              </ul>
-            </el-card>
-          </div>
-
-          <el-divider class="my-12" />
-
-          <div class="max-w-lg mx-auto">
-            <el-card class="bg-blue-50 rounded-2xl p-10 shadow-lg text-center">
-              <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                Empower your team with instant access to expertise.
-              </h2>
-              <p class="text-gray-700 mb-6 text-sm">
-                SARAS transforms complex docs and deep expertise into AI-powered answers—anytime, anywhere.
-              </p>
-              <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <el-button type="primary" size="large" class="rounded-xl px-8 py-3">Request a Demo</el-button>
-                <el-button type="info" size="large" plain class="rounded-xl px-8 py-3">Explore Knowledge Platform</el-button>
-              </div>
-            </el-card>
+    <!-- Features Section -->
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-slate-900 text-center mb-16">Key Features</h2>
+        <div class="grid gap-10 md:grid-cols-3">
+          <div v-for="(feature, index) in features" :key="index" class="p-8 rounded-2xl shadow hover:shadow-lg transition cursor-pointer bg-gradient-to-br from-white to-slate-50">
+            <div :class="feature.color" class="w-16 h-16 flex items-center justify-center rounded-xl text-3xl mb-6">
+              {{ feature.icon }}
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">{{ feature.title }}</h3>
+            <p class="text-slate-600 leading-relaxed">{{ feature.description }}</p>
           </div>
         </div>
-      </el-main>
-    </el-container>
+      </div>
+    </section>
+
+    <!-- Benefits & Ideal For -->
+    <section class="py-24 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 mb-8">Benefits</h2>
+          <ul class="space-y-5 text-lg text-slate-700">
+            <li v-for="(benefit, index) in benefits" :key="index" class="flex items-start gap-3">
+              <el-icon class="text-blue-600 mt-1"><CircleCheckFilled /></el-icon> {{ benefit }}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 mb-8">Ideal For</h2>
+          <ul class="space-y-5 text-lg text-slate-700">
+            <li v-for="(ideal, index) in idealFor" :key="index" class="flex items-start gap-3">
+              <el-icon class="text-green-600 mt-1"><CircleCheckFilled /></el-icon> {{ ideal }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Give your team instant access to everything your firm knows.
+        </h2>
+        <p class="text-lg md:text-xl mb-12">
+          SARAS turns complex documents and deep expertise into accessible, AI-powered answers.
+        </p>
+        <div class="flex justify-center flex-wrap gap-6">
+          <el-button type="primary" size="large" class="bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 font-semibold">
+            👉 Request a Demo
+          </el-button>
+          <el-button size="large" plain class="border-white text-white hover:bg-white/10 px-8 py-3 font-semibold">
+            Explore Knowledge Platform
+          </el-button>
+        </div>
+      </div>
+    </section>
+
     <Footer />
+  </div>
 </template>
 
 <script setup>
-import Header from '../layout/Header.vue'
-import Footer from '../layout/Footer.vue'
-import { ElContainer, ElMain, ElDivider, ElCard, ElButton, ElIcon } from 'element-plus'
-import { CircleCheckFilled } from '@element-plus/icons-vue'
-</script>
+import Header from '../layout/Header.vue';
+import Footer from '../layout/Footer.vue';
+import { ElButton, ElIcon } from 'element-plus';
+import { CircleCheckFilled } from '@element-plus/icons-vue';
 
-<style>
-/* Styling via Tailwind & Element Plus utilities */
-</style>
+const features = [
+  {
+    icon: '🧠',
+    title: 'Enterprise Knowledge Repository',
+    description: 'Centralize legal, tax, and advisory documents into a single knowledge system.',
+    color: 'bg-blue-100 text-blue-600',
+  },
+  {
+    icon: '💬',
+    title: 'AI-Powered Legal & Tax ChatBot',
+    description: 'Ask complex questions and get statute-backed, AI-generated answers.',
+    color: 'bg-green-100 text-green-600',
+  },
+  {
+    icon: '📂',
+    title: 'FileBot: Smart Document Reading',
+    description: 'Upload documents and extract contextual answers directly from content.',
+    color: 'bg-yellow-100 text-yellow-600',
+  },
+];
+
+const benefits = [
+  'Save 30–50% of research time across legal, tax, and audit functions',
+  'Reduce dependency on individual experts with institutionalized knowledge',
+  'Speed up onboarding by giving new team members a ready source of truth',
+  'Enhance audit readiness with traceable knowledge history',
+];
+
+const idealFor = [
+  'Legal and tax advisory firms with large knowledge repositories',
+  'Corporate law departments',
+  'Audit and compliance teams handling document-heavy cases',
+];
+</script>
