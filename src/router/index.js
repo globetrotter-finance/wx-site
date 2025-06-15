@@ -12,6 +12,9 @@ import ComplianceGovernance from '../components/Home/ComplianceGovernance.vue';
 import AuditAutomation from '../components/Home/AuditAutomation.vue';
 import KnowledgeAdvisory from '../components/Home/KnowledgeAdvisory.vue';
 import LitigationManagement from '../components/Home/LitigationManagement.vue';
+import Privacy from '../views/Privacy.vue';
+import Terms from '../views/Terms.vue';
+
 const routes = [
   { path: '/',                  component: Home },
   { path: '/integration',       component: Integration },
@@ -23,7 +26,17 @@ const routes = [
   { path: '/compliance-governance', component: ComplianceGovernance },
   { path: '/audit-automation', component: AuditAutomation },
   { path: '/knowledge-advisory', component: KnowledgeAdvisory },
-  { path: '/litigation-management', component: LitigationManagement }
+  { path: '/litigation-management', component: LitigationManagement },
+  {
+    path: '/privacy',
+    name: 'privacy',
+    component: Privacy
+  },
+  {
+    path: '/terms',
+    name: 'terms',
+    component: Terms
+  }
 ];
 
 const router = createRouter({

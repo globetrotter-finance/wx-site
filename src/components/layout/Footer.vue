@@ -53,8 +53,8 @@
           <ul class="space-y-3 text-gray-500">
             <li><router-link to="/contact" class="hover:text-blue-600 transition-colors">Contact Us</router-link></li>
             <li><router-link to="/aboutus" class="hover:text-blue-600 transition-colors">About Us</router-link></li>
-            <li><a href="https://globetrotter.finance/privacy/" class="hover:text-blue-600 transition-colors">Privacy</a></li>
-            <li><a href="https://globetrotter.finance/terms/" class="hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
+            <li><router-link to="/privacy" class="hover:text-blue-600 transition-colors">Privacy</router-link></li>
+            <li><router-link to="/terms" class="hover:text-blue-600 transition-colors">Terms & Conditions</router-link></li>
           </ul>
         </div>
 
