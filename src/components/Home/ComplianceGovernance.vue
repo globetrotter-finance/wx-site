@@ -61,7 +61,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-center">
+    <section class="py-24 bg-gradient-to-r from-blue-300 to-blue-300 text-white text-center">
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
           Ready to simplify and secure your compliance process?

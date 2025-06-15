@@ -1,87 +1,111 @@
 <template>
   <div>
-    <Header />
-    <el-container class="bg-gradient-to-br from-blue-50 via-white to-blue-50 font-sans min-h-screen py-24">
+
+    <el-container class="bg-gradient-to-br from-blue-50 via-white to-blue-50 min-h-screen py-24">
       <el-main>
         <el-row justify="center">
           <el-col :xs="24" :sm="20" :md="16" :lg="12" class="text-center">
-            <el-text tag="h1" class="contact-title mb-8">
-              <span class="block">Get in Touch</span>
-              <span class="block text-blue-600 mt-2">with the SARAS Team</span>
-            </el-text>
-            <el-text class="contact-desc mb-10">
+
+            <!-- Title -->
+            <h1 class="text-5xl font-extrabold text-slate-900 mb-4">
+              Get in Touch
+            </h1>
+            <h2 class="text-2xl text-blue-600 font-semibold mb-10">
+              with the SARAS Team
+            </h2>
+
+            <!-- Intro -->
+            <p class="text-lg text-slate-600 mb-16 max-w-3xl mx-auto">
               Whether you’re exploring automation for legal operations, planning a compliance overhaul, or want to see SARAS in action — we’re ready to help.
-            </el-text>
+            </p>
+
+            <!-- Contact Info -->
             <el-divider content-position="center">Contact Information</el-divider>
-            <el-row :gutter="40" justify="center" align="stretch" class="contact-info-row">
-              <el-col :xs="24" :sm="12" :md="8" class="contact-info-col">
-                <el-icon color="#2563EB" class="contact-icon"><CircleCheckFilled /></el-icon>
-                <div class="contact-label text-blue-700">Sales & Demo</div>
-                <el-link href="mailto:sales@sarasfinance.com" type="primary" class="contact-link">sales@sarasfinance.com</el-link>
+
+            <el-row :gutter="40" justify="center" class="mt-10 mb-16">
+              <el-col :xs="24" :sm="12" :md="8">
+                <el-card shadow="hover" class="rounded-2xl p-8 text-center">
+                  <el-icon size="40" class="mb-4 text-blue-600"><CircleCheckFilled /></el-icon>
+                  <div class="text-xl font-semibold text-blue-700 mb-2">Sales & Demo</div>
+                  <el-link href="mailto:sales@sarasfinance.com" type="primary" class="text-lg font-medium">
+                    sales@sarasfinance.com
+                  </el-link>
+                </el-card>
               </el-col>
-              <el-col :xs="24" :sm="12" :md="8" class="contact-info-col">
-                <el-icon color="#22c55e" class="contact-icon"><CircleCheckFilled /></el-icon>
-                <div class="contact-label text-green-700">Support</div>
-                <el-link href="mailto:support@sarasfinance.com" type="success" class="contact-link">support@sarasfinance.com</el-link>
+
+              <el-col :xs="24" :sm="12" :md="8">
+                <el-card shadow="hover" class="rounded-2xl p-8 text-center">
+                  <el-icon size="40" class="mb-4 text-green-600"><CircleCheckFilled /></el-icon>
+                  <div class="text-xl font-semibold text-green-700 mb-2">Support</div>
+                  <el-link href="mailto:support@sarasfinance.com" type="success" class="text-lg font-medium">
+                    support@sarasfinance.com
+                  </el-link>
+                </el-card>
               </el-col>
-              <el-col :xs="24" :sm="12" :md="8" class="contact-info-col">
-                <el-icon color="#eab308" class="contact-icon"><CircleCheckFilled /></el-icon>
-                <div class="contact-label text-yellow-700">Phone</div>
-                <el-link href="tel:+919501289879" type="warning" class="contact-link">+91-95012 89879</el-link>
+
+              <el-col :xs="24" :sm="12" :md="8">
+                <el-card shadow="hover" class="rounded-2xl p-8 text-center">
+                  <el-icon size="40" class="mb-4 text-yellow-600"><CircleCheckFilled /></el-icon>
+                  <div class="text-xl font-semibold text-yellow-700 mb-2">Phone</div>
+                  <el-link href="tel:+919501289879" type="warning" class="text-lg font-medium">
+                    +91-95012 89879
+                  </el-link>
+                </el-card>
               </el-col>
             </el-row>
+
+            <!-- Office Address -->
             <el-divider content-position="center">Office Address</el-divider>
-            <el-row justify="center">
-              <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-text class="address-text">
-                  <span class="font-bold">Globetrotter Finance Pvt. Ltd.</span><br />
-                  [Full Address Here]<br />
-                  India
-                </el-text>
-              </el-col>
-            </el-row>
+
+            <el-card shadow="always" class="rounded-2xl p-8 text-center my-16 bg-white">
+              <p class="text-lg text-slate-700 leading-relaxed">
+                <span class="font-bold text-slate-900 text-xl">Globetrotter Finance Pvt. Ltd.</span><br />
+                [Full Address Here]<br />
+                India
+              </p>
+            </el-card>
+
+            <!-- Book Demo -->
             <el-divider content-position="center">Book a Demo</el-divider>
-            <el-row justify="center" class="mb-10">
-              <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="demo-card mb-10">
-                  <el-text class="demo-title">
-                    <el-icon color="#2563EB"><CircleCheckFilled /></el-icon> Book a Demo
-                  </el-text>
-                  <el-text class="demo-desc">
-                    Use our <b>Request Demo</b> form to schedule a personalized walkthrough of the SARAS platform with our product specialists.
-                  </el-text>
-                  <el-button type="primary" size="large" class="mt-6 w-full demo-btn">Request a Demo</el-button>
-                </el-card>
-              </el-col>
-            </el-row>
+
+            <el-card shadow="hover" class="rounded-2xl p-8 my-16">
+              <div class="flex flex-col items-center text-center">
+                <el-icon size="40" class="mb-4 text-blue-600"><CircleCheckFilled /></el-icon>
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Book a Demo</h3>
+                <p class="text-lg text-slate-600 mb-8">
+                  Use our <b>Request Demo</b> form to schedule a personalized walkthrough of the SARAS platform with our product specialists.
+                </p>
+                <el-button type="primary" size="large" class="px-10 py-3 text-lg">Request a Demo</el-button>
+              </div>
+            </el-card>
+
+            <!-- Partnerships -->
             <el-divider content-position="center">Partnerships & Media</el-divider>
-            <el-row justify="center" class="mb-10">
-              <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="partnership-card mb-10">
-                  <el-text class="partnership-title">
-                    <el-icon color="#6366f1"><CircleCheckFilled /></el-icon> Partnerships & Media
-                  </el-text>
-                  <el-text class="partnership-desc">
-                    Interested in collaborating or covering SARAS? Reach out at
-                    <el-link href="mailto:partnerships@sarasplatform.com" type="info" class="inline-link">partnerships@sarasplatform.com</el-link>
-                  </el-text>
-                </el-card>
-              </el-col>
-            </el-row>
+
+            <el-card shadow="hover" class="rounded-2xl p-8 my-16">
+              <div class="flex flex-col items-center text-center">
+                <el-icon size="40" class="mb-4 text-indigo-500"><CircleCheckFilled /></el-icon>
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Partnerships & Media</h3>
+                <p class="text-lg text-slate-600">
+                  Interested in collaborating or covering SARAS? Reach out at
+                  <el-link href="mailto:partnerships@sarasplatform.com" type="info" class="ml-1 font-semibold">
+                    partnerships@sarasplatform.com
+                  </el-link>
+                </p>
+              </div>
+            </el-card>
+
+            <!-- CTA -->
             <el-divider content-position="center"></el-divider>
-            <el-row justify="center" class="mb-10">
-              <el-col :xs="24" :sm="20" :md="16" :lg="10">
-                <el-card class="cta-card mb-10">
-                  <el-text class="cta-title">
-                    We’re here to simplify your workflow — let’s connect.
-                  </el-text>
-                  <div class="cta-actions mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-                    <el-button type="primary" size="large" class="cta-btn">👉 Request a Demo</el-button>
-                    <el-button type="info" size="large" plain class="cta-btn">Write to Us</el-button>
-                  </div>
-                </el-card>
-              </el-col>
-            </el-row>
+
+            <el-card shadow="always" class="rounded-2xl p-8 my-16 text-center bg-gradient-to-r from-blue-300 to-blue-300 text-white">
+              <h3 class="text-3xl font-bold mb-6">We’re here to simplify your workflow — let’s connect.</h3>
+              <div class="flex flex-col sm:flex-row justify-center gap-6 mt-4">
+                <el-button type="primary" size="large" class="bg-white text-blue-600 font-bold px-10 py-3">👉 Request a Demo</el-button>
+                <el-button size="large" plain class="border-white text-white font-bold px-10 py-3">Write to Us</el-button>
+              </div>
+            </el-card>
+
           </el-col>
         </el-row>
       </el-main>
@@ -92,70 +116,6 @@
 <script setup>
 import Header from '../layout/Header.vue';
 import Footer from '../layout/Footer.vue';
-import { ElIcon, ElText, ElLink, ElDivider, ElContainer, ElMain, ElRow, ElCol, ElCard, ElButton } from 'element-plus';
+import { ElIcon, ElLink, ElDivider, ElContainer, ElMain, ElRow, ElCol, ElCard, ElButton } from 'element-plus';
 import { CircleCheckFilled } from '@element-plus/icons-vue';
 </script>
-
-<style scoped>
-.contact-title {
-  font-size: 3.2rem;
-  font-weight: 900;
-  letter-spacing: -1px;
-  color: #1e293b;
-  line-height: 1.1;
-}
-.contact-desc {
-  font-size: 1.3rem;
-  color: #334155;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.contact-info-row {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-.contact-info-col {
-  background: rgba(255,255,255,0.95);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.06);
-  padding: 2.5rem 1.5rem 2rem 1.5rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 210px;
-  transition: box-shadow 0.2s;
-}
-.contact-info-col:hover {
-  box-shadow: 0 8px 32px 0 rgba(37,99,235,0.10);
-}
-.contact-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.7rem;
-}
-.contact-label {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.contact-link {
-  font-size: 1.1rem;
-  font-weight: 500;
-  word-break: break-all;
-  margin-bottom: 0.5rem;
-}
-.address-text {
-  font-size: 1.15rem;
-  color: #334155;
-  line-height: 1.7;
-  background: rgba(255,255,255,0.95);
-  border-radius: 1.2rem;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.07);
-  margin-top: 1.5rem;
-  display: block;
-}
-.demo-card, .partnership-card, .cta-card {
-  margin-bottom: 2.5rem;
-}
-</style>
