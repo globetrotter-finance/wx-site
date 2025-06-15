@@ -14,13 +14,13 @@
     <div class="hidden md:flex items-center space-x-3 flex-shrink-0">
       <el-dropdown>
         <template #default>
-          <el-button type="primary" round>Products</el-button>
+          <el-button type="primary" round text>Products</el-button>
         </template>
         <template #dropdown>
           <el-dropdown-menu>
             <el-dropdown-item @click="router.push('/compliance-governance')">Compliance, Risk & Governance</el-dropdown-item>
             <el-dropdown-item @click="router.push('/audit-automation')">Audit Automation</el-dropdown-item>
-            <el-dropdown-item @click="router.push('/knowledge-advisory')">Knowledge & Advisory</el-dropdown-item>
+            <el-dropdown-item @click="textrouter.push('/knowledge-advisory')">Knowledge & Advisory</el-dropdown-item>
             <el-dropdown-item @click="router.push('/litigation-management')">Litigation Management</el-dropdown-item>
           </el-dropdown-menu>
         </template>

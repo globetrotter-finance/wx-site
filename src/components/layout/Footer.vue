@@ -3,7 +3,7 @@
 
     <div class="container mx-auto max-w-6xl relative z-10">
       <!-- Top section with logo and links -->
-      <div class="grid md:grid-cols-4 gap-10 mb-12 pb-12 border-b border-gray-200">
+      <div class="grid md:grid-cols-4 gap-10 mb-12 pb-12 border-b border-gray-300">
         <!-- Company info -->
         <div class="col-span-1 md:col-span-1 space-y-4">
           <div class="flex items-center">
@@ -80,7 +80,8 @@
       </div> -->
 
       <!-- Bottom section with copyright -->
-      <el-row class="flex flex-col md:flex-row justify-between items-center border-gray-200">
+      <el-row class="flex flex-col md:flex-row justify-between items-center border-gray-800">
+        
         <p class="text-gray-500 text-sm">
           &copy; 2025 Globetrotter Finance. All rights reserved.
         </p>

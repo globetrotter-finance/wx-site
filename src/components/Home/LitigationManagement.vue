@@ -142,7 +142,8 @@ useHead({
     { property: 'og:title', content: 'AI-Powered Litigation Management Software | SARAS' },
     { property: 'og:description', content: 'Simplify legal workflows with SARAS. Automate notice handling, analyze case documents, and generate legal drafts using AI-powered tools.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://sarasfinance.com/litigation-management' }  ],
+    { property: 'og:url', content: 'https://sarasfinance.com/litigation-management' }
+  ],
   link: [
     { rel: 'canonical', href: 'https://sarasfinance.com/litigation-management' }
   ]

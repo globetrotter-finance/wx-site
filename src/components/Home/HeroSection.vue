@@ -7,7 +7,7 @@
       <div class="absolute -bottom-10 sm:-bottom-20 right-1/4 w-48 sm:w-64 h-48 sm:h-64 bg-blue-200 rounded-full opacity-40 blur-3xl"></div>
     </div>
 
-    <el-row justify="center" class="mt-30 mb-10  sm:mb-16">
+    <el-row justify="center" class="mt-20 mb-10  sm:mb-16">
       <el-col :xs="22" class="items-center justify-between">
         <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
           We are <span class="text-blue-600">redefining</span> how<br>
@@ -19,11 +19,11 @@
         <!-- Animated Titles Start -->
 
         <!-- Animated Titles End -->
-        <p class="mt-10 text-center">
+        <p class="mt-10 text-center text-2xl">
           AI-powered, ISO-certified, and built for scale —
         </p>
             
-        <p class="mt-4 text-center">
+        <p class="mt-4 mb-6 text-center text-2xl">
           <span class="text-blue-600 fw-bold">Saras</span> helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
         </p>
 

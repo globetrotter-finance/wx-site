@@ -13,8 +13,9 @@
       <el-row justify="center" class="mb-12 sm:mb-16">
         <el-col :span="20" :xs="22">
           <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
-            With our Game Changing <span class="text-blue-600"> Agentic Solutions</span>
-          </h2>
+            With our Game Changing 
+            <h2 class="text-blue-600 text-3xl sm:text-5xl md:text-6xl font-bold mt-4">Agentic Solutions
+          </h2></h2> 
           <!-- <br> -->
           <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
             Unlock lightning-fast productivity and seamless integration 🚀            </p>
