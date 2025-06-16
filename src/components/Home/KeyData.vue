@@ -13,12 +13,13 @@
       <el-row justify="center" class="mb-12 sm:mb-16">
         <el-col :span="20" :xs="22">
           <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
-            With our Game Changing 
+            With our Game Changing
             <h2 class="text-blue-600 text-3xl sm:text-5xl md:text-6xl font-bold mt-4">Agentic Solutions
-          </h2></h2> 
+          </h2></h2>
           <!-- <br> -->
           <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
-            Unlock lightning-fast productivity and seamless integration 🚀            </p>
+            Unlock lightning-fast productivity and seamless integration 🚀
+          </p>
         </el-col>
       </el-row>
 
@@ -58,14 +59,14 @@
           <el-button
             circle
             class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100"
-            @click="scrollLeft"
+            @click="scrollLeftFn"
           >
             <el-icon><arrow-left /></el-icon>
           </el-button>
           <el-button
             circle
             class="pointer-events-auto bg-white shadow-md opacity-75 hover:opacity-100"
-            @click="scrollRight"
+            @click="scrollRightFn"
           >
             <el-icon><arrow-right /></el-icon>
           </el-button>
