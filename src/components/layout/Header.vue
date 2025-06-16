@@ -18,10 +18,10 @@
         </template>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item @click="router.push('/compliance-governance')">Compliance, Risk & Governance</el-dropdown-item>
-            <el-dropdown-item @click="router.push('/audit-automation')">Audit Automation</el-dropdown-item>
-            <el-dropdown-item @click="router.push('/knowledge-advisory')">Knowledge & Advisory</el-dropdown-item>
             <el-dropdown-item @click="router.push('/litigation-management')">Litigation Management</el-dropdown-item>
+            <el-dropdown-item @click="router.push('/compliance-governance')">Compliance & Governance</el-dropdown-item>
+            <el-dropdown-item @click="router.push('/knowledge-advisory')">Knowledge & Advisory</el-dropdown-item>
+            <el-dropdown-item @click="router.push('/audit-automation')">Audit & Due Diligence Automation</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>

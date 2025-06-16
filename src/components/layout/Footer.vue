@@ -40,10 +40,10 @@
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider">Product</h3>
           <h3 class="text-sm font-semibold text-gray-800 uppercase tracking-wider"></h3>
           <ul class="space-y-3 text-gray-500">
-                        <li><router-link to="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</router-link></li>
-            <li><router-link to="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</router-link></li>
-            <li><router-link to="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</router-link></li>
             <li><router-link to="/litigation-management" class="hover:text-blue-600 transition-colors">Litigation Management</router-link></li>
+            <li><router-link to="/compliance-governance" class="hover:text-blue-600 transition-colors">Compliance, Risk & Governance</router-link></li>
+            <li><router-link to="/knowledge-advisory" class="hover:text-blue-600 transition-colors">Knowledge & Advisory</router-link></li>
+            <li><router-link to="/audit-automation" class="hover:text-blue-600 transition-colors">Audit Automation</router-link></li>
           </ul>
         </div>
 
@@ -81,7 +81,7 @@
 
       <!-- Bottom section with copyright -->
       <el-row class="flex flex-col md:flex-row justify-between items-center border-gray-800">
-        
+
         <p class="text-gray-500 text-sm">
           &copy; 2025 Globetrotter Finance. All rights reserved.
         </p>
