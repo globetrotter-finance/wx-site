@@ -19,34 +19,33 @@
 
                 <div shadow="never" class="rounded-xl p-4 mb-5">
                   <h2 class="text-2xl font-semibold text-blue-700 mb-3">Information We Collect</h2>
-                  <el-row direction="vertical" :column="1"  >
+                  <el-row>
                     <!-- <el-row label="Personal Information"> -->
-                      <h2 class="font-bold">Personal Information</h2>
-                      We collect personal information that you provide to us when registering or using our services, such as your name, email address, and payment information.
-                                            <h2 class="font-bold">Usage Data</h2>
-</el-row>
-                      <el-row>
-We may collect data on how you use our services, including your IP address, browser type, and pages visited.
-                  
-                      </el-row>
+                      <h2 class="font-bold mb-2">Personal Information</h2>
+                      <span class="mb-2">
+                        We collect personal information that you provide to us when registering or using our services, such as your name, email address, and payment information.
+                      </span>
+                      <h2 class="font-bold">Usage Data</h2>
+                      <span class="mb-2">
+                        We may collect data on how you use our services, including your IP address, browser type, and pages visited.
+                      </span>
+                  </el-row>
                 </div>
 
                 <div shadow="never" class="rounded-xl p-4 mb-5">
                   <h2 class="text-2xl font-semibold text-blue-700 mb-3">Use of Information</h2>
-                  <el-row direction="vertical" :column="1"  >
+                  <el-row direction="vertical" :column="1">
                     <h4>
-
                       <h2 class="font-bold">Service Provision</h2>
-                      
-                      
-                      We use your personal information to provide and improve our services, process transactions, and communicate with you.
-                      
+                      <span class="mb-2">
+                        We use your personal information to provide and improve our services, process transactions, and communicate with you.
+                      </span>
                       <h2 class="font-bold">Compliance and Security</h2>
-                      
-                      We use your information to comply with legal obligations, mitigate fraud and security risks.
-                      
+                      <span class="mb-2">
+                        We use your information to comply with legal obligations, mitigate fraud and security risks.
+                      </span>
                     </h4>
-                    
+
                   </el-row>
                 </div>
 
@@ -60,7 +59,7 @@ We may collect data on how you use our services, including your IP address, brow
                 <div shadow="never" class="rounded-xl p-4 mb-5">
                   <h2 class="text-2xl font-semibold text-blue-700 mb-3">Your Rights</h2>
                   <p class="text-gray-700 text-base leading-relaxed">
-                    You have the right to access, update, and delete your personal information. You can exercise these rights by contacting us at  <el-link href="mailto:"> support@sarasfinance.com </el-link> 
+                    You have the right to access, update, and delete your personal information. You can exercise these rights by contacting us at  <el-link href="mailto:support@sarasfinance.com"> support@sarasfinance.com </el-link>
                   </p>
                 </div>
 

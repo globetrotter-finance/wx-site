@@ -54,44 +54,20 @@
               </el-col>
             </el-row>
 
-            <!-- Book Demo -->
-            <el-divider content-position="center">Book a Demo</el-divider>
-
-            <el-card shadow="hover" class="rounded-2xl p-8 my-16">
-              <div class="flex flex-col items-center text-center">
-                <el-icon size="40" class="mb-4 text-blue-600"><CircleCheckFilled /></el-icon>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4">Book a Demo</h3>
-                <p class="text-lg text-slate-600 mb-8">
-                  Use our <b>Request Demo</b> form to schedule a personalized walkthrough of the SARAS platform with our product specialists.
-                </p>
-                <el-button type="primary" size="large" class="px-10 py-3 text-lg">Request a Demo</el-button>
-              </div>
-            </el-card>
-
             <!-- Partnerships -->
             <el-divider content-position="center">Partnerships & Media</el-divider>
 
             <el-card shadow="hover" class="rounded-2xl p-8 my-16">
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">Partnerships & Media</h3>
               <div class="flex flex-col items-center text-center">
-                <el-icon size="40" class="mb-4 text-indigo-500"><CircleCheckFilled /></el-icon>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4">Partnerships & Media</h3>
                 <p class="text-lg text-slate-600">
-                  Interested in collaborating or covering SARAS? Reach out at
-                  <el-link href="mailto:partnerships@sarasplatform.com" type="info" class="ml-1 font-semibold">
-                    partnerships@sarasplatform.com
+                  Interested in collaborating with <span class="text-blue-600 fw-bold">Saras</span>?
+                </p>
+                <p class="text-lg text-slate-600">
+                  <el-link href="mailto:partners@sarasfinance.com" type="info" class="text-lg font-medium">
+                    partners@sarasfinance.com
                   </el-link>
                 </p>
-              </div>
-            </el-card>
-
-            <!-- CTA -->
-            <el-divider content-position="center"></el-divider>
-
-            <el-card shadow="always" class="rounded-2xl p-8 my-16 text-center bg-gradient-to-r from-blue-300 to-blue-300 text-white">
-              <h3 class="text-3xl font-bold mb-6">We’re here to simplify your workflow — let’s connect.</h3>
-              <div class="flex flex-col sm:flex-row justify-center gap-6 mt-4">
-                <el-button type="primary" size="large" class="bg-white text-blue-600 font-bold px-10 py-3">👉 Request a Demo</el-button>
-                <el-button size="large" plain class="border-white text-white font-bold px-10 py-3">Write to Us</el-button>
               </div>
             </el-card>
 
