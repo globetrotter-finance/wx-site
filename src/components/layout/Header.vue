@@ -28,7 +28,7 @@
             </el-dropdown-menu>
           </template>
         </el-dropdown>
-        <el-button @click="takeMeToApp" type="success" round>Go to Saras Portal</el-button>
+        <el-button @click="gotoApp" type="success" round>Go to Saras Portal</el-button>
         <el-button @click="router.push('/contact')" type="primary" round>Get Started</el-button>
       </div>
 
