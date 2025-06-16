@@ -2,7 +2,7 @@
   <div class="bg-white">
 
     <!-- Hero -->
-    <section class="py-28 border-b border-gray-100">
+    <section class="py-28 border-b border-gray-100 bg-gradient-to-tr from-white via-blue-50 to-slate-100">
       <div class="max-w-7xl mx-auto px-6">
         <div class="max-w-3xl">
           <h1 class="text-5xl font-bold tracking-tight text-gray-900 mb-6">
@@ -16,7 +16,7 @@
     </section>
 
     <!-- Mission & Who we are -->
-    <section class="py-24 bg-gray-50 border-b border-gray-100">
+    <section class="py-24 bg-gray-50 border-b border-gray-100 bg-white">
       <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 mb-4">
         <div>
           <h2 class="text-3xl font-semibold text-gray-900 mb-4">Our Mission</h2>
