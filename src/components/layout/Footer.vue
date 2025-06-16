@@ -88,6 +88,21 @@
         <p class="text-gray-500 text-sm">
           &copy; 2025 The Rita Software Services. All rights reserved.
         </p>
+        <el-row >
+          <el-tooltip content="CCPA Compliant" placement="top">
+            <img src="../../assets/ccpa.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+          </el-tooltip>
+          <el-tooltip content="GDPR Compliant" placement="top">
+            <img src="../../assets/gdpr.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+          </el-tooltip>
+          <el-tooltip content="SOC2 Compliant" placement="top">
+            <img src="../../assets/soc2.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+          </el-tooltip>
+          <el-tooltip content="ISO / IEC 27001:2022 Certified" placement="top">
+            <img src="../../assets/iso-iec.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+          </el-tooltip>
+        </el-row>
+
         <!-- <div class="flex space-x-6 mt-4 md:mt-0">
           <a href="#" class="text-sm text-gray-500 hover:text-blue-600 transition-colors">Privacy</a>
           <a href="#" class="text-sm text-gray-500 hover:text-blue-600 transition-colors">Terms</a>

@@ -12,10 +12,12 @@
       <!-- Section Header -->
       <el-row justify="center" class="mb-12 sm:mb-16">
         <el-col :span="20" :xs="22">
-          <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
-            With our Game Changing
-            <h2 class="text-blue-600 text-3xl sm:text-5xl md:text-6xl font-bold mt-4">Agentic Solutions
-          </h2></h2>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-800 text-center mb-10" style="line-height: 1.5em;">
+            With our Game Changing <span class="text-2xl sm:text-4xl md:text-5xl font-bold text-blue-600">Agentic Solutions</span>
+            which is built specially for finance and legal teams,
+            our AI solutions do not <span class="text-2xl sm:text-4xl md:text-5xl font-bold text-blue-600">hallucinate</span> and still remains creative.
+            It gives you the atmost accuracy with your enterprise data.
+          </h2>
           <!-- <br> -->
           <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
             Unlock lightning-fast productivity and seamless integration 🚀
@@ -83,7 +85,7 @@
             class="px-10 py-4 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl"
             @click="router.push('/contact')"
           >
-            Unlock Your Potential
+            👉 Talk to our Agentic Experts
           </el-button>
         </el-col>
       </el-row>
