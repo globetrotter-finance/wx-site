@@ -73,9 +73,12 @@
           <span class="text-blue-600 fw-bold">Saras</span> transforms complex documents and specialized knowledge into clear, intelligent, and well-reasoned insights.
         </p>
         <div class="flex justify-center flex-wrap gap-6">
-          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Knowledge Expert
-          </el-button>
+          <router-link to="/contact">
+
+            <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+              👉 Talk to our Knowledge Expert
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>
