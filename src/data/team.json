@@ -1,5 +1,17 @@
 [
   {
+    "name": "Aditya Kumar Saini",
+    "roleColor": "indigo-600",
+    "desc": "Full Stack - Intern",
+    "img": "/src/assets/LOGO.png"
+  },
+  {
+    "name": "Devansh Khandelwal",
+    "roleColor": "indigo-600",
+    "desc": "Full Stack - Intern",
+    "img": "/src/assets/LOGO.png"
+  },
+  {
     "name": "CP",
     "role": "Co-Founder & CEO",
     "roleColor": "blue-600",
@@ -26,19 +38,5 @@
     "roleColor": "green-600",
     "desc": "Brand, Content & Outreach",
     "img": "/src/assets/vue.svg"
-  },
-  {
-    "name": "Devansh Khandelwal",
-    "role": "Software Dev Intern",
-    "roleColor": "indigo-600",
-    "desc": "Full Stack & Integrations",
-    "img": "/src/assets/LOGO.png"
-  },
-  {
-    "name": "Aditya Kumar Saini",
-    "role": "Software Dev Intern",
-    "roleColor": "indigo-600",
-    "desc": "Frontend & UI/UX",
-    "img": "/src/assets/LOGO.png"
   }
 ]

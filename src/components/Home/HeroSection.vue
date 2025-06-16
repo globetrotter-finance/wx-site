@@ -12,7 +12,7 @@
         <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
           We are <span class="text-blue-600">redefining</span> how<br>
         </h2>
-                <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
+        <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-12">
           Legal, Audit & Finance Firms work
         </h2>
         <!-- <br> -->
@@ -22,7 +22,7 @@
         <p class="mt-10 text-center text-2xl">
           AI-powered, ISO-certified, and built for scale —
         </p>
-            
+
         <p class="mt-4 mb-6 text-center text-2xl">
           <span class="text-blue-600 fw-bold">Saras</span> helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
         </p>
@@ -45,8 +45,8 @@
           </div>
         </div> -->
 
-       
-                <div class="relative h-16 flex flex-col items-center justify-center mb-1 mt-5 overflow-hidden">
+
+        <div class="relative h-16 flex flex-col items-center justify-center mb-1 mt-15 overflow-hidden">
           <transition-group name="scroll-up" tag="div" class="relative w-full h-16 flex items-center justify-center">
             <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title absolute w-full h-full top-0 left-0 transition-transform duration-700">
               <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
