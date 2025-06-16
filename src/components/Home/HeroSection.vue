@@ -7,7 +7,7 @@
       <div class="absolute -bottom-10 sm:-bottom-20 right-1/4 w-48 sm:w-64 h-48 sm:h-64 bg-blue-200 rounded-full opacity-40 blur-3xl"></div>
     </div>
 
-    <el-row justify="center" class="mt-20 mb-10  sm:mb-16">
+    <el-row justify="center" class="mt-20">
       <el-col :xs="22" class="items-center justify-between">
         <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
           We are <span class="text-blue-600">redefining</span> how<br>
@@ -46,7 +46,7 @@
         </div> -->
 
 
-        <div class="relative h-16 flex flex-col items-center justify-center mb-1 mt-15 overflow-hidden">
+        <div class="relative h-16 flex flex-col items-center justify-center mt-15 overflow-hidden">
           <transition-group name="scroll-up" tag="div" class="relative w-full h-16 flex items-center justify-center">
             <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title absolute w-full h-full top-0 left-0 transition-transform duration-700">
               <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
@@ -54,7 +54,7 @@
             </div>
           </transition-group>
         </div>
- <div class="flex justify-center">
+        <div class="flex justify-center">
           <img src="../../assets/hero/home-hero-cropped.gif" />
         </div>
       </el-col>
