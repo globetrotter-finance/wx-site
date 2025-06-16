@@ -6,17 +6,17 @@
     <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-white via-blue-50 to-slate-100 px-4">
       <div class="max-w-6xl text-center">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-8">
-          Enterprise-Grade <span class="text-blue-600">Compliance, Risk & Governance Management</span>
+          Enterprise Grade
+        </h1>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-8">
+          <span class="text-blue-600">Compliance Tracking and Management</span>
         </h1>
         <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12">
-          Stay in control, reduce risk, and simplify compliance across the enterprise. SARAS transforms how organizations manage statutory and internal compliance by bringing all obligations, risks, and actions into a unified, real-time system.
+          Stay in control, reduce risk, and simplify compliance across your organisation. <span class="text-blue-600 fw-bold">Saras</span> transforms how organizations manage statutory and internal compliance by bringing all obligations, risks, and actions into a unified, real-time system.
         </p>
         <div class="flex justify-center gap-6 flex-wrap">
-          <el-button type="primary" size="large" class="px-8 py-3 text-base font-semibold bg-blue-600 hover:bg-blue-700">
-            👉 Request a Demo
-          </el-button>
-          <el-button size="large" class="px-8 py-3 text-base font-semibold border border-slate-300 text-slate-700 hover:bg-slate-100">
-            Talk to Compliance Experts
+          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+            👉 Talk to our Compliance Expert
           </el-button>
         </div>
       </div>
@@ -67,14 +67,11 @@
           Ready to simplify and secure your compliance process?
         </h2>
         <p class="text-lg md:text-xl mb-12">
-          SARAS gives your team the clarity, control, and confidence to manage risk — intelligently.
+          <span class="text-blue-600 fw-bold">Saras</span> gives your team the clarity, control, and confidence to manage risk — intelligently.
         </p>
         <div class="flex justify-center flex-wrap gap-6">
-          <el-button type="primary" size="large" class="bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 font-semibold">
-            👉 Request a Demo
-          </el-button>
-          <el-button size="large" plain class="border-white text-white hover:bg-white/10 px-8 py-3 font-semibold">
-            Talk to Compliance Experts
+          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+            👉 Talk to our Compliance Expert
           </el-button>
         </div>
       </div>

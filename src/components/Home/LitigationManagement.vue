@@ -6,7 +6,7 @@
     <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-white via-blue-50 to-slate-100 px-4">
       <div class="max-w-6xl text-center">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-          AI-Powered
+          AI Powered
         </h1>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-8">
           <span class="text-blue-600">Litigation Management</span>
@@ -16,7 +16,7 @@
         </p>
         <div class="flex justify-center gap-6 flex-wrap">
           <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Request a Demo
+            👉 Talk to our Litigation Expert
           </el-button>
         </div>
       </div>
@@ -74,7 +74,7 @@
         </p>
         <div class="flex justify-center flex-wrap gap-6">
           <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Request a Demo
+            👉 Talk to our Litigation Expert
           </el-button>
         </div>
       </div>
