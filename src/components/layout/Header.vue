@@ -41,15 +41,18 @@
 
     </el-row>
 
-    <el-drawer v-model="drawer" direction="rtl" size="100%" :with-header="false" append-to-body :z-index="9999">
-      <div class="p-4 flex flex-col h-full">
+    <el-drawer v-model="drawer" size="100%" append-to-body>
 
-        <el-link @click="router.push('/')" :underline="false" class="mb-4">
+      <template #header="{ close, titleId, titleClass }">
+        <el-link @click="router.push('/')" :underline="false">
           <img src="../../assets/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1" />
-          <span
-            class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent whitespace-nowrap">Saras
-            Finance</span>
+          <span class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent whitespace-nowrap">
+            Saras Finance
+          </span>
         </el-link>
+      </template>
+
+      <div class="p-4 flex flex-col h-full">
 
         <template v-if="!showProducts">
           <el-menu class="el-menu-vertical-demo flex" mode="vertical" :router="false" background-color="transparent"
@@ -64,10 +67,14 @@
           </el-menu>
         </template>
 
-        <div class="mt-auto flex flex-col ">
-          <el-button type="success" @click="gotoApp" class="mb-2">Go to Saras Portal</el-button>
-          <el-button type="primary" @click="navigateAndClose('/contact')">Get Started</el-button>
-        </div>
+        <el-row class="flex mt-4">
+          <el-col :span="24">
+            <el-button type="success" @click="gotoApp" plain text class="m-2">Go to Saras Portal</el-button>
+          </el-col>
+          <el-col :span="24">
+            <el-button type="primary" @click="navigateAndClose('/contact')" plain text class="m-2">Get Started</el-button>
+          </el-col>
+        </el-row>
 
       </div>
     </el-drawer>
