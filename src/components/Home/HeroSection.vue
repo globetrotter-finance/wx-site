@@ -117,11 +117,14 @@ const iconSize = '1em'; // Much smaller icon, close to text height
 // };
 
 const animatedTitles = [
-  'Compliance, Risk & Governance',
-  'Litigation Management',
-  'Knowledge & Advisory',
-  'Audits & Due Diligence',
-  'Agentic Automation Platform',
+  'Litigation Solved',
+  'Audits Done',
+  'Due Diligence Done',
+  'Tax Computations Solved',
+  'Compliance Tracked',
+  'Knowledge & Advisory Given',
+  'Depriciation Calculated',
+  'Valuation Done',
 ];
 const currentTitleIndex = ref(0);
 const currentTitle = ref(animatedTitles[0]);
