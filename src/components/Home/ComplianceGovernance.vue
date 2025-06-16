@@ -15,9 +15,12 @@
           Stay in control, reduce risk, and simplify compliance across your organisation. <span class="text-blue-600 fw-bold">Saras</span> transforms how organizations manage statutory and internal compliance by bringing all obligations, risks, and actions into a unified, real-time system.
         </p>
         <div class="flex justify-center gap-6 flex-wrap">
-          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Compliance Expert
-          </el-button>
+          <router-link to="/contact">
+
+            <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+              👉 Talk to our Compliance Expert
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>
@@ -70,10 +73,13 @@
           <span class="text-blue-600 fw-bold">Saras</span> gives your team the clarity, control, and confidence to manage risk — intelligently.
         </p>
         <div class="flex justify-center flex-wrap gap-6">
-          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Compliance Expert
-          </el-button>
-        </div>
+          <router-link to="/contact">
+
+            <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+              👉 Talk to our Compliance Expert
+            </el-button>
+          </router-link>
+          </div>
       </div>
     </section>
 

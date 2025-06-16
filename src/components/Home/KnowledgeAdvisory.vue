@@ -15,9 +15,12 @@
           Preserve your team’s expertise. Retrieve answers instantly. <span class="text-blue-600 fw-bold">Saras</span> Knowledge & Advisory tools turn your internal documentation, legal resources, and research material into a living, searchable knowledge system — powered by intelligent AI assistants trained to understand law, tax, and regulations.
         </p>
         <div class="flex justify-center gap-6 flex-wrap">
-          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Knowledge Expert
-          </el-button>
+          <router-link to="/contact">
+
+            <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+              👉 Talk to our Knowledge Expert
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>

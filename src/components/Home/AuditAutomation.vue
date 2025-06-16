@@ -18,9 +18,12 @@
           With AI-powered risk detection and real-time visibility, SARAS reduces manual effort and improves audit outcomes across departments.
         </p>
         <div class="flex justify-center gap-6 flex-wrap">
+          <router-link to="/contact">
           <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Audits Expert
-          </el-button>
+
+              👉 Talk to our Audits Expert
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>
@@ -73,9 +76,12 @@
           <span class="text-blue-600 fw-bold">Saras</span> gives your audit team the tools to track, detect, and deliver with confidence — powered by AI.
         </p>
         <div class="flex justify-center flex-wrap gap-6">
+          <router-link to="/contact">
           <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Audits Expert
-          </el-button>
+              👉 Talk to our Audits Expert
+
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>

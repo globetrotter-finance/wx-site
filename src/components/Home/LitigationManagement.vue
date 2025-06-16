@@ -15,9 +15,12 @@
           Manage legal complexities with speed, structure, and intelligence. <span class="text-blue-600 fw-bold">Saras</span> redefines litigation workflows by consolidating all notices, research, and drafting into one AI-enabled workspace. Save 100+ man-hours per case.
         </p>
         <div class="flex justify-center gap-6 flex-wrap">
-          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Litigation Expert
-          </el-button>
+          <router-link to="/contact">
+
+            <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+              👉 Talk to our Litigation Expert
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>
@@ -73,9 +76,12 @@
           Save 100+<sup>*</sup> man hours a week, Scale up, Move Faster.
         </p>
         <div class="flex justify-center flex-wrap gap-6">
-          <el-button type="primary" size="large" round class="px-8 py-3 text-base">
-            👉 Talk to our Litigation Expert
-          </el-button>
+          <router-link to="/contact">
+
+            <el-button type="primary" size="large" round class="px-8 py-3 text-base">
+              👉 Talk to our Litigation Expert
+            </el-button>
+          </router-link>
         </div>
       </div>
     </section>
