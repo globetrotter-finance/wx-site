@@ -25,7 +25,7 @@
     <!-- Features Section -->
     <section class="py-24 bg-white">
       <div class="max-w-6xl mx-auto px-4">
-        <!-- <h2 class="text-3xl font-bold text-slate-900 text-center mb-16">Features</h2> -->
+        <h2 class="text-3xl font-bold text-slate-900 text-center mb-16">Features</h2>
         <div class="grid gap-10 md:grid-cols-3">
           <div v-for="(feature, index) in features" :key="index" class="p-8">
             <div :class="feature.color" class="w-16 h-16 flex items-center justify-center  text-3xl mb-6">
