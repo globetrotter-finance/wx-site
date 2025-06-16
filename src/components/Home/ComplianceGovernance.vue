@@ -86,6 +86,30 @@ import Header from '../layout/Header.vue';
 import Footer from '../layout/Footer.vue';
 import { ElButton, ElIcon } from 'element-plus';
 import { CircleCheckFilled } from '@element-plus/icons-vue';
+import { useHead } from '@vueuse/head';
+useHead({
+  title: 'Compliance Management Software for Enterprises | SARAS',
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    {
+      name: 'description',
+      content: 'Track, manage, and automate regulatory and internal compliance with SARAS. Real-time dashboards and governance tools for audit readiness.'
+    },
+    {
+      name: 'keywords',
+      content: 'compliance management software, risk governance platform, regulatory compliance India, enterprise compliance tracking, audit-ready compliance system'
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'Compliance Management Software for Enterprises | SARAS' },
+    { property: 'og:description', content: 'Track, manage, and automate regulatory and internal compliance with SARAS. Real-time dashboards and governance tools for audit readiness.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://sarasfinance.com/compliance-governance' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://sarasfinance.com/compliance-governance' }
+  ]
+});
 
 const features = [
   {

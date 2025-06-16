@@ -86,6 +86,31 @@ import Header from '../layout/Header.vue';
 import Footer from '../layout/Footer.vue';
 import { ElButton, ElIcon } from 'element-plus';
 import { CircleCheckFilled } from '@element-plus/icons-vue';
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: 'Enterprise Legal Knowledge Base & AI Chatbot | SARAS',
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    {
+      name: 'description',
+      content: 'Centralize legal and tax knowledge. Use AI to search, retrieve, and explain complex documents and regulations with SARAS Knowledge & Advisory tools.'
+    },
+    {
+      name: 'keywords',
+      content: 'legal knowledge management software, AI legal chatbot, enterprise knowledge base for law firms, document interpretation tool, legal and tax advisory automation'
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'Enterprise Legal Knowledge Base & AI Chatbot | SARAS' },
+    { property: 'og:description', content: 'Centralize legal and tax knowledge. Use AI to search, retrieve, and explain complex documents and regulations with SARAS Knowledge & Advisory tools.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://sarasfinance.com/knowledge-advisory' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://sarasfinance.com/knowledge-advisory' }
+  ]
+});
 
 const features = [
   {

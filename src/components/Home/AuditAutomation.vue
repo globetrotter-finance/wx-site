@@ -89,6 +89,31 @@ import Header from '../layout/Header.vue';
 import Footer from '../layout/Footer.vue';
 import { ElButton, ElIcon } from 'element-plus';
 import { CircleCheckFilled } from '@element-plus/icons-vue';
+import { useHead } from '@vueuse/head';
+
+useHead({
+  title: 'Audit Automation Software for Finance & Compliance | SARAS',
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    {
+      name: 'description',
+      content: 'Automate audit workflows with SARAS. Identify risk areas, track audit readiness, and generate insights with AI-powered audit support tools.'
+    },
+    {
+      name: 'keywords',
+      content: 'audit automation software, internal audit workflow tools, audit readiness platform, AI audit assistant, enterprise audit management system'
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'Audit Automation Software for Finance & Compliance | SARAS' },
+    { property: 'og:description', content: 'Automate audit workflows with SARAS. Identify risk areas, track audit readiness, and generate insights with AI-powered audit support tools.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://sarasfinance.com/audit-automation' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://sarasfinance.com/audit-automation' }
+  ]
+});
 
 const features = [
   {
