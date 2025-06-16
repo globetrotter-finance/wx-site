@@ -79,7 +79,7 @@
             type="primary"
             round
             size="large"
-            class="px-10 py-4 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 bg-blue-600 hover:bg-blue-700"
+            class="px-10 py-4 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl"
             @click="router.push('/contact')"
           >
             Unlock Your Potential
@@ -160,25 +160,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.el-card:hover {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
 
-.el-card {
-  border-radius: 12px;
-
-}
-
-.el-button--primary {
-  background-color: #2563eb;
-  border-color: #2563eb;
-  padding: 14px 40px;
-}
-
-.el-button--primary:hover {
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
-}
 
 /* Horizontal Scroll Styling */
 .scrollbar-hidden {

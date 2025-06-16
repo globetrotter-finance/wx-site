@@ -17,7 +17,7 @@
             <span class="absolute -bottom-1.5 left-0 right-0 h-1.5 bg-blue-500 opacity-30 rounded-full"></span>
           </span>
         </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto mt-5">
+        <p class="text-gray-600 max-w-2xl mx-aut30o mt-5">
           Fragmented workflows. Manual processes. Compliance overload. Legal complexity.
         </p>
         <p class="text-gray-600 max-w-2xl mx-auto mt-5">
