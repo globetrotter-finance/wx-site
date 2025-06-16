@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 // import Home from '@/views/Home.vue';
 import Home from '../views/Home.vue';
 import Integration from '../views/Integration.vue';
@@ -42,10 +42,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-      scrollBehavior() {
-            document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
-            
-        }
+  scrollBehavior() {
+    document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+  }
 });
 
 export default router;
