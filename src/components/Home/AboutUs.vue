@@ -5,7 +5,7 @@
     <section class="py-28 border-b border-gray-100 bg-gradient-to-tr from-white via-blue-50 to-slate-100">
       <div class="max-w-7xl mx-auto px-6">
         <div class="max-w-3xl">
-          <h1 class="text-5xl font-bold tracking-tight text-gray-900 mb-6">
+          <h1 class="text-5xl font-bold tracking-tight text-gray-900 mb-6 mt-6">
             We are building and automating most of the operations in finance and legal domain.
           </h1>
           <p class="text-xl text-gray-600 leading-relaxed">
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="max-w-5xl mx-auto px-6 text-center">
+      <div class="max-w-5xl mx-auto px-6 text-center mt-4">
         <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Vision</h2>
         <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
           Build the global intelligence infrastructure that powers autonomous enterprise workflows across every regulated industry — replacing traditional software with continuous agentic decision loops.
