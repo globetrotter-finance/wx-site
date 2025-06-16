@@ -16,7 +16,7 @@
             With our Game Changing <span class="text-2xl sm:text-4xl md:text-5xl font-bold text-blue-600">Agentic Solutions</span>
             which is built specially for finance and legal teams,
             our AI solutions do not <span class="text-2xl sm:text-4xl md:text-5xl font-bold text-blue-600">hallucinate</span> and still remains creative.
-            It gives you the atmost accuracy with your enterprise data.
+            It gives you the atmost accuracy with your <span class="text-2xl sm:text-4xl md:text-5xl font-bold text-blue-600">enterprise data</span>.
           </h2>
           <!-- <br> -->
           <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
