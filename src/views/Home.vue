@@ -12,6 +12,7 @@ import OurTechnology from '../components/Home/OurTechnology.vue';
 import IndustryApplication from '../components/Home/IndustryApplication.vue';
 import KeyData from '../components/Home/KeyData.vue';
 import KeyData2 from '../components/Home/KeyData2.vue';
+import AboutUsMini from '../components/Home/AboutUsMini.vue';
 
 useHead({
   title: 'Saras Finance | AI-Powered Legal, Compliance & Finance Platform',
@@ -77,6 +78,6 @@ useHead({
   <!-- <TestimonialSection /> -->
   <!-- <CTASection /> -->
   <!-- <OurTechnology /> -->
-  <AboutUs />
+  <AboutUsMini />
   <Footer />
 </template>

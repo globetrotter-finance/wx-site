@@ -1,91 +1,86 @@
 <template>
+  <div>
 
-  <div class="bg-gradient-to-br from-blue-50 via-white to-blue-50 font-sans pb-40 pt-40">
-    <!-- Solutions Header -->
-    <section class="relative overflow-hidden">
-      <div class="container mx-auto relative z-10">
+    <el-container class="bg-gradient-to-br from-blue-50 via-white to-blue-50 min-h-screen py-24">
+      <el-main>
+        <el-row justify="center">
+          <el-col :xs="24" :sm="20" :md="16" :lg="12" class="text-center">
 
-        <div class="text-center">
-          <div class="space-y-10">
-            <div>
-              <h1 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                Get in Touch <span class="block text-blue-600 m-4">with Our Experts</span>
-              </h1>
-              <p>We’re here to help you scale your business with tailored SaaS solutions.</p>
-              <p>We are an email away, Ping Us!</p>
-            </div>
+            <!-- Title -->
+            <h1 class="text-5xl font-extrabold text-slate-900 mb-4">
+              Get in Touch
+            </h1>
+            <h2 class="text-2xl font-semibold mb-10">
+              with the <span class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">Saras Finance</span> Team
+            </h2>
 
-            <el-row class="flex-col">
-              <el-col class="items-center">
-                <p class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                  <a href="mailto:sales@sarasfinance.com">sales@sarasfinance.com</a>
-                </p>
+            <!-- Intro -->
+            <p class="text-lg text-slate-600 mb-16 max-w-3xl mx-auto">
+              Whether you’re exploring automation for legal operations, planning a compliance overhaul, or want to see <span class="text-blue-600 fw-bold">Saras</span> in action — we’re ready to help.
+            </p>
+
+            <!-- Contact Info -->
+            <el-divider content-position="center">Contact Us</el-divider>
+
+            <el-row :gutter="40" justify="center" class="mt-10 mb-16">
+              <el-col :xs="24" :sm="12" :md="8">
+                <el-card shadow="hover" class="rounded-2xl p-8 text-center">
+                  <el-icon size="40" class="mb-4 text-blue-600"><Briefcase /></el-icon>
+                  <div class="text-xl font-semibold text-blue-700 mb-2">Sales & Demo</div>
+                  <el-link href="mailto:sales@sarasfinance.com" type="primary" class="text-lg font-medium">
+                    sales@sarasfinance.com
+                  </el-link>
+                </el-card>
+              </el-col>
+
+              <el-col :xs="24" :sm="12" :md="8">
+                <el-card shadow="hover" class="rounded-2xl p-8 text-center">
+                  <el-icon size="40" class="mb-4 text-green-600"><Help /></el-icon>
+                  <div class="text-xl font-semibold text-green-700 mb-2">Support</div>
+                  <el-link href="mailto:support@sarasfinance.com" type="success" class="text-lg font-medium">
+                    support@sarasfinance.com
+                  </el-link>
+                </el-card>
+              </el-col>
+
+              <el-col :xs="24" :sm="12" :md="8">
+                <el-card shadow="hover" class="rounded-2xl p-8 text-center">
+                  <el-icon size="40" class="mb-4 text-yellow-600"><Iphone /></el-icon>
+                  <div class="text-xl font-semibold text-yellow-700 mb-2">Phone</div>
+                  <el-link href="tel:+919501289879" type="warning" class="text-lg font-medium">
+                    +91 95012 89879
+                  </el-link>
+                </el-card>
               </el-col>
             </el-row>
 
-          </div>
-        </div>
+            <!-- Partnerships -->
+            <el-divider content-position="center">Partnerships & Media</el-divider>
 
-      </div>
+            <el-card shadow="hover" class="rounded-2xl p-8 my-16">
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">Partnerships & Media</h3>
+              <div class="flex flex-col items-center text-center">
+                <p class="text-lg text-slate-600">
+                  Interested in collaborating with <span class="text-blue-600 fw-bold">Saras</span>?
+                </p>
+                <p class="text-lg text-slate-600">
+                  <el-link href="mailto:partners@sarasfinance.com" type="info" class="text-lg font-medium">
+                    partners@sarasfinance.com
+                  </el-link>
+                </p>
+              </div>
+            </el-card>
 
-    </section>
+          </el-col>
+        </el-row>
+      </el-main>
+    </el-container>
   </div>
-
 </template>
 
 <script setup>
-// import { reactive, ref } from 'vue'
-// import { ElMessage } from 'element-plus'
-
-// const contactFormRef = ref(null)
-
-// const contactForm = reactive({
-//   firstName: '',
-//   lastName: '',
-//   email: '',
-//   phone: '',
-//   company: '',
-//   message: '',
-//   agreedToTerms: false
-// })
-
-// const formRules = {
-//   firstName: [{ required: true, message: 'First name is required', trigger: 'blur' }],
-//   lastName: [{ required: true, message: 'Last name is required', trigger: 'blur' }],
-//   email: [
-//     { required: true, message: 'Email is required', trigger: 'blur' },
-//     { type: 'email', message: 'Please enter a valid email', trigger: 'blur' }
-//   ],
-//   phone: [{ required: true, message: 'Phone number is required', trigger: 'blur' }],
-//   message: [{ required: true, message: 'Please include a message', trigger: 'blur' }]
-// }
-
-// const submitForm = async () => {
-//   if (!contactFormRef.value) return
-
-//   try {
-//     await contactFormRef.value.validate()
-//     console.log('Form submitted:', contactForm)
-//     ElMessage({
-//       message: 'Thank you! We’ll get back to you within 24 hours.',
-//       type: 'success'
-//     })
-//     contactFormRef.value.resetFields()
-//   } catch (error) {
-//     ElMessage({
-//       message: 'Please fill out all required fields correctly.',
-//       type: 'error'
-//     })
-//   }
-// }
-
-const initiateCall = () => {
-  // Placeholder for scheduling logic (e.g., open a modal or redirect to a calendar tool)
-  window.location.href = 'tel:+919501289879';
-}
-
-const sendEmail = () => {
-  // Placeholder for email action (e.g., open mail client)
-  window.location.href = 'mailto:sales@sarasfinance.com'
-}
+import Header from '../layout/Header.vue';
+import Footer from '../layout/Footer.vue';
+import { ElIcon, ElLink, ElDivider, ElContainer, ElMain, ElRow, ElCol, ElCard, ElButton } from 'element-plus';
+import { Briefcase, Help, Iphone } from '@element-plus/icons-vue';
 </script>

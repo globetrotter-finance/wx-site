@@ -1,127 +1,75 @@
-<!-- AboutUs.vue -->
 <template>
-    <section class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div class="container mx-auto max-w-6xl">
-        <!-- Section Header -->
-        <el-row justify="center" class="mb-12 sm:mb-16">
-          <el-col :span="20" :xs="22">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 text-center">
-              About <span class="bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">Saras Finance</span>
-            </h2>
-            <p class="text-gray-600 text-base sm:text-lg md:text-xl mt-4 text-center max-w-3xl mx-auto">
-              Discover the team and vision driving intelligent automation forward
-            </p>
-          </el-col>
-        </el-row>
+  <div class="bg-white">
 
-        <!-- Content Cards -->
-        <el-row :gutter="20" class="mb-12">
-          <!-- Our Mission -->
-          <el-col :xs="24" :md="12" class="mb-6 md:mb-0">
-            <el-card
-              shadow="hover"
-              class="h-full bg-white border-gray-100"
-              :body-style="{ padding: '24px' }"
-            >
-              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
-              <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
-                At Saras Finance, we believe that every business - regardless of industry - deserves the power to innovate and operate at the speed of thought.
-<br> <br>
-Our mission is to empower organizations worldwide with tools that transform labor-intensive processes into smart, efficient workflows which is truly powered by Agentic Engines that work for your business.
-              </p>
-            </el-card>
-          </el-col>
-
-          <!-- Who We Are -->
-          <el-col :xs="24" :md="12">
-            <el-card
-              shadow="hover"
-              class="h-full bg-white border-gray-100"
-              :body-style="{ padding: '24px' }"
-            >
-              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
-              <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
-                Founded by a team of industry experts in FinTech, Legal Domain, our journey began with a simple goal: to eliminate the traditional bottlenecks of process validation. <br> <br>
-
-Today, our technology serves a diverse range of domains, be it Identity Fraud Prevention, to Anti Money Laundering or to Finance Team.
-              </p>
-            </el-card>
-          </el-col>
-        </el-row>
-
-        <!-- Our Vision -->
-        <!-- <el-row justify="center" class="mb-12">
-          <el-col :span="20" :xs="22">
-            <el-card
-              shadow="hover"
-              class="bg-white border-gray-100"
-              :body-style="{ padding: '32px' }"
-            >
-              <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 text-center">Our Vision</h3>
-              <p class="text-gray-600 text-sm sm:text-base leading-relaxed text-center">
-                To be the catalyst for a new era of intelligent automation, where businesses can focus on strategic growth rather than routine operations.
-              </p>
-            </el-card>
-          </el-col>
-        </el-row> -->
-
-        <!-- CTA -->
-        <!-- <el-row justify="center">
-          <el-col :span="24" class="text-center">
-            <el-button
-              type="primary"
-              round
-              size="large"
-              class="px-8 py-3 text-base sm:text-lg font-medium shadow-md hover:shadow-lg transition-all"
-              @click="handleReadStory"
-            >
-              Read Our Full Story
-            </el-button>
-          </el-col>
-        </el-row> -->
+    <!-- Hero -->
+    <section class="py-28 border-b border-gray-100 bg-gradient-to-tr from-white via-blue-50 to-slate-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl">
+          <h1 class="text-5xl font-bold tracking-tight text-gray-900 mb-6 mt-6">
+            We are building and automating most of the operations in finance and legal domain.
+          </h1>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            <span class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">Saras Finance</span> delivers enterprise-grade AI agents that eliminate operational drag, automate compliance, and unlock scale for modern finance and legal teams.
+          </p>
+        </div>
       </div>
     </section>
-  </template>
 
-  <script>
-  export default {
-    name: 'AboutUs',
-    methods: {
-      handleReadStory() {
-        // Add your navigation logic here, e.g., to a full story page
-        this.$router.push('/about-story');
-      }
-    }
-  }
-  </script>
+    <!-- Mission & Who we are -->
+    <section class="py-24 bg-gray-50 border-b border-gray-100 bg-white">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 mb-4">
+        <div>
+          <h2 class="text-3xl font-semibold text-gray-900 mb-4">Our Mission</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            We empower enterprise finance and legal operations through self-governing agentic systems that execute, monitor and optimize high-stakes processes at scale — reducing human error, accelerating decisions, and ensuring compliance.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-3xl font-semibold text-gray-900 mb-4">Who We Are</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Founded by domain experts in FinTech, LegalTech, and AI infrastructure, Saras Finance brings together deep experience in automation, enterprise SaaS architecture, fraud prevention, and modern compliance stacks.
+          </p>
+        </div>
+      </div>
 
-  <style scoped>
-  /* Custom styles to match your website's aesthetic */
-  .el-card {
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
+      <div class="max-w-5xl mx-auto px-6 text-center mt-4">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Vision</h2>
+        <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          Build the global intelligence infrastructure that powers autonomous enterprise workflows across every regulated industry — replacing traditional software with continuous agentic decision loops.
+        </p>
+      </div>
+    </section>
 
-  .el-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-  }
+    <!-- Leadership Team
+    <section class="py-24 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12">Meet <span class="bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">Saras Finance</span> Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
+          <template v-for="person in team" :key="person.name">
+            <div class="flex flex-col items-center">
+              <img :src="person.img" class="w-28 h-28 rounded-full mb-4 border border-gray-300" />
+              <div class="text-lg font-semibold text-gray-900">{{ person.name }}</div>
+              <div class="text-blue-600 text-sm mb-2">{{ person.role }}</div>
+              <p class="text-sm text-gray-500 leading-relaxed text-center">{{ person.desc }}</p>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section> -->
 
-  .el-button--primary {
-    background-color: #2563eb;
-    border-color: #2563eb;
-  }
+  </div>
+</template>
 
-  .el-button--primary:hover {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
-    transform: translateY(-2px);
-  }
+<script setup>
+import Header from '../layout/Header.vue'
+import Footer from '../layout/Footer.vue'
+import { ref, onMounted } from 'vue'
+import { ElButton } from 'element-plus'
 
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .el-card {
-      margin-bottom: 16px;
-    }
-  }
-  </style>
+const team = ref([])
+
+onMounted(async () => {
+  const res = await fetch('/src/data/team.json')
+  team.value = await res.json()
+})
+</script>

@@ -18,10 +18,13 @@
           </span>
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto mt-5">
-          Fragmented workflows. Manual processes. Compliance overload. Legal complexity.
+          From automated compliance tracking to litigation support and knowledge management — we bring intelligence to your most complex workflows.
         </p>
         <p class="text-gray-600 max-w-2xl mx-auto mt-5">
-          Saras is your unified digital workspace that simplifies the most challenging operations in Legal, Audit, and Finance.
+          <span class="text-blue-600 fw-bold">Saras</span> is your unified digital workspace that simplifies the most challenging operations in Legal, Audit, and Finance.
+        </p>
+        <p class="text-gray-600 max-w-2xl mx-auto mt-5">
+          <span class="text-blue-600 fw-bold">Saras</span> combines deep industry insight with cutting-edge automation.
         </p>
       </div>
 

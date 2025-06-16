@@ -7,7 +7,7 @@
       <div class="absolute -bottom-10 sm:-bottom-20 right-1/4 w-48 sm:w-64 h-48 sm:h-64 bg-blue-200 rounded-full opacity-40 blur-3xl"></div>
     </div>
 
-    <el-row justify="center" class="mt-30 mb-10  sm:mb-16">
+    <el-row justify="center" class="mt-20">
       <el-col :xs="22" class="items-center justify-between">
         <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8">
           We are <span class="text-blue-600">redefining</span> how<br>
@@ -16,10 +16,14 @@
           Legal, Audit & Finance Firms work
         </h2>
         <!-- <br> -->
-        <p class="mt-10 text-center">
+        <!-- Animated Titles Start -->
+
+        <!-- Animated Titles End -->
+        <p class="mt-10 text-center text-2xl">
           AI-powered, ISO-certified, and built for scale —
         </p>
-        <p class="mt-4 text-center">
+
+        <p class="mt-4 mb-6 text-center text-2xl">
           <span class="text-blue-600 fw-bold">Saras</span> helps you automate, analyze, and manage everything from litigation to compliance and knowledge.
         </p>
 
@@ -41,10 +45,18 @@
           </div>
         </div> -->
 
-        <div class="flex justify-center mt-5">
-          <img src="../../assets/hero/home-hero.gif" />
-        </div>
 
+        <div class="relative h-16 flex flex-col items-center justify-center mt-15 overflow-hidden">
+          <transition-group name="scroll-up" tag="div" class="relative w-full h-16 flex items-center justify-center">
+            <div v-for="(title, idx) in [currentTitle]" :key="title" class="flex items-center justify-center gap-2 text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 animated-title absolute w-full h-full top-0 left-0 transition-transform duration-700">
+              <el-icon color="#22c55e" :size="iconSize" class="tick-icon"><CircleCheckFilled /></el-icon>
+              <span>{{ title }}</span>
+            </div>
+          </transition-group>
+        </div>
+        <div class="flex justify-center">
+          <img src="../../assets/hero/home-hero-cropped.gif" />
+        </div>
       </el-col>
     </el-row>
 
@@ -53,12 +65,13 @@
 
 <script setup>
 import { ref, computed, onMounted, watchEffect } from 'vue';
-import { ElCheckbox } from 'element-plus';
+import { ElCheckbox, ElIcon } from 'element-plus';
+import { CircleCheckFilled } from '@element-plus/icons-vue';
 
 import { useRouter } from 'vue-router';
 const router = useRouter();
 
-
+const iconSize = '1em'; // Much smaller icon, close to text height
 
 // Tasks array with text and checked status
 // const tasks = ref([
@@ -103,6 +116,25 @@ const router = useRouter();
 //   isTaskChanging.value = true; // Re-add the animation class to trigger animation
 // };
 
+const animatedTitles = [
+  'Litigation Solved',
+  'Audits Done',
+  'Due Diligence Done',
+  'Tax Computations Solved',
+  'Compliance Tracked',
+  'Knowledge & Advisory Given',
+  'Depriciation Calculated',
+  'Valuation Done',
+];
+const currentTitleIndex = ref(0);
+const currentTitle = ref(animatedTitles[0]);
+
+onMounted(() => {
+  setInterval(() => {
+    currentTitleIndex.value = (currentTitleIndex.value + 1) % animatedTitles.length;
+    currentTitle.value = animatedTitles[currentTitleIndex.value];
+  }, 2500); // Much longer interval (2.5s)
+});
 </script>
 
 <style scoped>
@@ -187,5 +219,48 @@ const router = useRouter();
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* Animation for title scrolling */
+.scroll-up-enter-active, .scroll-up-leave-active {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.scroll-up-enter-from {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.scroll-up-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-up-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-up-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.tick-icon {
+  display: flex;
+  align-items: center;
+  height: 1em;
+}
+
+.animated-title {
+  font-size: 2em !important;
+  line-height: 1.1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 </style>

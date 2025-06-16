@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Aditya Kumar Saini",
+    "roleColor": "indigo-600",
+    "desc": "Full Stack - Intern",
+    "img": "/src/assets/LOGO.png"
+  },
+  {
+    "name": "Devansh Khandelwal",
+    "roleColor": "indigo-600",
+    "desc": "Full Stack - Intern",
+    "img": "/src/assets/LOGO.png"
+  },
+  {
+    "name": "CP",
+    "role": "Co-Founder & CEO",
+    "roleColor": "blue-600",
+    "desc": "Vision, Product & LegalTech",
+    "img": "/src/assets/hero/Hero01.png"
+  },
+  {
+    "name": "CP",
+    "role": "Co-Founder & CTO",
+    "roleColor": "blue-600",
+    "desc": "Technology, AI & Platform",
+    "img": "/src/assets/hero/home-hero-cropped.gif"
+  },
+  {
+    "name": "Robert",
+    "role": "Co-Founder & COO",
+    "roleColor": "blue-600",
+    "desc": "Operations & Customer Success",
+    "img": "/src/assets/hero/home-hero.gif"
+  },
+  {
+    "name": "CP",
+    "role": "Marketing Lead",
+    "roleColor": "green-600",
+    "desc": "Brand, Content & Outreach",
+    "img": "/src/assets/vue.svg"
+  }
+]
