@@ -39,7 +39,7 @@
     </section>
 
     <!-- Benefits & Ideal For -->
-    <section class="py-24 bg-slate-50">
+    <section class="py-24 bg-gradient-to-tr from-white via-blue-50 to-slate-100">
       <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16">
         <div>
           <h2 class="text-2xl font-bold text-slate-900 mb-8">Benefits</h2>
@@ -61,7 +61,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-blue-300 to-blue-300 text-white text-center">
+    <section class="py-24 bg-white text-center">
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
           Give your legal team a smarter way to manage cases.

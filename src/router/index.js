@@ -42,8 +42,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-          scrollBehavior() {
+      scrollBehavior() {
             document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+            
         }
 });
 
