@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build-verify": "node build-and-verify.js"
+    "build-verify": "node build-and-verify.js",
+    "deploy-prepare": "node deploy-prepare.js"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",

@@ -31,14 +31,35 @@ export default defineNuxtConfig({
     transpile: ['element-plus/es']
   },
 
-  // Vite configuration for proper asset handling
+  // Vite configuration for proper asset handling and chunking
   vite: {
     build: {
       rollupOptions: {
         output: {
-          manualChunks: undefined
+          manualChunks: undefined,
+          chunkFileNames: 'js/[name]-[hash].js',
+          entryFileNames: 'js/[name]-[hash].js',
+          assetFileNames: 'assets/[name]-[hash].[ext]'
         }
-      }
+      },
+      chunkSizeWarningLimit: 1000
+    },
+    optimizeDeps: {
+      include: ['element-plus/es']
     }
+  },
+
+  // Experimental features for better static generation
+  experimental: {
+    payloadExtraction: false
+  },
+
+  // SSR configuration
+  ssr: true,
+
+  // Route rules for better static generation
+  routeRules: {
+    '/': { prerender: true },
+    '/**': { prerender: true }
   }
 })

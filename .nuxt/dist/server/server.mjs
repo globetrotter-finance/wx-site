@@ -379,67 +379,67 @@ const _routes = [
   {
     name: "blogs",
     path: "/blogs",
-    component: () => import("./_nuxt/blogs-DIBeF2nd.js")
+    component: () => import("./js/blogs-8IRR1oPt.js")
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-ClIBnTY6.js")
+    component: () => import("./js/index-dYdROCP0.js")
   },
   {
     name: "terms",
     path: "/terms",
-    component: () => import("./_nuxt/terms-BMOCDmYC.js")
+    component: () => import("./js/terms-3RSEHlyn.js")
   },
   {
     name: "aboutus",
     path: "/aboutus",
-    component: () => import("./_nuxt/aboutus-CumLqKvT.js")
+    component: () => import("./js/aboutus-CgMabM8z.js")
   },
   {
     name: "contact",
     path: "/contact",
-    component: () => import("./_nuxt/contact-4bjbD4gZ.js")
+    component: () => import("./js/contact-CFQyf3Gs.js")
   },
   {
     name: "privacy",
     path: "/privacy",
-    component: () => import("./_nuxt/privacy-DinqZOB9.js")
+    component: () => import("./js/privacy-B8IVEFkz.js")
   },
   {
     name: "solutions",
     path: "/solutions",
-    component: () => import("./_nuxt/solutions-COrHNfR7.js")
+    component: () => import("./js/solutions-DO3aphqm.js")
   },
   {
     name: "integration",
     path: "/integration",
-    component: () => import("./_nuxt/integration-DPrOouE7.js")
+    component: () => import("./js/integration-DQvqy9An.js")
   },
   {
     name: "audit-automation",
     path: "/audit-automation",
-    component: () => import("./_nuxt/audit-automation-BAQ3OI2m.js")
+    component: () => import("./js/audit-automation-D69tSGsO.js")
   },
   {
     name: "agentic-solutions",
     path: "/agentic-solutions",
-    component: () => import("./_nuxt/agentic-solutions-BkRg8sIz.js")
+    component: () => import("./js/agentic-solutions-BQP_oTZ4.js")
   },
   {
     name: "knowledge-advisory",
     path: "/knowledge-advisory",
-    component: () => import("./_nuxt/knowledge-advisory-YkhWwteK.js")
+    component: () => import("./js/knowledge-advisory-DCBC-vm7.js")
   },
   {
     name: "compliance-governance",
     path: "/compliance-governance",
-    component: () => import("./_nuxt/compliance-governance-Cn2J_3YZ.js")
+    component: () => import("./js/compliance-governance-CCHvm1Pv.js")
   },
   {
     name: "litigation-management",
     path: "/litigation-management",
-    component: () => import("./_nuxt/litigation-management-KsqTicsx.js")
+    component: () => import("./js/litigation-management-W5pKe0So.js")
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -1122,8 +1122,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import("./_nuxt/error-404-CYfHvwuW.js"));
-    const _Error = defineAsyncComponent(() => import("./_nuxt/error-500-DhF5blVK.js"));
+    const _Error404 = defineAsyncComponent(() => import("./js/error-404-vcaOx3VM.js"));
+    const _Error = defineAsyncComponent(() => import("./js/error-500-CLIyKK5V.js"));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));

@@ -640,7 +640,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "880cadae-535c-4460-9807-baae09afdde9",
+    "buildId": "20012ca3-b855-4bb4-91ab-00f7bbeb5059",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -649,6 +649,12 @@ const _inlineRuntimeConfig = {
     "routeRules": {
       "/__nuxt_error": {
         "cache": false
+      },
+      "/": {
+        "prerender": true
+      },
+      "/**": {
+        "prerender": true
       },
       "/_nuxt/builds/meta/**": {
         "headers": {
@@ -1243,5 +1249,5 @@ const localFetch = nitroApp.localFetch;
 const closePrerenderer = () => nitroApp.hooks.callHook("close");
 trapUnhandledNodeErrors();
 
-export { useStorage as a, useNitroApp as b, closePrerenderer as c, defineRenderHandler as d, getRouteRules as g, localFetch as l, useRuntimeConfig as u };
+export { useNitroApp as a, closePrerenderer as c, defineRenderHandler as d, getRouteRules as g, localFetch as l, useRuntimeConfig as u };
 //# sourceMappingURL=nitro.mjs.map
