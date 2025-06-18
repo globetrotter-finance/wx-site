@@ -12,4 +12,33 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config.js',
     viewer: true,                  // enables live Tailwind viewer at /_tailwind
   },
+
+  // Configuration for manual deployment to separate repo
+  app: {
+    baseURL: '/',
+    buildAssetsDir: '/_nuxt/',
+  },
+
+  // Static site generation configuration
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
+
+  // Build configuration
+  build: {
+    transpile: ['element-plus/es']
+  },
+
+  // Vite configuration for proper asset handling
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: undefined
+        }
+      }
+    }
+  }
 })

@@ -1,9 +1,12 @@
 import { ssrRenderComponent, ssrRenderAttrs, ssrRenderList, ssrRenderVNode, ssrInterpolate } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue/server-renderer/index.mjs';
-import { H as Header, _ as _sfc_main$3 } from './Footer-bpAE6knL.mjs';
-import { ElStep, ElSteps, ElButton } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/element-plus/es/index.mjs';
-import { Link, Clock, HomeFilled } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@element-plus/icons-vue/dist/index.js';
-import { resolveComponent, mergeProps, withCtx, createTextVNode, createBlock, openBlock, createVNode, resolveDynamicComponent, useSSRContext } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue/index.mjs';
-import { _ as _export_sfc } from './server.mjs';
+import { H as Header, _ as _sfc_main$5 } from './Footer-bpAE6knL.mjs';
+import { Check, Close, Link, Clock, HomeFilled } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@element-plus/icons-vue/dist/index.js';
+import { isVNode, shallowRef, defineComponent, getCurrentInstance, watch, provide, createElementBlock, openBlock, normalizeClass, unref, renderSlot, ref, inject, onMounted, onBeforeUnmount, reactive, computed, normalizeStyle, createCommentVNode, createElementVNode, createBlock, withCtx, resolveDynamicComponent, createVNode, toDisplayString, createTextVNode, resolveComponent, mergeProps, useSSRContext } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue/index.mjs';
+import { _ as _export_sfc$1 } from './server.mjs';
+import { b as buildProps, i as isNumber, _ as _export_sfc, u as useNamespace, E as ElIcon, a as withNoopInstall, w as withInstall } from '../_/index.mjs';
+import { isArray } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@vue/shared/dist/shared.cjs.prod.js';
+import { i as iconPropType } from '../_/icon.mjs';
+import { E as ElButton } from '../_/index2.mjs';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue-router/dist/vue-router.node.mjs';
 import '../_/renderer.mjs';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue-bundle-renderer/dist/runtime.mjs';
@@ -31,6 +34,337 @@ import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/nuxt/no
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/devalue/index.js';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/nuxt/node_modules/unhead/dist/utils.mjs';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/nuxt/node_modules/unhead/dist/plugins.mjs';
+import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/lodash-unified/import.js';
+import '../_/use-global-config.mjs';
+import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@vueuse/core/index.mjs';
+import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@ctrl/tinycolor/dist/public_api.js';
+
+const CHANGE_EVENT = "change";
+
+const flattedChildren = (children) => {
+  const vNodes = isArray(children) ? children : [children];
+  const result = [];
+  vNodes.forEach((child) => {
+    var _a;
+    if (isArray(child)) {
+      result.push(...flattedChildren(child));
+    } else if (isVNode(child) && ((_a = child.component) == null ? void 0 : _a.subTree)) {
+      result.push(child, ...flattedChildren(child.component.subTree));
+    } else if (isVNode(child) && isArray(child.children)) {
+      result.push(...flattedChildren(child.children));
+    } else if (isVNode(child) && child.shapeFlag === 2) {
+      result.push(...flattedChildren(child.type()));
+    } else {
+      result.push(child);
+    }
+  });
+  return result;
+};
+
+const getOrderedChildren = (vm, childComponentName, children) => {
+  const nodes = flattedChildren(vm.subTree).filter((n) => {
+    var _a;
+    return isVNode(n) && ((_a = n.type) == null ? void 0 : _a.name) === childComponentName && !!n.component;
+  });
+  const uids = nodes.map((n) => n.component.uid);
+  return uids.map((uid) => children[uid]).filter((p) => !!p);
+};
+const useOrderedChildren = (vm, childComponentName) => {
+  const children = {};
+  const orderedChildren = shallowRef([]);
+  const addChild = (child) => {
+    children[child.uid] = child;
+    orderedChildren.value = getOrderedChildren(vm, childComponentName, children);
+  };
+  const removeChild = (uid) => {
+    delete children[uid];
+    orderedChildren.value = orderedChildren.value.filter((children2) => children2.uid !== uid);
+  };
+  return {
+    children: orderedChildren,
+    addChild,
+    removeChild
+  };
+};
+
+const stepsProps = buildProps({
+  space: {
+    type: [Number, String],
+    default: ""
+  },
+  active: {
+    type: Number,
+    default: 0
+  },
+  direction: {
+    type: String,
+    default: "horizontal",
+    values: ["horizontal", "vertical"]
+  },
+  alignCenter: {
+    type: Boolean
+  },
+  simple: {
+    type: Boolean
+  },
+  finishStatus: {
+    type: String,
+    values: ["wait", "process", "finish", "error", "success"],
+    default: "finish"
+  },
+  processStatus: {
+    type: String,
+    values: ["wait", "process", "finish", "error", "success"],
+    default: "process"
+  }
+});
+const stepsEmits = {
+  [CHANGE_EVENT]: (newVal, oldVal) => [newVal, oldVal].every(isNumber)
+};
+
+const __default__$1 = defineComponent({
+  name: "ElSteps"
+});
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+  ...__default__$1,
+  props: stepsProps,
+  emits: stepsEmits,
+  setup(__props, { emit }) {
+    const props = __props;
+    const ns = useNamespace("steps");
+    const {
+      children: steps,
+      addChild: addStep,
+      removeChild: removeStep
+    } = useOrderedChildren(getCurrentInstance(), "ElStep");
+    watch(steps, () => {
+      steps.value.forEach((instance, index) => {
+        instance.setIndex(index);
+      });
+    });
+    provide("ElSteps", { props, steps, addStep, removeStep });
+    watch(() => props.active, (newVal, oldVal) => {
+      emit(CHANGE_EVENT, newVal, oldVal);
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        class: normalizeClass([unref(ns).b(), unref(ns).m(_ctx.simple ? "simple" : _ctx.direction)])
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 2);
+    };
+  }
+});
+var Steps = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__file", "steps.vue"]]);
+
+const stepProps = buildProps({
+  title: {
+    type: String,
+    default: ""
+  },
+  icon: {
+    type: iconPropType
+  },
+  description: {
+    type: String,
+    default: ""
+  },
+  status: {
+    type: String,
+    values: ["", "wait", "process", "finish", "error", "success"],
+    default: ""
+  }
+});
+
+const __default__ = defineComponent({
+  name: "ElStep"
+});
+const _sfc_main$3 = defineComponent({
+  ...__default__,
+  props: stepProps,
+  setup(__props) {
+    const props = __props;
+    const ns = useNamespace("step");
+    const index = ref(-1);
+    const lineStyle = ref({});
+    const internalStatus = ref("");
+    const parent = inject("ElSteps");
+    const currentInstance = getCurrentInstance();
+    onMounted(() => {
+      watch([
+        () => parent.props.active,
+        () => parent.props.processStatus,
+        () => parent.props.finishStatus
+      ], ([active]) => {
+        updateStatus(active);
+      }, { immediate: true });
+    });
+    onBeforeUnmount(() => {
+      parent.removeStep(stepItemState.uid);
+    });
+    const currentStatus = computed(() => {
+      return props.status || internalStatus.value;
+    });
+    const prevStatus = computed(() => {
+      const prevStep = parent.steps.value[index.value - 1];
+      return prevStep ? prevStep.currentStatus : "wait";
+    });
+    const isCenter = computed(() => {
+      return parent.props.alignCenter;
+    });
+    const isVertical = computed(() => {
+      return parent.props.direction === "vertical";
+    });
+    const isSimple = computed(() => {
+      return parent.props.simple;
+    });
+    const stepsCount = computed(() => {
+      return parent.steps.value.length;
+    });
+    const isLast = computed(() => {
+      var _a;
+      return ((_a = parent.steps.value[stepsCount.value - 1]) == null ? void 0 : _a.uid) === (currentInstance == null ? void 0 : currentInstance.uid);
+    });
+    const space = computed(() => {
+      return isSimple.value ? "" : parent.props.space;
+    });
+    const containerKls = computed(() => {
+      return [
+        ns.b(),
+        ns.is(isSimple.value ? "simple" : parent.props.direction),
+        ns.is("flex", isLast.value && !space.value && !isCenter.value),
+        ns.is("center", isCenter.value && !isVertical.value && !isSimple.value)
+      ];
+    });
+    const style = computed(() => {
+      const style2 = {
+        flexBasis: isNumber(space.value) ? `${space.value}px` : space.value ? space.value : `${100 / (stepsCount.value - (isCenter.value ? 0 : 1))}%`
+      };
+      if (isVertical.value)
+        return style2;
+      if (isLast.value) {
+        style2.maxWidth = `${100 / stepsCount.value}%`;
+      }
+      return style2;
+    });
+    const setIndex = (val) => {
+      index.value = val;
+    };
+    const calcProgress = (status) => {
+      const isWait = status === "wait";
+      const style2 = {
+        transitionDelay: `${isWait ? "-" : ""}${150 * index.value}ms`
+      };
+      const step = status === parent.props.processStatus || isWait ? 0 : 100;
+      style2.borderWidth = step && !isSimple.value ? "1px" : 0;
+      style2[parent.props.direction === "vertical" ? "height" : "width"] = `${step}%`;
+      lineStyle.value = style2;
+    };
+    const updateStatus = (activeIndex) => {
+      if (activeIndex > index.value) {
+        internalStatus.value = parent.props.finishStatus;
+      } else if (activeIndex === index.value && prevStatus.value !== "error") {
+        internalStatus.value = parent.props.processStatus;
+      } else {
+        internalStatus.value = "wait";
+      }
+      const prevChild = parent.steps.value[index.value - 1];
+      if (prevChild)
+        prevChild.calcProgress(internalStatus.value);
+    };
+    const stepItemState = reactive({
+      uid: currentInstance.uid,
+      currentStatus,
+      setIndex,
+      calcProgress
+    });
+    parent.addStep(stepItemState);
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        style: normalizeStyle(unref(style)),
+        class: normalizeClass(unref(containerKls))
+      }, [
+        createCommentVNode(" icon & line "),
+        createElementVNode("div", {
+          class: normalizeClass([unref(ns).e("head"), unref(ns).is(unref(currentStatus))])
+        }, [
+          !unref(isSimple) ? (openBlock(), createElementBlock("div", {
+            key: 0,
+            class: normalizeClass(unref(ns).e("line"))
+          }, [
+            createElementVNode("i", {
+              class: normalizeClass(unref(ns).e("line-inner")),
+              style: normalizeStyle(lineStyle.value)
+            }, null, 6)
+          ], 2)) : createCommentVNode("v-if", true),
+          createElementVNode("div", {
+            class: normalizeClass([unref(ns).e("icon"), unref(ns).is(_ctx.icon || _ctx.$slots.icon ? "icon" : "text")])
+          }, [
+            renderSlot(_ctx.$slots, "icon", {}, () => [
+              _ctx.icon ? (openBlock(), createBlock(unref(ElIcon), {
+                key: 0,
+                class: normalizeClass(unref(ns).e("icon-inner"))
+              }, {
+                default: withCtx(() => [
+                  (openBlock(), createBlock(resolveDynamicComponent(_ctx.icon)))
+                ]),
+                _: 1
+              }, 8, ["class"])) : unref(currentStatus) === "success" ? (openBlock(), createBlock(unref(ElIcon), {
+                key: 1,
+                class: normalizeClass([unref(ns).e("icon-inner"), unref(ns).is("status")])
+              }, {
+                default: withCtx(() => [
+                  createVNode(unref(Check))
+                ]),
+                _: 1
+              }, 8, ["class"])) : unref(currentStatus) === "error" ? (openBlock(), createBlock(unref(ElIcon), {
+                key: 2,
+                class: normalizeClass([unref(ns).e("icon-inner"), unref(ns).is("status")])
+              }, {
+                default: withCtx(() => [
+                  createVNode(unref(Close))
+                ]),
+                _: 1
+              }, 8, ["class"])) : !unref(isSimple) ? (openBlock(), createElementBlock("div", {
+                key: 3,
+                class: normalizeClass(unref(ns).e("icon-inner"))
+              }, toDisplayString(index.value + 1), 3)) : createCommentVNode("v-if", true)
+            ])
+          ], 2)
+        ], 2),
+        createCommentVNode(" title & description "),
+        createElementVNode("div", {
+          class: normalizeClass(unref(ns).e("main"))
+        }, [
+          createElementVNode("div", {
+            class: normalizeClass([unref(ns).e("title"), unref(ns).is(unref(currentStatus))])
+          }, [
+            renderSlot(_ctx.$slots, "title", {}, () => [
+              createTextVNode(toDisplayString(_ctx.title), 1)
+            ])
+          ], 2),
+          unref(isSimple) ? (openBlock(), createElementBlock("div", {
+            key: 0,
+            class: normalizeClass(unref(ns).e("arrow"))
+          }, null, 2)) : (openBlock(), createElementBlock("div", {
+            key: 1,
+            class: normalizeClass([unref(ns).e("description"), unref(ns).is(unref(currentStatus))])
+          }, [
+            renderSlot(_ctx.$slots, "description", {}, () => [
+              createTextVNode(toDisplayString(_ctx.description), 1)
+            ])
+          ], 2))
+        ], 2)
+      ], 6);
+    };
+  }
+});
+var Step = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__file", "item.vue"]]);
+
+const ElSteps = withInstall(Steps, {
+  Step
+});
+const ElStep = withNoopInstall(Step);
 
 const _sfc_main$2 = {
   name: "AgenticSolutionsPage",
@@ -238,7 +572,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("src/components/Home/SolutionAgentic.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const SolutionAgentic = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-297aff40"]]);
+const SolutionAgentic = /* @__PURE__ */ _export_sfc$1(_sfc_main$2, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-297aff40"]]);
 const _sfc_main$1 = {
   __name: "AgenticSolution",
   __ssrInlineRender: true,
@@ -247,7 +581,7 @@ const _sfc_main$1 = {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(Header, null, null, _parent));
       _push(ssrRenderComponent(SolutionAgentic, null, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$3, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$5, null, null, _parent));
       _push(`<!--]-->`);
     };
   }

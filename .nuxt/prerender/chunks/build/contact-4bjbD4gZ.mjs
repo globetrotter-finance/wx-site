@@ -1,8 +1,11 @@
 import { ssrRenderComponent, ssrRenderAttrs } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue/server-renderer/index.mjs';
-import { H as Header, _ as _sfc_main$3 } from './Footer-bpAE6knL.mjs';
-import { unref, withCtx, createTextVNode, createVNode, useSSRContext } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue/index.mjs';
-import { ElContainer, ElMain, ElRow, ElCol, ElDivider, ElCard, ElIcon, ElLink } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/element-plus/es/index.mjs';
+import { H as Header$1, _ as _sfc_main$d } from './Footer-bpAE6knL.mjs';
+import { defineComponent, createElementBlock, openBlock, normalizeClass, unref, createCommentVNode, createElementVNode, renderSlot, createTextVNode, toDisplayString, normalizeStyle, inject, computed, createBlock, resolveDynamicComponent, withCtx, useSlots, provide, createVNode, useSSRContext } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue/index.mjs';
 import { Briefcase, Help, Iphone } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@element-plus/icons-vue/dist/index.js';
+import { b as buildProps, d as definePropType, _ as _export_sfc, u as useNamespace, w as withInstall, i as isNumber, a as withNoopInstall, E as ElIcon } from '../_/index.mjs';
+import { m as mutable } from '../_/typescript.mjs';
+import { isObject } from 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/@vue/shared/dist/shared.cjs.prod.js';
+import { i as iconPropType } from '../_/icon.mjs';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/vue-router/dist/vue-router.node.mjs';
 import './server.mjs';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/ofetch/dist/node.mjs';
@@ -31,6 +34,526 @@ import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/nuxt/no
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/devalue/index.js';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/nuxt/node_modules/unhead/dist/utils.mjs';
 import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/nuxt/node_modules/unhead/dist/plugins.mjs';
+import 'file:///home/devanshkhandelwal/iwx/wx-site2/wx-site/node_modules/lodash-unified/import.js';
+
+const cardProps = buildProps({
+  header: {
+    type: String,
+    default: ""
+  },
+  footer: {
+    type: String,
+    default: ""
+  },
+  bodyStyle: {
+    type: definePropType([String, Object, Array]),
+    default: ""
+  },
+  bodyClass: String,
+  shadow: {
+    type: String,
+    values: ["always", "hover", "never"],
+    default: "always"
+  }
+});
+
+const __default__$9 = defineComponent({
+  name: "ElCard"
+});
+const _sfc_main$c = /* @__PURE__ */ defineComponent({
+  ...__default__$9,
+  props: cardProps,
+  setup(__props) {
+    const ns = useNamespace("card");
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        class: normalizeClass([unref(ns).b(), unref(ns).is(`${_ctx.shadow}-shadow`)])
+      }, [
+        _ctx.$slots.header || _ctx.header ? (openBlock(), createElementBlock("div", {
+          key: 0,
+          class: normalizeClass(unref(ns).e("header"))
+        }, [
+          renderSlot(_ctx.$slots, "header", {}, () => [
+            createTextVNode(toDisplayString(_ctx.header), 1)
+          ])
+        ], 2)) : createCommentVNode("v-if", true),
+        createElementVNode("div", {
+          class: normalizeClass([unref(ns).e("body"), _ctx.bodyClass]),
+          style: normalizeStyle(_ctx.bodyStyle)
+        }, [
+          renderSlot(_ctx.$slots, "default")
+        ], 6),
+        _ctx.$slots.footer || _ctx.footer ? (openBlock(), createElementBlock("div", {
+          key: 1,
+          class: normalizeClass(unref(ns).e("footer"))
+        }, [
+          renderSlot(_ctx.$slots, "footer", {}, () => [
+            createTextVNode(toDisplayString(_ctx.footer), 1)
+          ])
+        ], 2)) : createCommentVNode("v-if", true)
+      ], 2);
+    };
+  }
+});
+var Card = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__file", "card.vue"]]);
+
+const ElCard = withInstall(Card);
+
+const colProps = buildProps({
+  tag: {
+    type: String,
+    default: "div"
+  },
+  span: {
+    type: Number,
+    default: 24
+  },
+  offset: {
+    type: Number,
+    default: 0
+  },
+  pull: {
+    type: Number,
+    default: 0
+  },
+  push: {
+    type: Number,
+    default: 0
+  },
+  xs: {
+    type: definePropType([Number, Object]),
+    default: () => mutable({})
+  },
+  sm: {
+    type: definePropType([Number, Object]),
+    default: () => mutable({})
+  },
+  md: {
+    type: definePropType([Number, Object]),
+    default: () => mutable({})
+  },
+  lg: {
+    type: definePropType([Number, Object]),
+    default: () => mutable({})
+  },
+  xl: {
+    type: definePropType([Number, Object]),
+    default: () => mutable({})
+  }
+});
+
+const rowContextKey = Symbol("rowContextKey");
+
+const __default__$8 = defineComponent({
+  name: "ElCol"
+});
+const _sfc_main$b = /* @__PURE__ */ defineComponent({
+  ...__default__$8,
+  props: colProps,
+  setup(__props) {
+    const props = __props;
+    const { gutter } = inject(rowContextKey, { gutter: computed(() => 0) });
+    const ns = useNamespace("col");
+    const style = computed(() => {
+      const styles = {};
+      if (gutter.value) {
+        styles.paddingLeft = styles.paddingRight = `${gutter.value / 2}px`;
+      }
+      return styles;
+    });
+    const colKls = computed(() => {
+      const classes = [];
+      const pos = ["span", "offset", "pull", "push"];
+      pos.forEach((prop) => {
+        const size = props[prop];
+        if (isNumber(size)) {
+          if (prop === "span")
+            classes.push(ns.b(`${props[prop]}`));
+          else if (size > 0)
+            classes.push(ns.b(`${prop}-${props[prop]}`));
+        }
+      });
+      const sizes = ["xs", "sm", "md", "lg", "xl"];
+      sizes.forEach((size) => {
+        if (isNumber(props[size])) {
+          classes.push(ns.b(`${size}-${props[size]}`));
+        } else if (isObject(props[size])) {
+          Object.entries(props[size]).forEach(([prop, sizeProp]) => {
+            classes.push(prop !== "span" ? ns.b(`${size}-${prop}-${sizeProp}`) : ns.b(`${size}-${sizeProp}`));
+          });
+        }
+      });
+      if (gutter.value) {
+        classes.push(ns.is("guttered"));
+      }
+      return [ns.b(), classes];
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createBlock(resolveDynamicComponent(_ctx.tag), {
+        class: normalizeClass(unref(colKls)),
+        style: normalizeStyle(unref(style))
+      }, {
+        default: withCtx(() => [
+          renderSlot(_ctx.$slots, "default")
+        ]),
+        _: 3
+      }, 8, ["class", "style"]);
+    };
+  }
+});
+var Col = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__file", "col.vue"]]);
+
+const ElCol = withInstall(Col);
+
+const __default__$7 = defineComponent({
+  name: "ElContainer"
+});
+const _sfc_main$a = /* @__PURE__ */ defineComponent({
+  ...__default__$7,
+  props: {
+    direction: {
+      type: String
+    }
+  },
+  setup(__props) {
+    const props = __props;
+    const slots = useSlots();
+    const ns = useNamespace("container");
+    const isVertical = computed(() => {
+      if (props.direction === "vertical") {
+        return true;
+      } else if (props.direction === "horizontal") {
+        return false;
+      }
+      if (slots && slots.default) {
+        const vNodes = slots.default();
+        return vNodes.some((vNode) => {
+          const tag = vNode.type.name;
+          return tag === "ElHeader" || tag === "ElFooter";
+        });
+      } else {
+        return false;
+      }
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("section", {
+        class: normalizeClass([unref(ns).b(), unref(ns).is("vertical", unref(isVertical))])
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 2);
+    };
+  }
+});
+var Container = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__file", "container.vue"]]);
+
+const __default__$6 = defineComponent({
+  name: "ElAside"
+});
+const _sfc_main$9 = /* @__PURE__ */ defineComponent({
+  ...__default__$6,
+  props: {
+    width: {
+      type: String,
+      default: null
+    }
+  },
+  setup(__props) {
+    const props = __props;
+    const ns = useNamespace("aside");
+    const style = computed(() => props.width ? ns.cssVarBlock({ width: props.width }) : {});
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("aside", {
+        class: normalizeClass(unref(ns).b()),
+        style: normalizeStyle(unref(style))
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 6);
+    };
+  }
+});
+var Aside = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__file", "aside.vue"]]);
+
+const __default__$5 = defineComponent({
+  name: "ElFooter"
+});
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
+  ...__default__$5,
+  props: {
+    height: {
+      type: String,
+      default: null
+    }
+  },
+  setup(__props) {
+    const props = __props;
+    const ns = useNamespace("footer");
+    const style = computed(() => props.height ? ns.cssVarBlock({ height: props.height }) : {});
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("footer", {
+        class: normalizeClass(unref(ns).b()),
+        style: normalizeStyle(unref(style))
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 6);
+    };
+  }
+});
+var Footer = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__file", "footer.vue"]]);
+
+const __default__$4 = defineComponent({
+  name: "ElHeader"
+});
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
+  ...__default__$4,
+  props: {
+    height: {
+      type: String,
+      default: null
+    }
+  },
+  setup(__props) {
+    const props = __props;
+    const ns = useNamespace("header");
+    const style = computed(() => {
+      return props.height ? ns.cssVarBlock({
+        height: props.height
+      }) : {};
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("header", {
+        class: normalizeClass(unref(ns).b()),
+        style: normalizeStyle(unref(style))
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 6);
+    };
+  }
+});
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__file", "header.vue"]]);
+
+const __default__$3 = defineComponent({
+  name: "ElMain"
+});
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+  ...__default__$3,
+  setup(__props) {
+    const ns = useNamespace("main");
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("main", {
+        class: normalizeClass(unref(ns).b())
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 2);
+    };
+  }
+});
+var Main = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__file", "main.vue"]]);
+
+const ElContainer = withInstall(Container, {
+  Aside,
+  Footer,
+  Header,
+  Main
+});
+withNoopInstall(Aside);
+withNoopInstall(Footer);
+withNoopInstall(Header);
+const ElMain = withNoopInstall(Main);
+
+const dividerProps = buildProps({
+  direction: {
+    type: String,
+    values: ["horizontal", "vertical"],
+    default: "horizontal"
+  },
+  contentPosition: {
+    type: String,
+    values: ["left", "center", "right"],
+    default: "center"
+  },
+  borderStyle: {
+    type: definePropType(String),
+    default: "solid"
+  }
+});
+
+const __default__$2 = defineComponent({
+  name: "ElDivider"
+});
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+  ...__default__$2,
+  props: dividerProps,
+  setup(__props) {
+    const props = __props;
+    const ns = useNamespace("divider");
+    const dividerStyle = computed(() => {
+      return ns.cssVar({
+        "border-style": props.borderStyle
+      });
+    });
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", {
+        class: normalizeClass([unref(ns).b(), unref(ns).m(_ctx.direction)]),
+        style: normalizeStyle(unref(dividerStyle)),
+        role: "separator"
+      }, [
+        _ctx.$slots.default && _ctx.direction !== "vertical" ? (openBlock(), createElementBlock("div", {
+          key: 0,
+          class: normalizeClass([unref(ns).e("text"), unref(ns).is(_ctx.contentPosition)])
+        }, [
+          renderSlot(_ctx.$slots, "default")
+        ], 2)) : createCommentVNode("v-if", true)
+      ], 6);
+    };
+  }
+});
+var Divider = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__file", "divider.vue"]]);
+
+const ElDivider = withInstall(Divider);
+
+const linkProps = buildProps({
+  type: {
+    type: String,
+    values: ["primary", "success", "warning", "info", "danger", "default"],
+    default: "default"
+  },
+  underline: {
+    type: Boolean,
+    default: true
+  },
+  disabled: Boolean,
+  href: { type: String, default: "" },
+  target: {
+    type: String,
+    default: "_self"
+  },
+  icon: {
+    type: iconPropType
+  }
+});
+const linkEmits = {
+  click: (evt) => evt instanceof MouseEvent
+};
+
+const __default__$1 = defineComponent({
+  name: "ElLink"
+});
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+  ...__default__$1,
+  props: linkProps,
+  emits: linkEmits,
+  setup(__props, { emit }) {
+    const props = __props;
+    const ns = useNamespace("link");
+    const linkKls = computed(() => [
+      ns.b(),
+      ns.m(props.type),
+      ns.is("disabled", props.disabled),
+      ns.is("underline", props.underline && !props.disabled)
+    ]);
+    function handleClick(event) {
+      if (!props.disabled)
+        emit("click", event);
+    }
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("a", {
+        class: normalizeClass(unref(linkKls)),
+        href: _ctx.disabled || !_ctx.href ? void 0 : _ctx.href,
+        target: _ctx.disabled || !_ctx.href ? void 0 : _ctx.target,
+        onClick: handleClick
+      }, [
+        _ctx.icon ? (openBlock(), createBlock(unref(ElIcon), { key: 0 }, {
+          default: withCtx(() => [
+            (openBlock(), createBlock(resolveDynamicComponent(_ctx.icon)))
+          ]),
+          _: 1
+        })) : createCommentVNode("v-if", true),
+        _ctx.$slots.default ? (openBlock(), createElementBlock("span", {
+          key: 1,
+          class: normalizeClass(unref(ns).e("inner"))
+        }, [
+          renderSlot(_ctx.$slots, "default")
+        ], 2)) : createCommentVNode("v-if", true),
+        _ctx.$slots.icon ? renderSlot(_ctx.$slots, "icon", { key: 2 }) : createCommentVNode("v-if", true)
+      ], 10, ["href", "target"]);
+    };
+  }
+});
+var Link = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__file", "link.vue"]]);
+
+const ElLink = withInstall(Link);
+
+const RowJustify = [
+  "start",
+  "center",
+  "end",
+  "space-around",
+  "space-between",
+  "space-evenly"
+];
+const RowAlign = ["top", "middle", "bottom"];
+const rowProps = buildProps({
+  tag: {
+    type: String,
+    default: "div"
+  },
+  gutter: {
+    type: Number,
+    default: 0
+  },
+  justify: {
+    type: String,
+    values: RowJustify,
+    default: "start"
+  },
+  align: {
+    type: String,
+    values: RowAlign
+  }
+});
+
+const __default__ = defineComponent({
+  name: "ElRow"
+});
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+  ...__default__,
+  props: rowProps,
+  setup(__props) {
+    const props = __props;
+    const ns = useNamespace("row");
+    const gutter = computed(() => props.gutter);
+    provide(rowContextKey, {
+      gutter
+    });
+    const style = computed(() => {
+      const styles = {};
+      if (!props.gutter) {
+        return styles;
+      }
+      styles.marginRight = styles.marginLeft = `-${props.gutter / 2}px`;
+      return styles;
+    });
+    const rowKls = computed(() => [
+      ns.b(),
+      ns.is(`justify-${props.justify}`, props.justify !== "start"),
+      ns.is(`align-${props.align}`, !!props.align)
+    ]);
+    return (_ctx, _cache) => {
+      return openBlock(), createBlock(resolveDynamicComponent(_ctx.tag), {
+        class: normalizeClass(unref(rowKls)),
+        style: normalizeStyle(unref(style))
+      }, {
+        default: withCtx(() => [
+          renderSlot(_ctx.$slots, "default")
+        ]),
+        _: 3
+      }, 8, ["class", "style"]);
+    };
+  }
+});
+var Row = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__file", "row.vue"]]);
+
+const ElRow = withInstall(Row);
 
 const _sfc_main$2 = {
   __name: "Contact",
@@ -1354,9 +1877,9 @@ const _sfc_main$1 = {
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
-      _push(ssrRenderComponent(Header, null, null, _parent));
+      _push(ssrRenderComponent(Header$1, null, null, _parent));
       _push(ssrRenderComponent(_sfc_main$2, null, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$3, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$d, null, null, _parent));
       _push(`<!--]-->`);
     };
   }
