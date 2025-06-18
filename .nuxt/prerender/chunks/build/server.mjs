@@ -398,67 +398,67 @@ const _routes = [
   {
     name: "blogs",
     path: "/blogs",
-    component: () => import('./blogs-BT6uy_ux.mjs')
+    component: () => import('./blogs-DIBeF2nd.mjs')
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DkTrPyeX.mjs')
+    component: () => import('./index-ClIBnTY6.mjs')
   },
   {
     name: "terms",
     path: "/terms",
-    component: () => import('./terms-1eTZIN_O.mjs')
+    component: () => import('./terms-BMOCDmYC.mjs')
   },
   {
     name: "aboutus",
     path: "/aboutus",
-    component: () => import('./aboutus-CeJQcDr_.mjs')
+    component: () => import('./aboutus-CumLqKvT.mjs')
   },
   {
     name: "contact",
     path: "/contact",
-    component: () => import('./contact-aShxfXTq.mjs')
+    component: () => import('./contact-4bjbD4gZ.mjs')
   },
   {
     name: "privacy",
     path: "/privacy",
-    component: () => import('./privacy-dXgt-A8y.mjs')
+    component: () => import('./privacy-DinqZOB9.mjs')
   },
   {
     name: "solutions",
     path: "/solutions",
-    component: () => import('./solutions-BYxSIg39.mjs')
+    component: () => import('./solutions-COrHNfR7.mjs')
   },
   {
     name: "integration",
     path: "/integration",
-    component: () => import('./integration-GIV3kDFc.mjs')
+    component: () => import('./integration-DPrOouE7.mjs')
   },
   {
     name: "audit-automation",
     path: "/audit-automation",
-    component: () => import('./audit-automation-oYp63qc1.mjs')
+    component: () => import('./audit-automation-BAQ3OI2m.mjs')
   },
   {
     name: "agentic-solutions",
     path: "/agentic-solutions",
-    component: () => import('./agentic-solutions-Bj4XGLS1.mjs')
+    component: () => import('./agentic-solutions-BkRg8sIz.mjs')
   },
   {
     name: "knowledge-advisory",
     path: "/knowledge-advisory",
-    component: () => import('./knowledge-advisory-CU6SCEdU.mjs')
+    component: () => import('./knowledge-advisory-YkhWwteK.mjs')
   },
   {
     name: "compliance-governance",
     path: "/compliance-governance",
-    component: () => import('./compliance-governance-Bx6rmX9X.mjs')
+    component: () => import('./compliance-governance-Cn2J_3YZ.mjs')
   },
   {
     name: "litigation-management",
     path: "/litigation-management",
-    component: () => import('./litigation-management-QBVqasuY.mjs')
+    component: () => import('./litigation-management-KsqTicsx.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {
