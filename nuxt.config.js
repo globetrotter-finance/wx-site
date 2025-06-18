@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+      app: {
+    baseURL: '/wx-site/', 
+  },
   modules: ['@nuxtjs/tailwindcss'],
 
   // Keep your existing Element Plus import
@@ -8,8 +11,8 @@ export default defineNuxtConfig({
 
   // Optional: configure tailwind module options
   tailwindcss: {
-    cssPath: '~/src/style.css',    // your main CSS file
+    cssPath: '~/src/style.css',    
     configPath: 'tailwind.config.js',
-    viewer: true,                  // enables live Tailwind viewer at /_tailwind
+    viewer: true,                 
   },
 })
