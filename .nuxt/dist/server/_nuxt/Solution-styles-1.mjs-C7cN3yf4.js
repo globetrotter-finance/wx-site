@@ -1,0 +1,5 @@
+const Solution_vue_vue_type_style_index_0_scoped_86bc5972_lang = ".font-sans[data-v-86bc5972]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}button[data-v-86bc5972]{transition:all .3s cubic-bezier(.4,0,.2,1)}button[data-v-86bc5972]:hover{box-shadow:0 10px 15px -3px #0000001a,0 4px 6px -2px #0000000d}[data-v-86bc5972] .el-button--primary{background-color:#2563eb;border-color:#2563eb}[data-v-86bc5972] .el-button--primary:hover{background-color:#1d4ed8;border-color:#1d4ed8}[data-v-86bc5972] .el-button--default{border-color:#bfdbfe}[data-v-86bc5972] .el-button--default:hover{background-color:#eff6ff;border-color:#93c5fd;color:#2563eb}";
+export {
+  Solution_vue_vue_type_style_index_0_scoped_86bc5972_lang as default
+};
+//# sourceMappingURL=Solution-styles-1.mjs-C7cN3yf4.js.map
