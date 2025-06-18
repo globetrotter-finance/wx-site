@@ -72,6 +72,12 @@ useHead({
   <HeroSection />
   <FeatureSection />
   <KeyData />
+  <!-- <KeyData2 /> -->
+  <!-- <IndustryApplication /> -->
+  <!-- <AgenticSolutionSection /> -->
+  <!-- <TestimonialSection /> -->
+  <!-- <CTASection /> -->
+  <!-- <OurTechnology /> -->
   <AboutUsMini />
   <Footer />
 </template>

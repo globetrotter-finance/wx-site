@@ -639,8 +639,8 @@ function _expandFromEnv(value) {
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/wx-site/",
-    "buildId": "85b4ae61-fedc-4bd2-8e64-5db115ef7343",
+    "baseURL": "/",
+    "buildId": "47548d08-2f7b-4c02-a45c-3ab8d783564e",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -894,7 +894,7 @@ function defaultHandler(error, event, opts) {
   const statusMessage = error.statusMessage || "Server Error";
   const url = getRequestURL(event, { xForwardedHost: true, xForwardedProto: true });
   if (statusCode === 404) {
-    const baseURL = "/wx-site/";
+    const baseURL = "/";
     if (/^\/[^/]/.test(baseURL) && !url.pathname.startsWith(baseURL)) {
       const redirectTo = `${baseURL}${url.pathname.slice(1)}${url.search}`;
       return {
