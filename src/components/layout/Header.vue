@@ -5,7 +5,7 @@
       <!-- Logo -->
       <el-col class="flex" :span="4">
         <el-link @click="router.push('/')" :underline="false">
-          <img src="../../assets/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1" />
+          <img src="../../../public/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1" />
           <span
             class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent whitespace-nowrap">Saras
             Finance</span>
@@ -45,7 +45,7 @@
 
       <template #header="{ close, titleId, titleClass }">
         <el-link @click="router.push('/')" :underline="false">
-          <img src="../../assets/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1" />
+          <img src="../../../public/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1" />
           <span class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent whitespace-nowrap">
             Saras Finance
           </span>

@@ -1,35 +1,16 @@
 export default {
-  "_C8l60Hxg.js": {
+  "_C-JWN02w.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C8l60Hxg.js",
-    "name": "blog-data"
-  },
-  "_CcPvbFk1.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CcPvbFk1.js",
-    "name": "v3",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "_CgfsK_CA.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CgfsK_CA.js",
+    "file": "C-JWN02w.js",
     "name": "Footer",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "Footer.CLyjoh3v.css"
+      "Footer.DpJ49lmv.css"
     ],
     "assets": [
       "LOGO.CvbNrNom.png",
@@ -39,8 +20,8 @@ export default {
       "iso-iec.Drf5dBOL.png"
     ]
   },
-  "Footer.CLyjoh3v.css": {
-    "file": "Footer.CLyjoh3v.css",
+  "Footer.DpJ49lmv.css": {
+    "file": "Footer.DpJ49lmv.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -75,19 +56,38 @@ export default {
     "prefetch": true,
     "mimeType": "image/png"
   },
-  "_Footer.CLyjoh3v.css": {
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true,
-    "file": "Footer.CLyjoh3v.css",
-    "src": "_Footer.CLyjoh3v.css"
-  },
-  "_a_xAHVrG.js": {
+  "_C8l60Hxg.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "a_xAHVrG.js",
+    "file": "C8l60Hxg.js",
+    "name": "blog-data"
+  },
+  "_CsYMsWpV.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CsYMsWpV.js",
+    "name": "v3",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_Footer.DpJ49lmv.css": {
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true,
+    "file": "Footer.DpJ49lmv.css",
+    "src": "_Footer.DpJ49lmv.css"
+  },
+  "_gs9G0KVy.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "gs9G0KVy.js",
     "name": "vue.-sixQ7xP",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -98,13 +98,13 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DbBc_vnf.js",
+    "file": "FpogC9F0.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CcPvbFk1.js"
+      "_CsYMsWpV.js"
     ],
     "css": []
   },
@@ -119,13 +119,13 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CIognfLR.js",
+    "file": "FTvhbi6e.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CcPvbFk1.js"
+      "_CsYMsWpV.js"
     ],
     "css": []
   },
@@ -140,7 +140,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B2aa3J2_.js",
+    "file": "D9j6WKPo.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -164,12 +164,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "G1UT6ruV.js",
+    "file": "CCO3uK15.js",
     "name": "aboutus",
     "src": "pages/aboutus.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -178,12 +178,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "4Iyz7Hta.js",
+    "file": "DCc8F7h1.js",
     "name": "agentic-solutions",
     "src": "pages/agentic-solutions.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -201,14 +201,14 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "VW4qvdCq.js",
+    "file": "fgR3pCc9.js",
     "name": "audit-automation",
     "src": "pages/audit-automation.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_a_xAHVrG.js"
+      "_gs9G0KVy.js"
     ]
   },
   "pages/blogs.vue": {
@@ -216,12 +216,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "D6yCqQtP.js",
+    "file": "D1eV9Zs8.js",
     "name": "blogs",
     "src": "pages/blogs.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "_C8l60Hxg.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -240,14 +240,14 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B6nf49IK.js",
+    "file": "DXNgS_Jc.js",
     "name": "compliance-governance",
     "src": "pages/compliance-governance.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_a_xAHVrG.js"
+      "_gs9G0KVy.js"
     ]
   },
   "pages/contact.vue": {
@@ -255,12 +255,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DzkWeX74.js",
+    "file": "B2fER17I.js",
     "name": "contact",
     "src": "pages/contact.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -269,24 +269,24 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DluqMna9.js",
+    "file": "D4KkNJ3-.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_a_xAHVrG.js"
+      "_gs9G0KVy.js"
     ],
     "css": [
-      "index.CbfGSDXP.css"
+      "index.D2pBwBrY.css"
     ],
     "assets": [
       "home-hero-cropped.CZN5sQGK.gif"
     ]
   },
-  "index.CbfGSDXP.css": {
-    "file": "index.CbfGSDXP.css",
+  "index.D2pBwBrY.css": {
+    "file": "index.D2pBwBrY.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -302,12 +302,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Cd4cuN0D.js",
+    "file": "Blh2HuE0.js",
     "name": "integration",
     "src": "pages/integration.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -325,14 +325,14 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DgU49-aq.js",
+    "file": "DwAZ9Mxo.js",
     "name": "knowledge-advisory",
     "src": "pages/knowledge-advisory.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_a_xAHVrG.js"
+      "_gs9G0KVy.js"
     ]
   },
   "pages/litigation-management.vue": {
@@ -340,14 +340,14 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "8zfmZLyE.js",
+    "file": "DDpdfop_.js",
     "name": "litigation-management",
     "src": "pages/litigation-management.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_a_xAHVrG.js"
+      "_gs9G0KVy.js"
     ]
   },
   "pages/privacy.vue": {
@@ -355,12 +355,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CdqBR64_.js",
+    "file": "DpXi6gNy.js",
     "name": "privacy",
     "src": "pages/privacy.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -369,12 +369,12 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vEolZaBp.js",
+    "file": "CG0IdU9t.js",
     "name": "solutions",
     "src": "pages/solutions.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "_C8l60Hxg.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -393,55 +393,55 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "COg9g_rE.js",
+    "file": "dzeHLrzg.js",
     "name": "terms",
     "src": "pages/terms.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CgfsK_CA.js",
+      "_C-JWN02w.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "src/assets/LOGO.png": {
+  "public/LOGO.png": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png",
     "file": "LOGO.CvbNrNom.png",
-    "src": "src/assets/LOGO.png"
+    "src": "public/LOGO.png"
   },
-  "src/assets/ccpa.png": {
+  "public/ccpa.png": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png",
     "file": "ccpa.BWsoSwrC.png",
-    "src": "src/assets/ccpa.png"
+    "src": "public/ccpa.png"
   },
-  "src/assets/gdpr.png": {
+  "public/gdpr.png": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png",
     "file": "gdpr.v6HbIw-m.png",
-    "src": "src/assets/gdpr.png"
+    "src": "public/gdpr.png"
   },
-  "src/assets/hero/home-hero-cropped.gif": {
+  "public/hero/home-hero-cropped.gif": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/gif",
     "file": "home-hero-cropped.CZN5sQGK.gif",
-    "src": "src/assets/hero/home-hero-cropped.gif"
+    "src": "public/hero/home-hero-cropped.gif"
   },
-  "src/assets/iso-iec.png": {
+  "public/iso-iec.png": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png",
     "file": "iso-iec.Drf5dBOL.png",
-    "src": "src/assets/iso-iec.png"
+    "src": "public/iso-iec.png"
   },
-  "src/assets/soc2.png": {
+  "public/soc2.png": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png",
     "file": "soc2.kMgJytFb.png",
-    "src": "src/assets/soc2.png"
+    "src": "public/soc2.png"
   }
 }

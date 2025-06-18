@@ -379,67 +379,67 @@ const _routes = [
   {
     name: "blogs",
     path: "/blogs",
-    component: () => import("./_nuxt/blogs-CVMPRpYi.js")
+    component: () => import("./_nuxt/blogs-BT6uy_ux.js")
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-kijaQXlL.js")
+    component: () => import("./_nuxt/index-DkTrPyeX.js")
   },
   {
     name: "terms",
     path: "/terms",
-    component: () => import("./_nuxt/terms-CCzzUxwv.js")
+    component: () => import("./_nuxt/terms-1eTZIN_O.js")
   },
   {
     name: "aboutus",
     path: "/aboutus",
-    component: () => import("./_nuxt/aboutus-iQaIpYWh.js")
+    component: () => import("./_nuxt/aboutus-CeJQcDr_.js")
   },
   {
     name: "contact",
     path: "/contact",
-    component: () => import("./_nuxt/contact-zaU-ZKo1.js")
+    component: () => import("./_nuxt/contact-aShxfXTq.js")
   },
   {
     name: "privacy",
     path: "/privacy",
-    component: () => import("./_nuxt/privacy-DVphcgy0.js")
+    component: () => import("./_nuxt/privacy-dXgt-A8y.js")
   },
   {
     name: "solutions",
     path: "/solutions",
-    component: () => import("./_nuxt/solutions-DMgxzYJP.js")
+    component: () => import("./_nuxt/solutions-BYxSIg39.js")
   },
   {
     name: "integration",
     path: "/integration",
-    component: () => import("./_nuxt/integration-C8m9FfnZ.js")
+    component: () => import("./_nuxt/integration-GIV3kDFc.js")
   },
   {
     name: "audit-automation",
     path: "/audit-automation",
-    component: () => import("./_nuxt/audit-automation-Ca9tWKhy.js")
+    component: () => import("./_nuxt/audit-automation-oYp63qc1.js")
   },
   {
     name: "agentic-solutions",
     path: "/agentic-solutions",
-    component: () => import("./_nuxt/agentic-solutions-_DbApTxH.js")
+    component: () => import("./_nuxt/agentic-solutions-Bj4XGLS1.js")
   },
   {
     name: "knowledge-advisory",
     path: "/knowledge-advisory",
-    component: () => import("./_nuxt/knowledge-advisory-nq-Ajrnm.js")
+    component: () => import("./_nuxt/knowledge-advisory-CU6SCEdU.js")
   },
   {
     name: "compliance-governance",
     path: "/compliance-governance",
-    component: () => import("./_nuxt/compliance-governance-2_Cn9uy8.js")
+    component: () => import("./_nuxt/compliance-governance-Bx6rmX9X.js")
   },
   {
     name: "litigation-management",
     path: "/litigation-management",
-    component: () => import("./_nuxt/litigation-management-BD798vZz.js")
+    component: () => import("./_nuxt/litigation-management-QBVqasuY.js")
   }
 ];
 const _wrapInTransition = (props, children) => {
