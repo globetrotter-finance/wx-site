@@ -55,7 +55,7 @@
           </transition-group>
         </div>
         <div class="flex justify-center">
-          <img src="../../assets/hero/home-hero-cropped.gif" />
+          <img src="/hero/home-hero-cropped.gif" />
         </div>
       </el-col>
     </el-row>

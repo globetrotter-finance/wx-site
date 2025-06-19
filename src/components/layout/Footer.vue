@@ -7,7 +7,7 @@
         <!-- Company info -->
         <div class="col-span-1 md:col-span-1 space-y-4">
           <el-link @click="router.push('/')" :underline="false">
-            <img src="../../assets/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1"/>
+            <img src="/LOGO.png" alt="Saras" style="height: 40px; width: auto;" class="p-1"/>
             <span class="text-xl bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">Saras Finance</span>
           </el-link>
           <p class="text-gray-500 text-sm">
@@ -90,16 +90,16 @@
         </p>
         <el-row >
           <el-tooltip content="CCPA Compliant" placement="top">
-            <img src="../../assets/ccpa.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+            <img src="/ccpa.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
           </el-tooltip>
           <el-tooltip content="GDPR Compliant" placement="top">
-            <img src="../../assets/gdpr.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+            <img src="/gdpr.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
           </el-tooltip>
           <el-tooltip content="SOC2 Compliant" placement="top">
-            <img src="../../assets/soc2.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+            <img src="/soc2.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
           </el-tooltip>
           <el-tooltip content="ISO / IEC 27001:2022 Certified" placement="top">
-            <img src="../../assets/iso-iec.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
+            <img src="/iso-iec.png" alt="Saras" style="height: 40px; width: auto;" class="pe-4"/>
           </el-tooltip>
         </el-row>
 
