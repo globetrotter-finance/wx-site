@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "Taxation & Financial Automation",
+    "title": "Execute Financial Workflows with Speed and Precision",
+    "subtitle": "Saras empowers finance professionals to automate complex tax, reporting, and analysis tasks, transforming hours of manual work into minutes of intelligent execution.",
+    "cta": "Request a Demo"
+  },
+  "features": {
+    "title": "A Smarter Way to Manage Finance",
+    "subtitle": "Our platform is designed to handle the most demanding financial tasks with ease and accuracy.",
+    "items": [
+      {
+        "icon": "fas fa-robot",
+        "title": "Intelligent Automation",
+        "description": "Automate direct tax, GST, and transfer pricing workflows with an AI that understands regulatory nuances."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Instant Reporting",
+        "description": "Generate complex MIS, segmental reports, and variance analyses on-demand, with zero manual data crunching."
+      },
+      {
+        "icon": "fas fa-check-double",
+        "title": "Audit-Ready Compliance",
+        "description": "Produce fully traceable, audit-ready outputs with detailed logs for every operation, ensuring total compliance."
+      }
+    ]
+  },
+  "detailSection": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Generate Insightful Reports in Minutes, Not Hours",
+    "description": "Break down your financials by cost centers, business units, or product lines with zero manual intervention. Saras makes segmental analysis, revenue attribution, cost distribution, and variance identification an instant and repeatable process, freeing your team to focus on strategy.",
+    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Dynamic+MIS+Dashboard"
+  },
+  "cta": {
+    "title": "Stop Chasing Numbers. Start Driving Strategy.",
+    "subtitle": "Saras handles the complex, time-consuming tasks so your team can focus on high-value analysis and strategic decision-making. Turn your raw data into your most powerful asset.",
+    "buttonText": "Unlock Strategic Finance"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "hero": {
+    "eyebrow": "Pricing for Taxation & Financial Suite",
+    "title": "Plans for Every Stage of Your Growth",
+    "subtitle": "From solo practitioners to large enterprises, find the perfect plan to automate your financial and legal workflows."
+  },
+  "tiers": [
+    {
+      "name": "Basic",
+      "price": "$49",
+      "period": "/user/month",
+      "description": "For individuals and small teams focused on core compliance and reporting.",
+      "features": [
+        "Compliance Tracking Module",
+        "Standard Financial Reporting",
+        "Community Support"
+      ],
+      "cta": "Get Started",
+      "cta_class": "btn-secondary",
+      "highlight": false
+    },
+    {
+      "name": "Premium",
+      "price": "$99",
+      "period": "/user/month",
+      "description": "For growing teams needing advanced automation and advisory tools.",
+      "features": [
+        "Everything in Basic, plus:",
+        "Litigation Management Module",
+        "Audit & Due Diligence Tools",
+        "Premium Knowledge Advisory",
+        "Priority Email Support"
+      ],
+      "cta": "Choose Premium",
+      "cta_class": "btn-primary",
+      "highlight": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For large organizations requiring end-to-end automation and support.",
+      "features": [
+        "Everything in Premium, plus:",
+        "Full Finance Workflow Automation",
+        "Advanced Security & SSO",
+        "Dedicated Account Manager",
+        "24/7 Priority Support"
+      ],
+      "cta": "Contact Sales",
+      "cta_class": "btn-secondary",
+      "highlight": false
+    }
+  ],
+  "featureComparison": [
+    {
+      "groupName": "Compliance Tracking",
+      "features": [
+        {
+          "name": "Compliance Calendar",
+          "tiers": { "basic": true, "premium": true, "enterprise": true }
+        },
+        {
+          "name": "Maker-Checker Workflows",
+          "tiers": { "basic": false, "premium": true, "enterprise": true }
+        }
+      ]
+    },
+    {
+      "groupName": "Litigation Management",
+      "features": [
+        {
+          "name": "AI Litigation Detection",
+          "tiers": { "basic": false, "premium": true, "enterprise": true }
+        },
+        {
+          "name": "AI Response Drafting",
+          "tiers": { "basic": false, "premium": true, "enterprise": true }
+        }
+      ]
+    },
+    {
+      "groupName": "Accounting, Audit & Due Diligence",
+      "features": [
+        {
+          "name": "Automated Anomaly Detection",
+          "tiers": { "basic": false, "premium": true, "enterprise": true }
+        },
+        {
+          "name": "Version Control & Audit Trails",
+          "tiers": { "basic": false, "premium": true, "enterprise": true }
+        }
+      ]
+    },
+    {
+      "groupName": "Premium Knowledge Advisory",
+      "features": [
+        {
+          "name": "Contextual AI Assistant",
+          "tiers": { "basic": false, "premium": true, "enterprise": true }
+        }
+      ]
+    },
+    {
+      "groupName": "Finance Workflows",
+      "features": [
+        {
+          "name": "Standard Financial Reporting",
+          "tiers": { "basic": true, "premium": true, "enterprise": true }
+        },
+        {
+          "name": "Custom Workflow Builder",
+          "tiers": { "basic": false, "premium": false, "enterprise": true }
+        }
+      ]
+    }
+  ]
+}

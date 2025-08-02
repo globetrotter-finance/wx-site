@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "Fintech Automations",
+    "title": "Build, Scale, and Secure Your Fintech Platform",
+    "subtitle": "Saras provides an integrated suite to accelerate onboarding, prevent fraud, and ensure total compliance, all from a single, seamless platform.",
+    "cta": "Secure Your Platform"
+  },
+  "features": {
+    "title": "A Unified Security & Compliance Suite",
+    "subtitle": "Everything you need to operate securely and scale with confidence.",
+    "items": [
+      {
+        "icon": "fas fa-id-card",
+        "title": "AI Identity Verification",
+        "description": "Verify digital identities with biometrics and liveness detection to stop fraud and deepfakes before they start."
+      },
+      {
+        "icon": "fas fa-user-secret",
+        "title": "Crime Prevention",
+        "description": "Detect and prevent financial crime with real-time analytics and networked intelligence from millions of profiles."
+      },
+      {
+        "icon": "fas fa-file-contract",
+        "title": "Automated AML/KYC",
+        "description": "Automate compliance with integrated, ongoing screening and monitoring to keep your platform secure and compliant."
+      }
+    ]
+  },
+  "detailSection": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Onboard Customers Faster, Without Compromise",
+    "description": "Our AI-powered verification speeds up onboarding while keeping your fintech platform compliant and secure. By stopping fraud at the entry point, you protect your ecosystem and build trust with legitimate users from day one.",
+    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Secure+Onboarding+Flow"
+  },
+  "cta": {
+    "title": "Focus on Innovation, Not on Integration Headaches.",
+    "subtitle": "Get all the tools you need to manage risk and compliance in one unified platform. Stop stitching together multiple vendors and start building the future of finance.",
+    "buttonText": "Unify Your Security Stack"
+  }
+}

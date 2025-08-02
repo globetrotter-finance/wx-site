@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "Automate High-Stakes Workflows Across Finance, Legal, and Tax in India",
+    "subtitle": "Saras is an agentic AI platform that executes, audits, and optimizes your most critical processes with unparalleled accuracy. Empower your teams to move faster, reduce human error, and ensure constant compliance.",
+    "primary_cta": {
+      "text": "Request a Demo",
+      "link": "contact.html"
+    },
+    "secondary_cta": {
+      "text": "See it in Action",
+      "link": "#video-showcase"
+    }
+  },
+  "trustedClients": {
+    "title": "TRUSTED BY INDUSTRY-LEADING FINANCE AND LEGAL DEPARTMENTS",
+    "logos": [
+      { "name": "Global Corp", "path": "assets/client/logos/global-corp.png" },
+      { "name": "Innovate Inc", "path": "assets/client/logos/innovate-inc.png" },
+      { "name": "Finance Pros", "path": "assets/client/logos/finance-pros.png" },
+      { "name": "Legal Eagle", "path": "assets/client/logos/legal-eagle.png" },
+      { "name": "Capital Group", "path": "assets/client/logos/capital-group.png" }
+    ]
+  },
+  "featuresHeader": {
+    "title": "A Unified Platform for Autonomous Operations",
+    "subtitle": "Saras replaces fragmented tools with a single, intelligent system that understands your business logic."
+  },
+  "features": [
+    {
+      "icon": "fas fa-calculator",
+      "title": "Taxation & Financial Automation",
+      "description": "Automate direct tax calculations, GST reconciliation, and transfer pricing. Generate audit-ready MIS reports and financial models in minutes, not days.",
+      "link": "products/finance/finance-workflows.html"
+    },
+    {
+      "icon": "fas fa-balance-scale",
+      "title": "Litigation Management",
+      "description": "Proactively detect new litigations, analyze case merits with relevant precedents, and draft tailored legal responses automatically. Centralize case management and collaboration.",
+      "link": "products/finance/litigation-management.html"
+    },
+    {
+      "icon": "fas fa-tasks",
+      "title": "Compliance & Audit",
+      "description": "Never miss a deadline with an intelligent compliance calendar. Use Maker-Checker workflows to ensure accuracy and provide HODs with a real-time, organization-wide view of compliance status.",
+      "link": "products/finance/compliance-tracking.html"
+    },
+    {
+      "icon": "fas fa-shield-alt",
+      "title": "Fintech & Onboarding",
+      "description": "Automate AML/KYC checks, verify digital identities with liveness detection to prevent fraud, and accelerate secure customer onboarding, all within one compliant framework.",
+      "link": "products/fintech/fintech-automations.html"
+    }
+  ],
+  "agenticPlatform": {
+    "eyebrow": "GAME-CHANGING AGENTIC AI",
+    "title": "Accuracy You Can Build On. Creativity You Can Trust.",
+    "description": "Our agentic systems are purpose-built for the high-stakes world of finance and law. Trained on verified regulatory, legal, and financial data, Saras eliminates the risk of AI hallucinations. It provides grounded, compliant answers and executes tasks with domain-specific intelligence, ensuring your outputs are always accurate, defensible, and strategically sound.",
+    "cta": {
+      "text": "Learn About Our Technology",
+      "link": "company/about.html"
+    },
+    "image": "https://placehold.co/500x500/F8F9FA/ADB5BD?text=Agentic+Workflow+Visualization"
+  },
+  "finalCta": {
+    "title": "Ready to Transform Your Operations?",
+    "subtitle": "See how Saras Finance can reduce manual work by up to 90% and give your team the power of autonomous execution. Get early access to the future of enterprise intelligence.",
+    "cta": {
+      "text": "Book Your Personalized Demo",
+      "link": "company/contact.html"
+    }
+  }
+}

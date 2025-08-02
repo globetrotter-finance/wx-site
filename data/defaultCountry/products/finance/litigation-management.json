@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "Litigation Management",
+    "title": "Move from Reactive Defense to Proactive Resolution",
+    "subtitle": "Saras redefines litigation management by handling every stage of the process—from early detection to resolution—with autonomous speed, intelligence, and precision.",
+    "cta": "See Litigation Automation"
+  },
+  "features": {
+    "title": "Key Capabilities",
+    "subtitle": "Automate your entire legal workflow from detection to resolution.",
+    "items": [
+      {
+        "icon": "fas fa-eye",
+        "title": "Automated Detection",
+        "description": "Continuously monitor public and private sources to detect new legal notices or litigations the moment they appear."
+      },
+      {
+        "icon": "fas fa-gavel",
+        "title": "Intelligent Drafting",
+        "description": "Analyze case merits, pull relevant precedents, and instantly draft tailored legal responses aligned with your company's stance."
+      },
+      {
+        "icon": "fas fa-sitemap",
+        "title": "Centralized Management",
+        "description": "Assign tasks, collaborate with teammates, and track the status of every case in one central, auditable workspace."
+      }
+    ]
+  },
+  "detailSection": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Draft Responses in Minutes, Not Weeks",
+    "description": "Saras analyzes the litigation content, understands the core issue, interprets your business’s position, and drafts a tailored response. This significantly reduces dependency on manual legal review for initial drafting, freeing your legal team to focus on high-level strategy.",
+    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=AI-Drafted+Response"
+  },
+  "cta": {
+    "title": "Never Be Caught Off Guard Again.",
+    "subtitle": "Equip your legal team with the proactive intelligence to anticipate challenges and manage them efficiently. Turn your legal department from a cost center into a strategic advantage.",
+    "buttonText": "Transform Your Legal Ops"
+  }
+}

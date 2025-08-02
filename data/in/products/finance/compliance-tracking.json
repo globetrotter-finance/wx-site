@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "Compliance Tracking & Management",
+    "title": "Ensure You Are Always Audit-Ready and On Time",
+    "subtitle": "Saras offers a centralized, intelligent system to track, manage, and report on all regulatory obligations, so you never miss a deadline.",
+    "cta": "Simplify Compliance"
+  },
+  "features": {
+    "title": "A Framework for Total Compliance",
+    "subtitle": "Key features designed to provide structure and peace of mind.",
+    "items": [
+      {
+        "icon": "far fa-calendar-alt",
+        "title": "Intelligent Calendar",
+        "description": "Get proactive reminders for every filing date, renewal, and statutory deadline across all jurisdictions."
+      },
+      {
+        "icon": "fas fa-user-check",
+        "title": "Maker-Checker Flow",
+        "description": "Guarantee accountability with a two-step validation system that ensures every task is prepared and verified correctly."
+      },
+      {
+        "icon": "fas fa-binoculars",
+        "title": "HOD Oversight",
+        "description": "Provide department heads with a real-time, bird's-eye view of compliance status across the entire organization."
+      }
+    ]
+  },
+  "detailSection": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Enhance Accountability and Reduce Risk",
+    "description": "At the heart of the platform is a robust Maker-Checker workflow. This guarantees every compliance task is prepared by the right team member and verified by an authorized reviewer before submission, minimizing errors and enhancing accountability across the board.",
+    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Maker-Checker+Approval"
+  },
+  "cta": {
+    "title": "Go Beyond Checklists. Achieve True Compliance.",
+    "subtitle": "Stop managing compliance in spreadsheets and emails. Move to an intelligent system that provides structure, visibility, and peace of mind for your entire organization.",
+    "buttonText": "Automate Your Compliance"
+  }
+}

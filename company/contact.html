@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Saras Finance</title>
+    <meta name="description" content="Get in touch with the Saras Finance team to request a demo, ask a question, or get early access to our AI platform.">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style-modern.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/2563EB/FFFFFF?text=S" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header"></header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container text-center">
+                <h1 class="animate-on-scroll">Let's Start a Conversation</h1>
+                <p class="page-hero-subtitle animate-on-scroll">Whether you have a question, want a demo, or are ready to get started, we'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid animate-on-scroll">
+                    <div class="contact-form-container">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm" action="https://formsubmit.co/sales@sarasfinance.com" method="POST">
+                            <div class="form-group">
+                                <label for="company-name">Company Name</label>
+                                <input type="text" id="company-name" name="company_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="product-interest">I'm interested in...</label>
+                                <select id="product-interest" name="product_interest" required>
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="Taxation & Financial">Taxation & Financial Automation</option>
+                                    <option value="Accounting & Audit">Accounting & Audit</option>
+                                    <option value="Litigation Management">Litigation Management</option>
+                                    <option value="Compliance Tracking">Compliance Tracking</option>
+                                    <option value="Fintech Automations">Fintech Automations</option>
+                                    <option value="Partnership">Partnership Inquiry</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="https://sarasfinance.com/contact.html">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong><br> [Your Company Address]<br> [City, State, Zip Code]</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong><br> <a href="mailto:support@sarasfinance.com">support@sarasfinance.com</a></p>
+
+                        <div class="map-placeholder">
+                            <img src="https://placehold.co/500x300/DEE2E6/495057?text=Map+Placeholder" alt="Map Placeholder">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer"></footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "eyebrow": "Premium Knowledge Advisory",
+    "title": "Get Expert Answers You Can Trust, Instantly",
+    "subtitle": "Saras AI delivers grounded, regulation-compliant insights without hallucinations. It's the knowledgeable, tireless assistant your professional team deserves.",
+    "cta": "Explore AI Advisory"
+  },
+  "features": {
+    "title": "An AI Built for Professionals",
+    "subtitle": "Experience the difference of a purpose-built knowledge engine.",
+    "items": [
+      {
+        "icon": "fas fa-brain",
+        "title": "Zero Hallucination",
+        "description": "Trained on verified legal, tax, and financial documents to provide grounded, accurate answers every time."
+      },
+      {
+        "icon": "fas fa-user-tie",
+        "title": "Purpose-Built for Pros",
+        "description": "Unlike generic AI, Saras understands the terminology, workflows, and risks of CAs, CFOs, and legal advisors."
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "Customizable Engine",
+        "description": "Evolves with your organization by learning your firm’s preferred formats, policies, and precedents."
+      }
+    ]
+  },
+  "detailSection": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Contextualized for Your Business",
+    "description": "The assistant doesn't just answer questions—it contextualizes them based on your business logic, sector, and jurisdiction. Whether you need to draft a legal reply or compute a complex tax scenario, Saras provides standardized formats and templates that professionals can trust.",
+    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Contextual+AI+Response"
+  },
+  "cta": {
+    "title": "In Your World, There's No Room for Error.",
+    "subtitle": "Equip your team with an AI that's built for the high-stakes environment of finance and law. Move faster, smarter, and with complete confidence in your data and decisions.",
+    "buttonText": "Request a Demo"
+  }
+}

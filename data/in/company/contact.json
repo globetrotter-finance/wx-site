@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "title": "Let's Start a Conversation",
+    "subtitle": "Whether you have a question, want a demo, or are ready to get started, we'd love to hear from you."
+  },
+  "form": {
+    "title": "Send us a Message",
+    "actionURL": "https://formsubmit.co/sales@sarasfinance.com",
+    "redirectURL": "https://sarasfinance.com/contact.html",
+    "buttonText": "Send Message",
+    "interestOptions": [
+      { "value": "", "text": "--Please choose an option--" },
+      { "value": "Taxation & Financial", "text": "Taxation & Financial Automation" },
+      { "value": "Accounting & Audit", "text": "Accounting & Audit" },
+      { "value": "Litigation Management", "text": "Litigation Management" },
+      { "value": "Compliance Tracking", "text": "Compliance Tracking" },
+      { "value": "Fintech Automations", "text": "Fintech Automations" },
+      { "value": "Partnership", "text": "Partnership Inquiry" },
+      { "value": "General Inquiry", "text": "General Inquiry" }
+    ]
+  },
+  "info": {
+    "title": "Contact Information",
+    "address": {
+      "line1": "[Your Company Address]",
+      "line2": "[City, State, Zip Code]"
+    },
+    "email": {
+      "address": "support@sarasfinance.com",
+      "link": "mailto:support@sarasfinance.com"
+    },
+    "mapImage": "https://placehold.co/500x300/DEE2E6/495057?text=Map+Placeholder"
+  }
+}
