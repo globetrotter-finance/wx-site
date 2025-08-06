@@ -1,7 +1,7 @@
 /* --- Root Variables and General Styling --- */
 :root {
-    --primary-color: #2563EB; /* UPDATED: Modern Blue */
-    --primary-color-light: #3B82F6; /* UPDATED: Lighter Blue */
+    --primary-color: #2563EB; /* Modern Blue */
+    --primary-color-light: #3B82F6; /* Lighter Blue */
     --bg-primary: #FFFFFF;
     --bg-secondary: #F8F9FA;
     --bg-success: #67C23A;
@@ -11,7 +11,7 @@
     --text-light: #6C757D;
     --border-color: rgba(13, 17, 23, 0.1);
     --font-family: 'Poppins', sans-serif;
-    --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.2); /* UPDATED: Blue Glow */
+    --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.2); /* Blue Glow */
 }
 
 *, *::before, *::after {
@@ -35,7 +35,7 @@ body {
     position: relative;
 }
 
-/* Aurora Background Glows (Adjusted for Blue Theme) */
+/* Aurora Background Glows */
 body::before, body::after {
     content: '';
     position: fixed;
@@ -250,8 +250,11 @@ main > section {
 }
 .hero-cta { display: flex; justify-content: center; gap: 20px; }
 
-/* --- Clients Section --- */
-.clients-section { padding: 60px 0; background: var(--bg-secondary); }
+/* --- CORRECTED CLIENTS SECTION --- */
+.clients-section {
+    padding: 60px 0;
+    background: var(--bg-secondary);
+}
 .clients-title {
     font-size: 0.9rem;
     font-weight: 600;
@@ -260,20 +263,37 @@ main > section {
     margin-bottom: 2rem;
 }
 .clients-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+}
+.clients-logos-slider {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
 }
 .clients-logos img {
-    opacity: 0.5;
-    transition: opacity 0.3s;
+    height: 40px;
+    width: auto;
+    margin: 0 40px;
     filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
-.clients-logos img:hover {
-    opacity: 1;
+.clients-logos:hover .clients-logos-slider {
+    animation-play-state: paused;
+}
+.clients-logos .clients-logos-slider img:hover {
     filter: grayscale(0);
+    opacity: 1;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* --- Video Showcase --- */
@@ -469,25 +489,21 @@ main > section {
 /* This is the actual tooltip bubble. It's a pseudo-element
    that is hidden by default and appears on hover. */
 .compliance-images span[data-tooltip]::after {
-    content: attr(data-tooltip); /* Pulls text from the data-tooltip attribute */
+    content: attr(data-tooltip);
     position: absolute;
-    bottom: 125%; /* Position it above the image */
+    bottom: 125%;
     left: 50%;
-    transform: translateX(-50%) scale(0.8); /* Start slightly smaller */
-    background: #0D1117; /* Dark background to match the modern theme */
-    color: #E6EDF3; /* Light text */
+    transform: translateX(-50%) scale(0.8);
+    background: #0D1117;
+    color: #E6EDF3;
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 0.9rem;
     font-weight: 500;
-    white-space: nowrap; /* Keep the text on one line */
-
-    /* Hide the tooltip by default */
+    white-space: nowrap;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
-
-    /* Add a smooth transition effect */
+    pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -495,12 +511,12 @@ main > section {
 .compliance-images span[data-tooltip]:hover::after {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) scale(1); /* Scale to full size on hover */
+    transform: translateX(-50%) scale(1);
 }
 
 /* Optional: Style the compliance images themselves */
 .compliance-images img {
-    height: 32px; /* Adjust size as needed */
+    height: 32px;
     width: auto;
     opacity: 0.7;
     transition: opacity 0.3s;

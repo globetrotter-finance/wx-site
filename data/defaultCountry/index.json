@@ -17,8 +17,10 @@
       { "name": "SDU", "path": "assets/client/logos/global-corp.png" },
       { "name": "Guru & Jana", "path": "assets/client/logos/innovate-inc.png" },
       { "name": "Affluence", "path": "assets/client/logos/finance-pros.png" },
-      { "name": "The Rita Software Services", "path": "assets/client/logos/legal-eagle.png" },
-      { "name": "Many more", "path": "" }
+      { "name": "Seer LLC", "path": "assets/client/logos/finance-pros.png" },
+      { "name": "Marconi", "path": "assets/client/logos/finance-pros.png" },
+      { "name": "AIGaming", "path": "assets/client/logos/finance-pros.png" },
+      { "name": "ConnectCo", "path": "assets/client/logos/finance-pros.png" }
     ]
   },
   "featuresHeader": {

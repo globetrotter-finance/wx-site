@@ -58,14 +58,18 @@ document.addEventListener('DOMContentLoaded', function() {
             // Populate Trusted Clients Section
             const clientsContainer = document.getElementById('clients-section-container');
             if (clientsContainer && data.trustedClients) {
+                const logosHTML = data.trustedClients.logos.map(logo => `
+                    <img src="${logo.path}" alt="${logo.name} Logo">
+                `).join('');
+
                 clientsContainer.innerHTML = `
                     <div class="container text-center">
                         <p class="clients-title animate-on-scroll">${data.trustedClients.title}</p>
-                        <div class="clients-logos animate-on-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
-                            ${data.trustedClients.logos.map(logo => `
-                                <img src="${logo.path}" alt="${logo.name} Logo"
-                                    style="max-height: 60px; object-fit: contain; display: inline-block;">
-                            `).join('')}
+                        <div class="clients-logos animate-on-scroll">
+                            <div class="clients-logos-slider">
+                                ${logosHTML}
+                                ${logosHTML}
+                            </div>
                         </div>
                     </div>
                 `;
