@@ -4,6 +4,8 @@
     --primary-color-light: #3B82F6; /* UPDATED: Lighter Blue */
     --bg-primary: #FFFFFF;
     --bg-secondary: #F8F9FA;
+    --bg-success: #67C23A;
+    --bg-success-hover: #F8F9FA;
     --text-dark: #0D1117;
     --text-medium: #495057;
     --text-light: #6C757D;

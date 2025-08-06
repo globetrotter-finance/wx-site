@@ -2,39 +2,49 @@
   "hero": {
     "eyebrow": "Compliance Tracking & Management",
     "title": "Ensure You Are Always Audit-Ready and On Time",
-    "subtitle": "Saras offers a centralized, intelligent system to track, manage, and report on all regulatory obligations, so you never miss a deadline.",
+    "subtitle": "Saras offers a centralized, intelligent system to track, manage, and report on all regulatory, tax, and legal obligations—so you never miss a deadline, filing, or requirement.",
     "cta": "Simplify Compliance"
   },
   "features": {
     "title": "A Framework for Total Compliance",
-    "subtitle": "Key features designed to provide structure and peace of mind.",
+    "subtitle": "Designed to replace fragmented tools and manual reminders with a single source of truth for compliance.",
     "items": [
       {
         "icon": "far fa-calendar-alt",
-        "title": "Intelligent Calendar",
-        "description": "Get proactive reminders for every filing date, renewal, and statutory deadline across all jurisdictions."
+        "title": "Intelligent Compliance Calendar",
+        "description": "Visualize all your due dates, filing timelines, renewals, and inspection cycles in one place. Get automated reminders and escalation alerts well in advance—customized for your jurisdiction, industry, and entity structure."
       },
       {
         "icon": "fas fa-user-check",
-        "title": "Maker-Checker Flow",
-        "description": "Guarantee accountability with a two-step validation system that ensures every task is prepared and verified correctly."
+        "title": "Maker-Checker Workflow",
+        "description": "Every compliance task—whether it's a tax filing, regulatory submission, or board resolution—is routed through a controlled Maker-Checker flow. Assign, prepare, verify, and approve in a fully auditable process to avoid lapses and unauthorized submissions."
       },
       {
         "icon": "fas fa-binoculars",
-        "title": "HOD Oversight",
-        "description": "Provide department heads with a real-time, bird's-eye view of compliance status across the entire organization."
+        "title": "HOD & Leadership Oversight",
+        "description": "Empower heads of departments, CFOs, and compliance officers with real-time dashboards that show which obligations are complete, pending, overdue, or at risk—segmented by team, region, and entity."
+      },
+      {
+        "icon": "fas fa-link",
+        "title": "Attachment & Evidence Management",
+        "description": "Link filings, certificates, challans, correspondence, and supporting documents directly to the task. Never scramble for audit evidence again—everything is structured, time-stamped, and accessible."
+      },
+      {
+        "icon": "fas fa-file-contract",
+        "title": "Preloaded Compliance Libraries",
+        "description": "Access ready-made compliance checklists and timelines for Indian corporate, tax, labor, and secretarial laws. Customize and assign them across entities to ensure you’re never building from scratch."
       }
     ]
   },
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
     "title": "Enhance Accountability and Reduce Risk",
-    "description": "At the heart of the platform is a robust Maker-Checker workflow. This guarantees every compliance task is prepared by the right team member and verified by an authorized reviewer before submission, minimizing errors and enhancing accountability across the board.",
+    "description": "At the core of Saras Compliance lies the Maker-Checker flow—every task is created by a responsible team member, verified by an internal reviewer, and approved before final execution. Combined with deadline alerts, escalations, and traceable evidence, this ensures full accountability and compliance continuity across departments, even when teams change or grow.",
     "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Maker-Checker+Approval"
   },
   "cta": {
     "title": "Go Beyond Checklists. Achieve True Compliance.",
-    "subtitle": "Stop managing compliance in spreadsheets and emails. Move to an intelligent system that provides structure, visibility, and peace of mind for your entire organization.",
+    "subtitle": "Say goodbye to Excel trackers, missed filings, and scattered responsibility. Saras delivers a unified system that enforces deadlines, clarifies ownership, and ensures nothing falls through the cracks.",
     "buttonText": "Automate Your Compliance"
   }
 }

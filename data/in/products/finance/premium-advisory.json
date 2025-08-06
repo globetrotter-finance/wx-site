@@ -2,39 +2,49 @@
   "hero": {
     "eyebrow": "Premium Knowledge Advisory",
     "title": "Get Expert Answers You Can Trust, Instantly",
-    "subtitle": "Saras AI delivers grounded, regulation-compliant insights without hallucinations. It's the knowledgeable, tireless assistant your professional team deserves.",
+    "subtitle": "Saras AI delivers grounded, regulation-compliant insights without hallucinations. It's the tireless, always-on assistant your finance, tax, and legal teams have always needed—ready to provide accurate answers and actionable intelligence, anytime.",
     "cta": "Explore AI Advisory"
   },
   "features": {
     "title": "An AI Built for Professionals",
-    "subtitle": "Experience the difference of a purpose-built knowledge engine.",
+    "subtitle": "More than a chatbot—Saras is a deep, domain-trained knowledge engine built for critical thinking and compliance.",
     "items": [
       {
         "icon": "fas fa-brain",
         "title": "Zero Hallucination",
-        "description": "Trained on verified legal, tax, and financial documents to provide grounded, accurate answers every time."
+        "description": "Powered by verified corpora of tax laws, regulatory frameworks, case laws, and accounting standards, Saras provides responses backed by source logic—not assumptions or guesses."
       },
       {
         "icon": "fas fa-user-tie",
-        "title": "Purpose-Built for Pros",
-        "description": "Unlike generic AI, Saras understands the terminology, workflows, and risks of CAs, CFOs, and legal advisors."
+        "title": "Purpose-Built for Professionals",
+        "description": "Understands the language of finance, tax, and law. From Section 43B disallowances to IND AS 115 compliance or FEMA advisory—Saras speaks your language and aligns with your workflows."
       },
       {
         "icon": "fas fa-cogs",
-        "title": "Customizable Engine",
-        "description": "Evolves with your organization by learning your firm’s preferred formats, policies, and precedents."
+        "title": "Customizable Intelligence Engine",
+        "description": "Fine-tune Saras to follow your internal policies, document formats, advisory tone, or jurisdiction-specific practices. It learns your preferences and grows with your organization."
+      },
+      {
+        "icon": "fas fa-bolt",
+        "title": "Instant Scenario Evaluation",
+        "description": "Ask multi-layered queries like: 'What are the GST implications for an inter-unit service transaction under SEZ rules?' Saras breaks it down and responds like a seasoned expert—fast."
+      },
+      {
+        "icon": "fas fa-file-alt",
+        "title": "Standardized Formats",
+        "description": "Get responses in draft memo, summary note, opinion format, computation table, or even Board presentation structure—based on how your team typically works."
       }
     ]
   },
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
     "title": "Contextualized for Your Business",
-    "description": "The assistant doesn't just answer questions—it contextualizes them based on your business logic, sector, and jurisdiction. Whether you need to draft a legal reply or compute a complex tax scenario, Saras provides standardized formats and templates that professionals can trust.",
+    "description": "Unlike generic chatbots, Saras is trained on structured and verified content across tax codes, legal commentary, audit handbooks, and financial templates. When you ask a question, it evaluates your query not just by keywords, but by interpreting your business function, jurisdiction, and objective. Whether you're drafting a GST refund note or seeking clarity on a board resolution, Saras responds in the exact format your professionals expect—complete with references, logic, and compliance citations.",
     "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Contextual+AI+Response"
   },
   "cta": {
     "title": "In Your World, There's No Room for Error.",
-    "subtitle": "Equip your team with an AI that's built for the high-stakes environment of finance and law. Move faster, smarter, and with complete confidence in your data and decisions.",
+    "subtitle": "Equip your teams with an AI that's purpose-built for professionals in high-stakes, regulation-heavy environments. Saras delivers reliability, precision, and speed—so your decisions are always backed by trusted knowledge.",
     "buttonText": "Request a Demo"
   }
 }

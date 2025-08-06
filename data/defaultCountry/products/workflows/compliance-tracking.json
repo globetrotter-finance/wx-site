@@ -1,0 +1,54 @@
+{
+  "workflowSection": {
+    "eyebrow": "DETAILED WORKFLOWS",
+    "title": "What Saras Tracks and Manages for You",
+    "subtitle": "From ROC filings to tax returns and labor law requirements, Saras brings structure, automation, and audit readiness to your compliance universe.",
+    "workflows": [
+      {
+        "title": "ROC & Company Law Compliance",
+        "steps": [
+          "Auto-schedule annual filings like MGT-7, AOC-4, and DIR-3 KYC based on incorporation date",
+          "Assign preparation and approval roles using Maker-Checker flow",
+          "Attach supporting board resolutions and auditor reports",
+          "Auto-flag overdue filings and escalate to HOD"
+        ]
+      },
+      {
+        "title": "GST & Indirect Tax Compliance",
+        "steps": [
+          "Track GSTR-1, GSTR-3B, GSTR-9, and state-specific return deadlines",
+          "Pull reconciliation data or link challans for audit evidence",
+          "Auto-remind for payment due dates with workflow for approval before submission",
+          "Highlight mismatch in input-output credits across months"
+        ]
+      },
+      {
+        "title": "Income Tax & TDS Compliance",
+        "steps": [
+          "Create workflows for monthly TDS payments and quarterly 26Q/24Q returns",
+          "Auto-assign PAN-wise challan uploads and validations",
+          "Send alerts for missed Form 16 or Form 15CA/CB compliance",
+          "Track corporate income tax return timelines and dependencies"
+        ]
+      },
+      {
+        "title": "Labor Law & Statutory Registrations",
+        "steps": [
+          "Maintain centralized tracker for PF, ESI, Shops & Establishment, PT, and LWF filings",
+          "Assign HR/Payroll teams to complete, review, and attach proof of payment",
+          "Alert management for missing registration renewals or threshold breaches (e.g. PF crossing limits)",
+          "Record inspection notices or correspondence for compliance history"
+        ]
+      },
+      {
+        "title": "Internal Policies & Compliance Certifications",
+        "steps": [
+          "Auto-schedule internal reviews of policies like POSH, Whistleblower, and Data Protection",
+          "Assign responsibility for annual compliance declarations or training",
+          "Link circulars, regulatory guidelines, and internal communication for traceability",
+          "Generate internal compliance scorecard for CXOs and audit committees"
+        ]
+      }
+    ]
+  }
+}

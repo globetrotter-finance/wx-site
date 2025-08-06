@@ -61,9 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 clientsContainer.innerHTML = `
                     <div class="container text-center">
                         <p class="clients-title animate-on-scroll">${data.trustedClients.title}</p>
-                        <div class="clients-logos animate-on-scroll">
+                        <div class="clients-logos animate-on-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
                             ${data.trustedClients.logos.map(logo => `
-                                <img src="${logo.path}" alt="${logo.name} Logo">
+                                <img src="${logo.path}" alt="${logo.name} Logo"
+                                    style="max-height: 60px; object-fit: contain; display: inline-block;">
                             `).join('')}
                         </div>
                     </div>

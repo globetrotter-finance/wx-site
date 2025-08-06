@@ -1,0 +1,49 @@
+{
+  "workflowSection": {
+    "eyebrow": "DETAILED WORKFLOWS",
+    "title": "What Saras Automates for You",
+    "subtitle": "From data ingestion to reporting, every step of your audit workflow is intelligently automated to minimize risk and maximize efficiency.",
+    "workflows": [
+      {
+        "title": "Trial Balance & Ledger Analysis",
+        "steps": [
+          "Import trial balance and general ledger automatically or via upload",
+          "Map accounts using internal or industry templates",
+          "Identify unusual entries, duplicate postings, or classification errors"
+        ]
+      },
+      {
+        "title": "Anomaly Detection & Flagging",
+        "steps": [
+          "Run 20+ prebuilt audit checks across financial statements",
+          "Spot mismatched balances, missing disclosures, negative values",
+          "Apply materiality thresholds to highlight critical issues"
+        ]
+      },
+      {
+        "title": "Segment & Function Analysis",
+        "steps": [
+          "Extract payroll, GL, cost centers and map to business functions",
+          "Perform margin benchmarking across segments",
+          "Identify low-profit or loss-making functions for deeper audit"
+        ]
+      },
+      {
+        "title": "Compliance & Disclosure Review",
+        "steps": [
+          "Verify completeness of Notes to Accounts as per GAAP or IND AS",
+          "Detect missing statutory disclosures based on audit checklist",
+          "Auto-flag outdated policy references or missing comparatives"
+        ]
+      },
+      {
+        "title": "Working Paper Generation",
+        "steps": [
+          "Auto-generate audit working papers per module",
+          "Include exception details, reviewer comments, linked evidence",
+          "Maintain version history for peer or partner review"
+        ]
+      }
+    ]
+  }
+}
