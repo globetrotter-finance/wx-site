@@ -14,13 +14,15 @@
   "trustedClients": {
     "title": "TRUSTED BY INDUSTRY-LEADING FINANCE AND LEGAL DEPARTMENTS",
     "logos": [
-      { "name": "SDU", "path": "assets/client/logos/global-corp.png" },
-      { "name": "Guru & Jana", "path": "assets/client/logos/innovate-inc.png" },
-      { "name": "Affluence", "path": "assets/client/logos/finance-pros.png" },
-      { "name": "Seer LLC", "path": "assets/client/logos/finance-pros.png" },
-      { "name": "Marconi", "path": "assets/client/logos/finance-pros.png" },
-      { "name": "AIGaming", "path": "assets/client/logos/finance-pros.png" },
-      { "name": "ConnectCo", "path": "assets/client/logos/finance-pros.png" }
+      { "name": "Maya Bank", "path": "/assets/clients/maya.svg" },
+      { "name": "SDU", "path": "/assets/clients/sdu.svg" },
+      { "name": "Guru & Jana", "path": "/assets/clients/gurujana.gif" },
+      { "name": "Affluence", "path": "/assets/clients/affluence.png" },
+      { "name": "Seer LLC", "path": "/assets/clients/seer.png" },
+      { "name": "Marconi", "path": "/assets/clients/marconi.svg" },
+      { "name": "AI Gaming", "path": "/assets/clients/aigaming.jpeg" },
+      { "name": "Hamad Al-Khaled & Bros. Co.", "path": "/assets/clients/hamad.png" },
+      { "name": "Connect Co", "path": "/assets/clients/connectco.png" }
     ]
   },
   "featuresHeader": {
