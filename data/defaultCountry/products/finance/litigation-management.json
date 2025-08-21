@@ -44,9 +44,7 @@
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
     "title": "Your litigations are solved even before they appear :)",
-    "description": "Litigation & Compliance Intelligence ensures you stay ahead of deadlines and risks:\n<li>Upload or sync notices, compliance requirements, and case data into a centralized system.</li>\n<li>AI agents classify, track, and flag pending obligations, hearings, and regulatory updates.</li>\n<li>Dashboards, reminders, and audit logs give management a single view of risks, deadlines, and compliance status.</li>",
-    "image": "/assets/products/finance/litigation.png"
-  },
+    "description": "Litigation & Compliance Intelligence ensures you stay ahead of deadlines and risks:\n<li>Upload or sync notices, compliance requirements, and case data into a centralized system.</li>\n<li>AI agents classify, track, and flag pending obligations, hearings, and regulatory updates.</li>\n<li>Dashboards, reminders, and audit logs give management a single view of risks, deadlines, and compliance status.</li>"  },
   "cta": {
     "title": "Stay Compliant. Stay Protected. Stay Ahead.",
     "subtitle": "With Litigation & Compliance Intelligence, your organization never misses a statutory filing, litigation notice, or compliance deadline. <b>Transform compliance from a burden into a strategic safeguard.</b>",

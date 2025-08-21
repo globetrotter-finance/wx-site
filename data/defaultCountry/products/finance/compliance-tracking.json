@@ -39,9 +39,7 @@
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
     "title": "Enhance Accountability and Reduce Risk",
-    "description": "At the core of Saras Compliance lies the Maker-Checker flow—every task is created by a responsible team member, verified by an internal reviewer, and approved before final execution. Combined with deadline alerts, escalations, and traceable evidence, this ensures full accountability and compliance continuity across departments, even when teams change or grow.",
-    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Maker-Checker+Approval"
-  },
+    "description": "At the core of Saras Compliance lies the Maker-Checker flow—every task is created by a responsible team member, verified by an internal reviewer, and approved before final execution. Combined with deadline alerts, escalations, and traceable evidence, this ensures full accountability and compliance continuity across departments, even when teams change or grow."  },
   "cta": {
     "title": "Go Beyond Checklists. Achieve True Compliance.",
     "subtitle": "Say goodbye to Excel trackers, missed filings, and scattered responsibility. Saras delivers a unified system that enforces deadlines, clarifies ownership, and ensures nothing falls through the cracks.",

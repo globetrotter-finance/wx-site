@@ -258,12 +258,22 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <h2>${data.detailSection.title}</h2>
                                     <p>${data.detailSection.description}</p>
                                 </div>
+                                `;
+                    if (data.detailSection.image) {
+                        detailContainer.innerHTML += `
                                 <div class="agentic-visual animate-on-scroll">
                                     <img src="${data.detailSection.image}" alt="${data.detailSection.title}" style="max-width: 100%; width: auto; height: auto; object-fit: contain;">
                                 </div>
                             </div>
                         </div>
                     `;
+                    }
+                    else {
+                        detailContainer.innerHTML += `
+                            </div>
+                        </div>
+                    `;
+                    }
                 }
 
                 const ctaContainer = document.getElementById('cta-section-container');

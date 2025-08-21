@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "Premium Knowledge Advisory",
-    "title": "Get Expert Answers You Can Trust, Instantly",
-    "subtitle": "Saras AI delivers grounded, regulation-compliant insights without hallucinations. It's the tireless, always-on assistant your finance, tax, and legal teams have always needed—ready to provide accurate answers and actionable intelligence, anytime.",
+    "eyebrow": "Knowledge Advisory",
+    "title": "Institutionalize Expertise, Deliver Insights Faster",
+    "subtitle": "Organizations generate massive amounts of knowledge — in SharePoint, Google Drive, emails, research papers, and internal notes. Much of it remains scattered and underused. Knowledge Advisory connects to your enterprise knowledge sources, builds a dynamic knowledge graph, and delivers AI-powered insights on-demand so teams spend less time searching and more time advising.",
     "cta": "Explore AI Advisory"
   },
   "features": {
@@ -10,41 +10,45 @@
     "subtitle": "More than a chatbot—Saras is a deep, domain-trained knowledge engine built for critical thinking and compliance.",
     "items": [
       {
+        "icon": "fas fa-project-diagram",
+        "title": "Enterprise Knowledge Graph",
+        "description": "Automatically connects your scattered documents, rulings, case files, and emails into a unified, navigable knowledge graph."
+      },
+      {
+        "icon": "fas fa-search",
+        "title": "Unified Smart Search",
+        "description": "Semantic search across SharePoint, Google Drive, emails, or any connected repository — with instant, contextual results."
+      },
+      {
         "icon": "fas fa-brain",
-        "title": "Zero Hallucination",
-        "description": "Powered by verified corpora of tax laws, regulatory frameworks, case laws, and accounting standards, Saras provides responses backed by source logic—not assumptions or guesses."
+        "title": "AI-Powered Q&A",
+        "description": "Ask questions in natural language and get precise, context-aware answers backed by your organization’s knowledge base."
       },
       {
-        "icon": "fas fa-user-tie",
-        "title": "Purpose-Built for Professionals",
-        "description": "Understands the language of finance, tax, and law. From Section 43B disallowances to IND AS 115 compliance or FEMA advisory—Saras speaks your language and aligns with your workflows."
+        "icon": "fas fa-sync-alt",
+        "title": "Always Up-to-Date",
+        "description": "Continuously syncs with internal repositories to capture the latest rulings, research, or knowledge contributions."
       },
       {
-        "icon": "fas fa-cogs",
-        "title": "Customizable Intelligence Engine",
-        "description": "Fine-tune Saras to follow your internal policies, document formats, advisory tone, or jurisdiction-specific practices. It learns your preferences and grows with your organization."
+        "icon": "fas fa-users",
+        "title": "Collaborative Wisdom",
+        "description": "Allows experts to annotate, enrich, and expand the knowledge base, institutionalizing expertise across teams."
       },
       {
-        "icon": "fas fa-bolt",
-        "title": "Instant Scenario Evaluation",
-        "description": "Ask multi-layered queries like: 'What are the GST implications for an inter-unit service transaction under SEZ rules?' Saras breaks it down and responds like a seasoned expert—fast."
-      },
-      {
-        "icon": "fas fa-file-alt",
-        "title": "Standardized Formats",
-        "description": "Get responses in draft memo, summary note, opinion format, computation table, or even Board presentation structure—based on how your team typically works."
+        "icon": "fas fa-lock",
+        "title": "Secure & Controlled Access",
+        "description": "Enterprise-grade security ensures role-based access, so sensitive knowledge stays protected."
       }
     ]
   },
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
     "title": "Contextualized for Your Business",
-    "description": "Unlike generic chatbots, Saras is trained on structured and verified content across tax codes, legal commentary, audit handbooks, and financial templates. When you ask a question, it evaluates your query not just by keywords, but by interpreting your business function, jurisdiction, and objective. Whether you're drafting a GST refund note or seeking clarity on a board resolution, Saras responds in the exact format your professionals expect—complete with references, logic, and compliance citations.",
-    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Contextual+AI+Response"
+    "description": "Knowledge Advisory transforms disconnected repositories into a living knowledge fabric:\n<li>Connect your SharePoint, Google Drive, emails, and internal databases.</li>\n<li>AI ingests, classifies, and links data into a dynamic knowledge graph.</li>\n<li>Advisors query in natural language and receive contextual, connected insights instantly.</li>"
   },
   "cta": {
-    "title": "In Your World, There's No Room for Error.",
-    "subtitle": "Equip your teams with an AI that's purpose-built for professionals in high-stakes, regulation-heavy environments. Saras delivers reliability, precision, and speed—so your decisions are always backed by trusted knowledge.",
+    "title": "From scattered files to connected knowledge.",
+    "subtitle": "With Knowledge Advisory, your organization moves from static repositories to a dynamic knowledge graph. Empower your teams to find, connect, and apply insights — instantly and securely.",
     "buttonText": "Request a Demo"
   }
 }

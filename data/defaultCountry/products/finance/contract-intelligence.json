@@ -49,8 +49,7 @@
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
     "title": "Put Contracts in Auto Pilot",
-    "description": "Contract Intelligence turns messy, unread contracts into structured, actionable insights:\n<li>Upload or sync contracts in any format, and Saras automatically extracts clauses, key dates, and obligations.</li>\n<li>AI flags hidden risks — like auto-renewals, unlimited liability, or compliance gaps — so your team can act before issues escalate.</li>\n<li>Track renewals, obligations, and risks through dashboards, reminders, and portfolio-level reports for total visibility and control.</li>",
-    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Anomaly+Flagging"
+    "description": "Contract Intelligence turns messy, unread contracts into structured, actionable insights:\n<li>Upload or sync contracts in any format, and Saras automatically extracts clauses, key dates, and obligations.</li>\n<li>AI flags hidden risks — like auto-renewals, unlimited liability, or compliance gaps — so your team can act before issues escalate.</li>\n<li>Track renewals, obligations, and risks through dashboards, reminders, and portfolio-level reports for total visibility and control.</li>"
   },
   "cta": {
     "title": "Every Contract. Every Clause. Total Control.",
