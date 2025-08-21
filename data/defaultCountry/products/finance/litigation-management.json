@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "Litigation Management",
-    "title": "Move from Reactive Defense to Proactive Resolution",
-    "subtitle": "Saras redefines litigation management with end-to-end automation—detecting, analyzing, and managing legal disputes across jurisdictions and departments, so your team is always one step ahead.",
+    "eyebrow": "Litigation & Compliance",
+    "title": "Move from Reactive Defense to Proactive Resolution<br>Never Miss a Notice, Deadline, or Obligation",
+    "subtitle": "Managing litigations, regulatory filings, and compliance obligations manually is error-prone and risky. Our Litigation & Compliance Intelligence platform automates <b>notice tracking, compliance checklists, and regulatory monitoring</b>, so your business always stays protected, audit-ready, and ahead of deadlines.",
     "cta": "See Litigation Automation"
   },
   "features": {
@@ -10,41 +10,46 @@
     "subtitle": "Automate your entire legal workflow—from risk identification to courtroom-ready documentation.",
     "items": [
       {
-        "icon": "fas fa-eye",
-        "title": "Automated Case Detection",
-        "description": "Saras scans court databases, public registries, regulator websites, and internal records to identify new legal notices, petitions, or adverse mentions relevant to your business—often before they are formally served."
+        "icon": "fas fa-bell",
+        "title": "Auto Notice Tracking",
+        "description": "Capture, centralize, and monitor all litigation notices, regulatory updates, and court communications with automated alerts."
+      },
+      {
+        "icon": "fas fa-clipboard-check",
+        "title": "Compliance Checklist Automation",
+        "description": "Digitize statutory, tax, and regulatory checklists with deadline reminders and completion tracking for 100% coverage."
       },
       {
         "icon": "fas fa-gavel",
-        "title": "AI-Powered Drafting & Case Building",
-        "description": "From show-cause notices to writ petitions, Saras reads the documents, understands the legal grounds, and generates customized drafts using statutory language, relevant case laws, and your company's legal posture."
+        "title": "Case & Litigation Management",
+        "description": "Organize cases, assign responsibilities, and monitor progress with timelines, document storage, and hearing schedules."
       },
       {
-        "icon": "fas fa-sitemap",
-        "title": "Centralized Case Management",
-        "description": "All notices, filings, responses, and hearing updates are organized in one centralized dashboard with role-based access, assignment tracking, and internal collaboration tools—ensuring every stakeholder knows the case status in real time."
+        "icon": "fas fa-university",
+        "title": "Regulatory Monitoring",
+        "description": "Track changes in laws, rules, and circulars across regulators (MCA, RBI, SEBI, GST, Income Tax) with contextual alerts."
       },
       {
-        "icon": "fas fa-flag",
-        "title": "Escalation & Risk Alerts",
-        "description": "Get automated alerts for high-risk matters based on issue type, monetary value, or jurisdiction. Saras flags delayed responses or approaching hearing dates so that nothing is missed, even across distributed teams."
+        "icon": "fas fa-file-alt",
+        "title": "Audit & Disclosure Readiness",
+        "description": "Maintain compliance logs, filings, and supporting documents in one place — always ready for statutory audits or board reporting."
       },
       {
-        "icon": "fas fa-scale-balanced",
-        "title": "Precedent & Judgment Intelligence",
-        "description": "Access a curated repository of prior case laws, internal decisions, and regulator rulings. Saras recommends applicable legal precedents based on the nature of the current litigation, strengthening your response strategy."
+        "icon": "fas fa-database",
+        "title": "Centralized Repository",
+        "description": "Securely store all compliance documents, notices, orders, and filings with advanced search and role-based access."
       }
     ]
   },
   "detailSection": {
     "eyebrow": "HOW IT WORKS",
-    "title": "Draft Responses in Minutes, Not Weeks",
-    "description": "When a notice or case is identified, Saras extracts the facts, understands the legal grounds, checks your internal records, and generates a contextually accurate first draft. This includes formatted responses, annexures, cited cases, and optional legal opinions. Your legal team reviews, edits, and finalizes—not starts from scratch—freeing time for higher-value legal strategy.",
-    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=AI-Drafted+Response"
+    "title": "Your litigations are solved even before they appear :)",
+    "description": "Litigation & Compliance Intelligence ensures you stay ahead of deadlines and risks:\n<li>Upload or sync notices, compliance requirements, and case data into a centralized system.</li>\n<li>AI agents classify, track, and flag pending obligations, hearings, and regulatory updates.</li>\n<li>Dashboards, reminders, and audit logs give management a single view of risks, deadlines, and compliance status.</li>",
+    "image": "/assets/products/finance/litigation.png"
   },
   "cta": {
-    "title": "Never Be Caught Off Guard Again.",
-    "subtitle": "Equip your legal, tax, and compliance teams with the intelligence to proactively detect, assess, and respond to legal challenges. Saras transforms litigation from a burden into a strategic asset.",
+    "title": "Stay Compliant. Stay Protected. Stay Ahead.",
+    "subtitle": "With Litigation & Compliance Intelligence, your organization never misses a statutory filing, litigation notice, or compliance deadline. <b>Transform compliance from a burden into a strategic safeguard.</b>",
     "buttonText": "Transform Your Legal Ops"
   }
 }
