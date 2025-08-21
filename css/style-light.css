@@ -380,6 +380,10 @@ main > section {
     align-items: center;
 }
 .agentic-text h2 { margin-bottom: 1.5rem; }
+.agentic-visual {
+    position: relative;
+    padding-top: 70px; /* Space for the scroller */
+}
 .agentic-visual img {
     width: 100%;
     border-radius: 12px;
@@ -524,4 +528,45 @@ main > section {
 
 .compliance-images img:hover {
     opacity: 1;
+}
+
+
+/* --- Agentic Platform Scroller --- */
+/* --- Agentic Platform Scroller --- */
+.use-case-scroller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* ADDED: This makes the container span the full width */
+    height: 50px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 0px solid var(--border-color); /* Corrected from 0px to 1px to match style */
+    border-radius: 8px;
+    padding: 0 20px;
+}
+.scroller-inner {
+    animation: vertical-scroll 16s linear infinite;
+}
+.scroller-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+.scroller-item i {
+    color: var(--bg-success);
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+@keyframes vertical-scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
 }

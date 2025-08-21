@@ -101,6 +101,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Populate Agentic Platform Section
             const agenticContainer = document.getElementById('agentic-platform-container');
             if (agenticContainer && data.agenticPlatform) {
+                let scrollerHTML = '';
+                if (data.agenticPlatform.scrollingUseCases && data.agenticPlatform.scrollingUseCases.length > 0) {
+                    const useCasesHTML = data.agenticPlatform.scrollingUseCases.map(useCase => `
+                        <div class="scroller-item">
+                            <i class="fas fa-check-circle"></i> ${useCase}
+                        </div>
+                    `).join('');
+                    scrollerHTML = `
+                        <div class="use-case-scroller">
+                            <div class="scroller-inner">
+                                ${useCasesHTML}
+                                ${useCasesHTML}
+                            </div>
+                        </div>
+                    `;
+                }
+
                 agenticContainer.innerHTML = `
                     <div class="container">
                         <div class="agentic-grid">
@@ -111,13 +128,13 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="${data.agenticPlatform.cta.link}" class="btn btn-outline">${data.agenticPlatform.cta.text}</a>
                             </div>
                             <div class="agentic-visual animate-on-scroll">
+                                ${scrollerHTML}
                                 <img src="${data.agenticPlatform.image}" alt="${data.agenticPlatform.title}">
                             </div>
                         </div>
                     </div>
                 `;
             }
-
             // Populate Final CTA Section
             const finalCtaContainer = document.getElementById('final-cta-container');
             if (finalCtaContainer && data.finalCta) {

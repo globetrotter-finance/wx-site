@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Automate High-Stakes Workflows Across Finance, Legal, and Tax",
-    "subtitle": "Saras is an agentic AI platform that executes, audits, and optimizes your most critical processes with unparalleled accuracy. Empower your teams to move faster, reduce human error, and ensure constant compliance.",
+    "title": "Fix Finance at the Source. Audit, Analyze, Automate.",
+    "subtitle": "Your data is only as strong as its foundation. We help you uncover hidden risks, eliminate errors, and power smarter decisions with an AI-driven platform built for Finance, Audit, Legal & Compliance teams.",
     "primary_cta": {
       "text": "Request a Demo",
       "link": "contact.html"
@@ -15,9 +15,7 @@
     "title": "TRUSTED BY INDUSTRY-LEADING FINANCE AND LEGAL DEPARTMENTS",
     "logos": [
       { "name": "Maya Bank", "path": "/assets/clients/maya.svg" },
-      { "name": "SDU", "path": "/assets/clients/sdu.svg" },
-      { "name": "Guru & Jana", "path": "/assets/clients/gurujana.gif" },
-      { "name": "Affluence", "path": "/assets/clients/affluence.png" },
+      { "name": "FE Credit", "path": "/assets/clients/fec-logo.svg" },
       { "name": "Seer LLC", "path": "/assets/clients/seer.png" },
       { "name": "Marconi", "path": "/assets/clients/marconi.svg" },
       { "name": "AI Gaming", "path": "/assets/clients/aigaming.jpeg" },
@@ -26,44 +24,75 @@
     ]
   },
   "featuresHeader": {
-    "title": "A Unified Platform for Autonomous Operations",
-    "subtitle": "Saras replaces fragmented tools with a single, intelligent system that understands your business logic."
+    "title": "One Platform.<br>Multiple Game-Changing Solutions.",
+    "subtitle": "We’re building the world’s first agentic platform for finance and compliance—where AI doesn’t just generate insights, it takes action, enforces accuracy, and ensures every report, audit, or compliance task is built on clean, reliable data.<br><br>Our suite of products is designed to solve real-world challenges that finance, tax, and legal professionals face every day."
   },
   "features": [
     {
       "icon": "fas fa-calculator",
-      "title": "Taxation & Financial Automation",
-      "description": "Automate direct tax calculations, GST reconciliation, and transfer pricing. Generate audit-ready MIS reports and financial models in minutes, not days.",
+      "title": "Finance Inttelligence & Automation",
+      "description": "<li>Ledger Analysis: Detect anomalies, wrong codes, missing narrations, or suspicious entries.</li><li>Inter-Company Charges: Automate reconciliations and flag anomalies.</li><li>Smart MIS & Reporting: Build reports on clean, verified data.</li>",
       "link": "products/finance/finance-workflows.html"
     },
     {
-      "icon": "fas fa-balance-scale",
-      "title": "Litigation Management",
-      "description": "Proactively detect new litigations, analyze case merits with relevant precedents, and draft tailored legal responses automatically. Centralize case management and collaboration.",
-      "link": "products/finance/litigation-management.html"
-    },
-    {
       "icon": "fas fa-tasks",
-      "title": "Compliance & Audit",
-      "description": "Never miss a deadline with an intelligent compliance calendar. Use Maker-Checker workflows to ensure accuracy and provide HODs with a real-time, organization-wide view of compliance status.",
+      "title": "Audits & Due Diligence",
+      "description": "<li>Audit Automation: AI-powered contract reading and risk flagging.</li><li>Due Diligence: Fast, intelligent checks on financials, operations, and compliance health.</li>",
       "link": "products/finance/compliance-tracking.html"
     },
     {
-      "icon": "fas fa-shield-alt",
-      "title": "Fintech & Onboarding",
-      "description": "Automate AML/KYC checks, verify digital identities with liveness detection to prevent fraud, and accelerate secure customer onboarding, all within one compliant framework.",
+      "icon": "fas fa-file-text",
+      "title": "Contracts Intelligence",
+      "description": "<li>Agreement Analysis: End-to-end audit workflows inspired by Big 4 methodologies.</li><li>Contract Tracking: Stay on top of obligations, renewals, and compliance clauses.</li>",
+      "link": "products/finance/compliance-tracking.html"
+    },
+    {
+      "icon": "fas fa-balance-scale",
+      "title": "Litigation & Compliance",
+      "description": "<li>Auto Notice Tracking: Never miss a court notice or legal update. Let AI fetch and track your litigation, and auto draft a submission based on your company's data.</li><li>Compliance Checklist: Monitor deadlines, filings, and regulatory requirements.</li>",
+      "link": "products/finance/litigation-management.html"
+    },
+    {
+      "icon": "fas fa-snowflake",
+      "title": "Premium Knowledge Hub",
+      "description": "Stay ahead of regulatory, financial, and legal changes with curated intelligence tailored for professionals. Our advisory engine combines expert insights, industry updates, case law summaries, tax & compliance changes, and global best practices—delivered in one place.",
+      "link": "products/fintech/fintech-automations.html"
+    },
+    {
+      "icon": "fas fa-credit-card",
+      "title": "FinTech Checks",
+      "description": "<li>AML / KYC Automation: Instantly verify entities and individuals. Prevent frauds, be on top of audits.</li><li>Anomaly Detection: Flag suspicious transactions and financial patterns ahead of time.</li>",
       "link": "products/fintech/fintech-automations.html"
     }
   ],
   "agenticPlatform": {
-    "eyebrow": "GAME-CHANGING AGENTIC AI",
-    "title": "Accuracy You Can Build On. Creativity You Can Trust.",
-    "description": "Our agentic systems are purpose-built for the high-stakes world of finance and law. Trained on verified regulatory, legal, and financial data, Saras eliminates the risk of AI hallucinations. It provides grounded, compliant answers and executes tasks with domain-specific intelligence, ensuring your outputs are always accurate, defensible, and strategically sound.",
+    "eyebrow": "GAME-CHANGING AGENTIC AI PLATFORM",
+    "title": "Meet the Future of Finance & Compliance: The Agentic Platform",
+    "description": "This isn’t just another reporting or workflow tool. Our platform is built with autonomous financial agents—AI-driven modules that continuously:<br><li>Scan your ledgers, contracts, and compliance data</li><li>Flag and fix anomalies before they snowball</li><li>Automate allocations, reconciliations, and documentation</li><li>Learn from your data to get smarter every cycle</li><br><br>Why it matters:<br>Instead of running on top of flawed inputs, your audits, MIS, or compliance processes are rooted in clean, accurate, and actionable data. This is where finance shifts from reactive reporting to proactive intelligence.",
     "cta": {
       "text": "Learn About Our Technology",
       "link": "company/about.html"
     },
-    "image": "https://placehold.co/500x500/F8F9FA/ADB5BD?text=Agentic+Workflow+Visualization"
+    "image": "https://sarasfinance.com/assets/home-hero-cropped-CZN5sQGK.gif",
+    "scrollingUseCases": [
+      "Litigation Solved",
+      "Ledger Analysed",
+      "Audits Done",
+      "Due Diligence Done",
+      "Tax Computations Done",
+      "Compliance Tracked",
+      "Knowledge & Advice Provided",
+      "Depreciation Calculated",
+      "Valuation Done",
+      "Budgets Finalized",
+      "Investments Managed",
+      "Performance Monitored",
+      "Documents Processed",
+      "Contracts Drafted",
+      "Disputes Resolved",
+      "Expenses Analyzed",
+      "Accounts Reconciled"
+    ]
   },
   "finalCta": {
     "title": "Ready to Transform Your Operations?",
