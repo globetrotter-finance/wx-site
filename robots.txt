@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.sarasfinance.com/sitemap.xml
+Sitemap: https://sarasfinance.com/sitemap.xml
 
