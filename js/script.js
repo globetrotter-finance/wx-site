@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <p>${data.detailSection.description}</p>
                                 </div>
                                 <div class="agentic-visual animate-on-scroll">
-                                    <img src="${data.detailSection.image}" alt="${data.detailSection.title}">
+                                    <img src="${data.detailSection.image}" alt="${data.detailSection.title}" style="max-width: 100%; width: auto; height: auto; object-fit: contain;">
                                 </div>
                             </div>
                         </div>

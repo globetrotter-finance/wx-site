@@ -1,8 +1,8 @@
 {
   "hero": {
-    "eyebrow": "Taxation & Financial Automation",
-    "title": "Execute Financial Workflows with Speed and Precision",
-    "subtitle": "Saras empowers finance professionals to automate complex tax, reporting, and analysis tasks, transforming hours of manual work into minutes of intelligent execution.",
+    "eyebrow": "FINANCE INTELLIGENCE",
+    "title": "Fix Data at the Source, Automate at Scale",
+    "subtitle": "Your finance team spends hours reconciling, validating, and firefighting data errors before reporting. Finance Intelligence from Saras automates anomaly detection, ledger analysis, and inter-company charge allocation (and many more), so that your MIS, compliance, and audits are built on clean, reliable data.",
     "cta": "Request a Demo"
   },
   "features": {
@@ -11,18 +11,33 @@
     "items": [
       {
         "icon": "fas fa-robot",
-        "title": "Intelligent Automation",
-        "description": "Automate direct tax, GST, and transfer pricing workflows with an AI that understands regulatory nuances."
+        "title": "Ledger Analysis & Anomaly Detection",
+        "description": "Automatically scan all ledgers to flag wrong codes, missing narrations, duplicate or suspicious entries, and unsupported transactions before they distort financials."
+      },
+      {
+        "icon": "fas fa-building",
+        "title": "Inter-Company Cross Charges",
+        "description": "Eliminate messy reconciliations with rule-based allocations (fixed, percentage, cost-plus) and get consolidated reporting across entities."
       },
       {
         "icon": "fas fa-chart-line",
-        "title": "Instant Reporting",
-        "description": "Generate complex MIS, segmental reports, and variance analyses on-demand, with zero manual data crunching."
+        "title": "Smart MIS & Reporting",
+        "description": "Generate error-free MIS that is always rooted in clean data, reducing the back-and-forth with auditors and management."
       },
       {
-        "icon": "fas fa-check-double",
-        "title": "Audit-Ready Compliance",
-        "description": "Produce fully traceable, audit-ready outputs with detailed logs for every operation, ensuring total compliance."
+        "icon": "fas fa-flag",
+        "title": "Real-Time Reconciliation",
+        "description": "Instantly match entries across books, accounts, and periods—no more manual hunting for mismatches."
+      },
+      {
+        "icon": "fas fa-fire",
+        "title": "Audit-Ready Financials",
+        "description": "By fixing anomalies upfront, you’re always ready with audit-friendly reports that stand scrutiny."
+      },
+      {
+        "icon": "fas fa-rocket",
+        "title": "Agentic Automations",
+        "description": "Our AI-driven financial agents don’t just analyze—they take corrective actions, enforce ledger hygiene, and continuously learn from your patterns."
       }
     ]
   },
@@ -30,10 +45,10 @@
     "eyebrow": "HOW IT WORKS",
     "title": "Generate Insightful Reports in Minutes, Not Hours",
     "description": "Break down your financials by cost centers, business units, or product lines with zero manual intervention. Saras makes segmental analysis, revenue attribution, cost distribution, and variance identification an instant and repeatable process, freeing your team to focus on strategy.",
-    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Dynamic+MIS+Dashboard"
+    "image": "/assets/products/finance/finance-intelligence.png"
   },
   "cta": {
-    "title": "Stop Chasing Numbers. Start Driving Strategy.",
+    "title": "Stop Chasing Numbers.<br/>Start Driving Strategy.",
     "subtitle": "Saras handles the complex, time-consuming tasks so your team can focus on high-value analysis and strategic decision-making. Turn your raw data into your most powerful asset.",
     "buttonText": "Unlock Strategic Finance"
   }
