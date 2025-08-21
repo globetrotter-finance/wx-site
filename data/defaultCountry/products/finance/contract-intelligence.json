@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "eyebrow": "Accounting, Audit & Due Diligence",
+    "title": "Achieve Complete Confidence in Your Financials",
+    "subtitle": "Saras automates financial audits, reviews, and due diligence with intelligent workflows and AI-driven analysis. Eliminate manual checks, reduce errors, and empower your team to make faster, insight-driven decisions.",
+    "cta": "Schedule a Consultation"
+  },
+  "features": {
+    "title": "Uncover Insights, Ensure Integrity",
+    "subtitle": "Our intelligent audit platform covers everything from anomaly detection to regulatory compliance, so you don’t have to.",
+    "items": [
+      {
+        "icon": "fas fa-search-dollar",
+        "title": "Intelligent Analysis",
+        "description": "Automatically review ledgers, trial balances, and financial statements to detect anomalies, misclassifications, and outliers based on industry-standard audit procedures."
+      },
+      {
+        "icon": "fas fa-history",
+        "title": "Transparent Audits",
+        "description": "Maintain a complete, time-stamped audit trail with version control, change detection, and reconciliation logs — ensuring your reviews are always verifiable and regulator-ready."
+      },
+      {
+        "icon": "fas fa-rocket",
+        "title": "Accelerated Diligence",
+        "description": "Streamline your financial due diligence with automated financial ratio analysis, working capital checks, and risk scoring — ideal for M&A, investor assessments, or internal health checks."
+      },
+      {
+        "icon": "fas fa-file-invoice-dollar",
+        "title": "Automated Working Papers",
+        "description": "Generate audit working papers with embedded calculations, evidence links, and reviewer notes. Standardize documentation and reduce rework during peer or partner review."
+      },
+      {
+        "icon": "fas fa-balance-scale",
+        "title": "Regulatory Alignment",
+        "description": "Ensure compliance with Indian GAAP, IND AS, or IFRS through built-in rule checks, disclosure validations, and real-time alerting on potential reporting lapses."
+      }
+    ]
+  },
+  "detailSection": {
+    "eyebrow": "HOW IT WORKS",
+    "title": "Focus on What Matters Most",
+    "description": "Saras continuously analyzes your uploaded or synced financial data and flags key issues — such as missing notes to accounts, incorrect opening balances, unlinked journal entries, or threshold breaches. Instead of combing through every cell, your audit team can prioritize issues, validate exceptions, and spend their time delivering insights, not catching mistakes.",
+    "image": "https://placehold.co/500x400/F8F9FA/ADB5BD?text=Anomaly+Flagging"
+  },
+  "cta": {
+    "title": "From Tedious Review to Strategic Insight.",
+    "subtitle": "Empower your finance and audit teams to transition from manual, reactive processes to a proactive and intelligent audit practice. Saras equips them with the tools to uncover deeper insights, faster — with audit-ready outputs you can trust.",
+    "buttonText": "Enhance Audit Accuracy"
+  }
+}

@@ -30,38 +30,32 @@
   "features": [
     {
       "icon": "fas fa-calculator",
-      "title": "Finance Inttelligence & Automation",
-      "description": "<li>Ledger Analysis: Detect anomalies, wrong codes, missing narrations, or suspicious entries.</li><li>Inter-Company Charges: Automate reconciliations and flag anomalies.</li><li>Smart MIS & Reporting: Build reports on clean, verified data.</li>",
+      "title": "Finance Intelligence",
+      "description": "<b>Ledger Analysis</b><br/>Detect anomalies, incorrect codes, missing narrations, or suspicious entries.<br/><b>Inter-Company Charges</b><br/>Automate reconciliations and flag anomalies.<br/><b>Smart MIS & Reporting</b><br/>Build reports based on clean, verified data.",
       "link": "products/finance/finance-workflows.html"
     },
     {
       "icon": "fas fa-tasks",
       "title": "Audits & Due Diligence",
-      "description": "<li>Audit Automation: AI-powered contract reading and risk flagging.</li><li>Due Diligence: Fast, intelligent checks on financials, operations, and compliance health.</li>",
+      "description": "<b>Audit Automation</b><br/>AI-powered contract reading and risk flagging.<br/><b>Due Diligence</b><br/>Perform fast, intelligent checks on financials, operations, and compliance health.",
       "link": "products/finance/compliance-tracking.html"
     },
     {
       "icon": "fas fa-file-text",
       "title": "Contracts Intelligence",
-      "description": "<li>Agreement Analysis: End-to-end audit workflows inspired by Big 4 methodologies.</li><li>Contract Tracking: Stay on top of obligations, renewals, and compliance clauses.</li>",
+      "description": "<b>Agreement Analysis</b><br/>End-to-end audit workflows inspired by Big 4 methodologies.<br/><b>Contract Tracking</b><br/>Stay on top of obligations, renewals, and compliance clauses.",
       "link": "products/finance/compliance-tracking.html"
     },
     {
       "icon": "fas fa-balance-scale",
       "title": "Litigation & Compliance",
-      "description": "<li>Auto Notice Tracking: Never miss a court notice or legal update. Let AI fetch and track your litigation, and auto draft a submission based on your company's data.</li><li>Compliance Checklist: Monitor deadlines, filings, and regulatory requirements.</li>",
+      "description": "<b>Auto Notice Tracking</b><br/>Never miss a court notice or legal update. Let AI fetch and track your litigation, and automatically draft a submission based on your company's data.<br/><b>Compliance Checklist</b><br/>Monitor deadlines, filings, and regulatory requirements.",
       "link": "products/finance/litigation-management.html"
     },
     {
       "icon": "fas fa-snowflake",
       "title": "Premium Knowledge Hub",
       "description": "Stay ahead of regulatory, financial, and legal changes with curated intelligence tailored for professionals. Our advisory engine combines expert insights, industry updates, case law summaries, tax & compliance changes, and global best practices—delivered in one place.",
-      "link": "products/fintech/fintech-automations.html"
-    },
-    {
-      "icon": "fas fa-credit-card",
-      "title": "FinTech Checks",
-      "description": "<li>AML / KYC Automation: Instantly verify entities and individuals. Prevent frauds, be on top of audits.</li><li>Anomaly Detection: Flag suspicious transactions and financial patterns ahead of time.</li>",
       "link": "products/fintech/fintech-automations.html"
     }
   ],
